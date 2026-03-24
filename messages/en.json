@@ -1,0 +1,138 @@
+{
+  "Metadata": {
+    "title": "NoCoda | AI Infrastructure & Automation Partner",
+    "description": "We transform companies into AI-first organizations. AI infrastructure, intelligent agents, and systems that drive real business impact."
+  },
+  "Navbar": {
+    "services": "Services",
+    "howWeWork": "Process",
+    "whyNoCoda": "Why NoCoda",
+    "cta": "Book a call"
+  },
+  "Hero": {
+    "badge": "AI Infrastructure Partner",
+    "title": "Your company needs AI infrastructure.",
+    "titleAccent": "Not another chatbot.",
+    "subtitle": "We build the AI systems that transform your operations. Infrastructure, agents, and internal tools that work from day one.",
+    "cta": "Book a call",
+    "secondaryCta": "See services"
+  },
+  "Problem": {
+    "label": "The problem",
+    "title": "Most companies don't have an AI problem.",
+    "titleAccent": "They have an infrastructure problem.",
+    "points": [
+      {
+        "title": "Fragile automations",
+        "description": "Workflows that break every week. Integrations held together with duct tape. Zero reliability."
+      },
+      {
+        "title": "Isolated tools",
+        "description": "ChatGPT here, a bot there. Nothing connected, nothing measurable, nothing scalable."
+      },
+      {
+        "title": "Wasted hours",
+        "description": "Your team spends time on tasks AI could solve in seconds. Every single day."
+      },
+      {
+        "title": "Prototypes that never ship",
+        "description": "Impressive demos that never integrate with your real systems. Investment with no return."
+      }
+    ]
+  },
+  "Services": {
+    "label": "Services",
+    "title": "What we build",
+    "subtitle": "Three pillars to transform your operations with AI.",
+    "items": [
+      {
+        "title": "AI Infrastructure",
+        "description": "The technical foundation your company needs to operate with AI reliably.",
+        "features": [
+          "AI-optimized servers and APIs",
+          "Data pipelines and vector databases",
+          "Model orchestration (OpenAI, Claude, open-source)",
+          "Integrations with your existing systems"
+        ]
+      },
+      {
+        "title": "AI Agents",
+        "description": "Autonomous agents that work for your team. Not chatbots: systems that take action.",
+        "features": [
+          "Agents for WhatsApp, Slack, and email",
+          "Internal copilots for sales and support",
+          "End-to-end process automation",
+          "Agents that connect to your tools"
+        ]
+      },
+      {
+        "title": "AI Systems / SaaS",
+        "description": "Complete applications with integrated AI. Dashboards, internal tools, and custom platforms.",
+        "features": [
+          "Web apps with built-in AI",
+          "Smart dashboards with real-time data",
+          "Custom internal tools",
+          "SaaS platforms ready to scale"
+        ]
+      }
+    ]
+  },
+  "HowWeWork": {
+    "label": "Process",
+    "title": "How we work",
+    "subtitle": "From idea to production in weeks, not months.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Diagnosis",
+        "description": "We analyze your operations, identify AI opportunities, and define the project scope."
+      },
+      {
+        "number": "02",
+        "title": "Design",
+        "description": "We design the technical architecture, data flows, and integration strategy."
+      },
+      {
+        "number": "03",
+        "title": "Build",
+        "description": "We develop with no-code + AI to deliver fast without sacrificing quality."
+      },
+      {
+        "number": "04",
+        "title": "Ship & iterate",
+        "description": "We deploy to production, monitor results, and continuously optimize."
+      }
+    ]
+  },
+  "WhyNoCoda": {
+    "label": "Why us",
+    "title": "Why NoCoda",
+    "subtitle": "We're not a generic AI agency. We're your infrastructure partner.",
+    "points": [
+      {
+        "title": "Fast delivery",
+        "description": "We combine no-code with AI to deliver in weeks what others take months. Without sacrificing quality or scalability."
+      },
+      {
+        "title": "Deep integration",
+        "description": "We don't create technology islands. We connect everything with your existing systems: CRM, ERP, databases, APIs."
+      },
+      {
+        "title": "Real impact",
+        "description": "We don't sell demos. We deliver systems that work in production and generate measurable results from day one."
+      }
+    ]
+  },
+  "CTA": {
+    "title": "Ready to transform your company?",
+    "subtitle": "Book a free diagnosis call. No commitment, no sales pitch. Just a technical conversation about what your company needs.",
+    "button": "Book a free call"
+  },
+  "Footer": {
+    "description": "AI infrastructure, intelligent agents, and systems that drive real business impact.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "home": "Home"
+  }
+}
