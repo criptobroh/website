@@ -7,8 +7,8 @@ export default async function Footer() {
   const tNav = await getTranslations("Navbar");
 
   return (
-    <footer className="bg-bg-secondary border-t border-border">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-16">
+    <footer className="nocoda-footer">
+      <div className="max-w-[1200px] mx-auto px-6 md:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div className="space-y-4">
@@ -19,7 +19,7 @@ export default async function Footer() {
               height={32}
               className="h-8 w-auto rounded-lg"
             />
-            <p className="text-sm text-text-secondary max-w-xs">
+            <p className="text-sm text-text-secondary max-w-sm leading-6">
               {t("description")}
             </p>
             <div className="flex gap-4">
@@ -27,7 +27,7 @@ export default async function Footer() {
                 href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-muted hover:text-text-primary transition-colors"
+                className="text-text-secondary hover:text-text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ export default async function Footer() {
                 href={SOCIAL_LINKS.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-muted hover:text-text-primary transition-colors"
+                className="text-text-secondary hover:text-text-primary transition-colors"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ export default async function Footer() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-[#8b8fff] hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-brand hover:text-brand-dark transition-colors"
             >
               {tNav("cta")}
               <svg

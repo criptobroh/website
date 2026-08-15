@@ -1,28 +1,21 @@
 "use client";
 
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
 import Button from "@/components/ui/Button";
-import OperatingSystemVisual from "@/components/visuals/OperatingSystemVisual";
 import { CALENDLY_URL } from "@/lib/constants";
 
 export default function Hero() {
   const t = useTranslations("Hero");
-  const ref = useRef<HTMLElement>(null);
-  const reduceMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const copyY = useTransform(scrollYProgress, [0, 1], [0, reduceMotion ? 0 : 34]);
-  const visualY = useTransform(scrollYProgress, [0, 1], [0, reduceMotion ? 0 : -38]);
-  const visualRotate = useTransform(scrollYProgress, [0, 1], [0, reduceMotion ? 0 : -1.4]);
-  const rail = [0, 1, 2, 3].map((index) => t(`rail.${index}`));
-
   return (
-    <section ref={ref} className="nocoda-hero">
-      <div className="nocoda-hero__beam" aria-hidden="true" />
-      <div className="nocoda-hero__orbit" aria-hidden="true" />
+    <section className="nocoda-hero">
       <div className="nocoda-hero__inner">
-        <motion.div className="nocoda-hero__copy" style={{ y: copyY }}>
+        <motion.div
+          className="nocoda-hero__copy"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        >
           <p className="editorial-kicker">{t("badge")}</p>
           <h1>
             {t("title")} <span>{t("titleAccent")}</span>
@@ -36,14 +29,9 @@ export default function Hero() {
               {t("secondaryCta")}<span aria-hidden="true">↓</span>
             </a>
           </div>
-          <p className="nocoda-hero__note"><i aria-hidden="true" />{t("note")}</p>
-        </motion.div>
-
-        <motion.div className="nocoda-hero__visual" style={{ y: visualY, rotate: visualRotate }}>
-          <OperatingSystemVisual label={t("visualAlt")} />
+          <p className="nocoda-hero__note">{t("note")}</p>
         </motion.div>
       </div>
-      <div className="nocoda-hero__rail" aria-label={t("badge")}>{rail.map((item, index) => <span key={item}><b>0{index + 1}</b>{item}</span>)}</div>
     </section>
   );
 }

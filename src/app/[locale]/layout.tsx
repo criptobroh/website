@@ -8,7 +8,6 @@ import { inter, spaceGrotesk } from "@/lib/fonts";
 import { SITE_URL, SITE_NAME, SOCIAL_LINKS } from "@/lib/constants";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ScrollProgress from "@/components/motion/ScrollProgress";
 import MotionProvider from "@/components/motion/MotionProvider";
 import "../globals.css";
 
@@ -100,7 +99,6 @@ export default async function LocaleLayout({
         <a className="skip-link" href="#main-content">{locale === "es" ? "Saltar al contenido" : "Skip to content"}</a>
         <NextIntlClientProvider>
           <MotionProvider>
-            <ScrollProgress />
             <Navbar />
             {children}
             <Footer />

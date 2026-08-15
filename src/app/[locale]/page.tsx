@@ -1,10 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
-import OutcomeMarquee from "@/components/sections/OutcomeMarquee";
 import Services from "@/components/sections/Services";
 import HowWeWork from "@/components/sections/HowWeWork";
-import SnowflakeCapability from "@/components/sections/SnowflakeCapability";
 import WhyNoCoda from "@/components/sections/WhyNoCoda";
 import CTASection from "@/components/sections/CTASection";
 
@@ -20,10 +18,8 @@ export default async function Home({
     <main id="main-content" className="flex-1">
       <Hero />
       <Problem />
-      <OutcomeMarquee />
       <Services />
       <HowWeWork />
-      <SnowflakeCapability />
       <WhyNoCoda />
       <CTASection />
     </main>

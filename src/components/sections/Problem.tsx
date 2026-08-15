@@ -25,12 +25,12 @@ export default function Problem() {
         {points.map((point, index) => (
           <motion.article
             key={point.title}
-            initial={{ y: 26 }}
-            whileInView={{ y: 0 }}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.45 }}
             transition={{ duration: 0.7, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="business-moves__index"><span>0{index + 1}</span><i aria-hidden="true" /></div>
+            <div className="business-moves__index"><span>0{index + 1}</span></div>
             <h3>{point.title}</h3>
             <p>{point.description}</p>
             <strong>{point.outcome}</strong>
@@ -41,7 +41,6 @@ export default function Problem() {
       <div className="business-moves__statement">
         <span>{t("statementLabel")}</span>
         <p>{t("statement")} <strong>{t("statementAccent")}</strong></p>
-        <i aria-hidden="true" />
       </div>
     </section>
   );
