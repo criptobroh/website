@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Button from "@/components/ui/Button";
+import DecisionArtifact from "@/components/visuals/DecisionArtifact";
 import { CALENDLY_URL } from "@/lib/constants";
 
 export default function Hero() {
@@ -31,6 +32,7 @@ export default function Hero() {
           </div>
           <p className="nocoda-hero__note">{t("note")}</p>
         </motion.div>
+        <DecisionArtifact label={t("visualAlt")} />
       </div>
     </section>
   );
