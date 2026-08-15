@@ -81,6 +81,31 @@
       {"number": "04", "title": "Operar y aprender", "description": "Lo incorporamos al equipo, medimos el resultado y mejoramos el circuito de decisión desde el uso real."}
     ]
   },
+  "Snowflake": {
+    "label": "Capacidad de plataforma / Snowflake",
+    "title": "La plataforma multiplica.",
+    "titleAccent": "El modelo operativo crea el valor.",
+    "intro": "Cuando Snowflake es la plataforma correcta, NoCoda diseña la capa que convierte datos gobernados en decisiones, productos y cargas de IA que la organización puede operar.",
+    "environment": "ENTORNOS DE DATOS EN LA NUBE",
+    "badge": "CONOCE LA PLATAFORMA / PRIORIZA EL RESULTADO",
+    "cardLabel": "DISEÑADO PARA ENTORNOS SNOWFLAKE",
+    "cardTitle": "De plataforma de datos a ventaja operativa.",
+    "cardDescription": "Conectamos el warehouse con la decisión: la lógica de negocio, los controles, los productos y las rutinas operativas que hacen rendir la inversión.",
+    "capabilities": [
+      "Arquitectura de decisiones y cargas antes de invertir en cómputo",
+      "Pipelines gobernados, modelos semánticos y métricas trazables",
+      "Costos, responsables y controles humanos diseñados desde el inicio",
+      "Una línea responsable desde el blueprint de ejecución hasta producción"
+    ],
+    "visualAlt": "Un diagrama de sistema muestra señales que pasan por datos gobernados en Snowflake hasta una decisión de negocio y una acción operativa.",
+    "systemLabel": "ARQUITECTURA OPERATIVA",
+    "systemStatus": "LÍNEA DE DECISIÓN ACTIVA",
+    "stages": ["SEÑAL", "GOBERNAR", "DECIDIR", "ACTUAR"],
+    "systemFootLeft": "DATOS / LÓGICA / CONTROL",
+    "systemFootRight": "ACCIÓN MEDIBLE",
+    "principle": "CAPACIDAD DE PLATAFORMA / CRITERIO INDEPENDIENTE",
+    "trademark": "Snowflake® es una marca registrada de Snowflake Inc. Esta referencia describe capacidad técnica y no implica respaldo ni relación de partnership."
+  },
   "WhyNoCoda": {
     "label": "La diferencia NoCoda",
     "title": "Estrategia sin handoff. Ingeniería sin visión de túnel.",

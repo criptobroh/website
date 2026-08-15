@@ -81,6 +81,31 @@
       {"number": "04", "title": "Operate and learn", "description": "Put it inside the team, measure the result and improve the decision loop from real use."}
     ]
   },
+  "Snowflake": {
+    "label": "Platform capability / Snowflake",
+    "title": "The platform is a multiplier.",
+    "titleAccent": "The operating model creates the value.",
+    "intro": "When Snowflake is the right platform, NoCoda designs the layer that turns governed data into decisions, products and AI workloads people can actually operate.",
+    "environment": "CLOUD DATA ENVIRONMENTS",
+    "badge": "VENDOR-AWARE / OUTCOME-LED",
+    "cardLabel": "DESIGNED FOR SNOWFLAKE ENVIRONMENTS",
+    "cardTitle": "From cloud data platform to operating advantage.",
+    "cardDescription": "We connect the warehouse to the decision: the business logic, controls, products and operating routines required to make the investment perform.",
+    "capabilities": [
+      "Decision and workload architecture before warehouse spend",
+      "Governed pipelines, semantic models and traceable metrics",
+      "Cost, ownership and human controls designed from day one",
+      "One accountable line from execution blueprint to production"
+    ],
+    "visualAlt": "A system diagram showing signals moving through governed Snowflake data into a business decision and operating action.",
+    "systemLabel": "OPERATING ARCHITECTURE",
+    "systemStatus": "LIVE DECISION LINE",
+    "stages": ["SIGNAL", "GOVERN", "DECIDE", "ACT"],
+    "systemFootLeft": "DATA / LOGIC / CONTROL",
+    "systemFootRight": "MEASURABLE ACTION",
+    "principle": "PLATFORM CAPABILITY / INDEPENDENT JUDGMENT",
+    "trademark": "Snowflake® is a registered trademark of Snowflake Inc. This reference describes technical capability and does not imply endorsement or partnership."
+  },
   "WhyNoCoda": {
     "label": "The NoCoda difference",
     "title": "Strategy without handoff. Engineering without tunnel vision.",
