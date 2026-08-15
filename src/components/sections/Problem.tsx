@@ -5,20 +5,43 @@ import { useTranslations } from "next-intl";
 
 export default function Problem() {
   const t = useTranslations("Problem");
-  const points = [0, 1, 2, 3].map((i) => ({ title: t(`points.${i}.title`), description: t(`points.${i}.description`) }));
+  const points = [0, 1, 2, 3].map((index) => ({
+    title: t(`points.${index}.title`),
+    description: t(`points.${index}.description`),
+    outcome: t(`points.${index}.outcome`),
+  }));
 
   return (
-    <section id="brecha" className="infrastructure-gap">
-      <div className="infrastructure-gap__heading">
-        <p className="editorial-kicker">{t("label")}</p>
-        <h2>{t("title")} <span>{t("titleAccent")}</span></h2>
+    <section id="impacto" className="business-moves">
+      <div className="business-moves__heading">
+        <div>
+          <p className="editorial-kicker">{t("label")}</p>
+          <h2>{t("title")} <span>{t("titleAccent")}</span></h2>
+        </div>
+        <p>{t("intro")}</p>
       </div>
-      <div className="infrastructure-gap__list">
+
+      <div className="business-moves__grid">
         {points.map((point, index) => (
-          <motion.article key={point.title} initial={{ opacity: 0, y: 14 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.6, delay: index * 0.04, ease: [0.22, 1, 0.36, 1] }}>
-            <span>0{index + 1}</span><h3>{point.title}</h3><p>{point.description}</p><i aria-hidden="true" />
+          <motion.article
+            key={point.title}
+            initial={{ y: 26 }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true, amount: 0.45 }}
+            transition={{ duration: 0.7, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="business-moves__index"><span>0{index + 1}</span><i aria-hidden="true" /></div>
+            <h3>{point.title}</h3>
+            <p>{point.description}</p>
+            <strong>{point.outcome}</strong>
           </motion.article>
         ))}
+      </div>
+
+      <div className="business-moves__statement">
+        <span>{t("statementLabel")}</span>
+        <p>{t("statement")} <strong>{t("statementAccent")}</strong></p>
+        <i aria-hidden="true" />
       </div>
     </section>
   );

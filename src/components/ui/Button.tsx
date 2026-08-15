@@ -19,9 +19,9 @@ type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const variantStyles: Record<Variant, string> = {
   primary:
-    "bg-brand text-white hover:bg-brand-light shadow-lg shadow-brand/20 hover:shadow-brand/30",
+    "bg-brand text-white hover:bg-brand-light shadow-[0_16px_44px_rgba(2,5,211,0.28)] hover:shadow-[0_22px_60px_rgba(2,5,211,0.38)]",
   secondary:
-    "border border-border text-text-primary hover:border-brand hover:text-brand",
+    "border border-border bg-bg-secondary text-text-primary hover:border-brand-light hover:text-white",
   ghost: "text-text-secondary hover:text-text-primary",
 };
 
@@ -39,7 +39,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 cursor-pointer";
+    "inline-flex min-h-11 items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 cursor-pointer active:translate-y-px active:scale-[0.99]";
   const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
   if ("href" in props && props.href) {

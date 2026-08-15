@@ -1,136 +1,105 @@
 {
   "Metadata": {
-    "title": "NoCoda | La capa operativa para la IA",
-    "description": "Conectamos datos, lógica de negocio y acción con IA en sistemas construidos para operaciones reales."
+    "title": "NoCoda | Sistemas de IA que cambian cómo opera el negocio",
+    "description": "Identificamos la decisión de negocio que vale la pena mejorar, exponemos los datos y la lógica operativa detrás de ella y construimos el sistema de IA que la convierte en un cambio operativo medible."
   },
   "Navbar": {
-    "services": "Servicios",
-    "howWeWork": "Proceso",
+    "services": "Cómo empezar",
+    "howWeWork": "Nuestro proceso",
     "whyNoCoda": "Por qué NoCoda",
-    "cta": "Agendar llamada"
+    "program": "Programa ejecutivo",
+    "cta": "Mapear una operación"
   },
   "Hero": {
-    "badge": "DATOS / LÓGICA / ACCIÓN",
-    "title": "Construimos la capa operativa",
-    "titleAccent": "para la IA.",
-    "subtitle": "Convertimos datos dispersos, reglas de negocio ocultas y experimentos aislados en sistemas que tu empresa puede operar, medir y gobernar.",
-    "visualAlt": "NoCoda conecta fuentes de datos, lógica de negocio y acciones de inteligencia artificial en un solo sistema gobernado.",
-    "cta": "Agendar llamada",
-    "secondaryCta": "Ver servicios"
+    "badge": "DECISIONES / OPERACIÓN / CRECIMIENTO",
+    "title": "La IA debería cambiar cómo funciona",
+    "titleAccent": "el negocio.",
+    "subtitle": "NoCoda encuentra la decisión que vale la pena mejorar, expone los datos y la lógica operativa detrás de ella y construye el sistema que la convierte en un cambio operativo medible.",
+    "visualAlt": "Un sistema de decisión de NoCoda convierte señales y contexto operativo en acción trazable y aprendizaje medible.",
+    "cta": "Mapear una operación",
+    "secondaryCta": "Ver cómo funciona",
+    "note": "Estrategia, datos y software en un solo equipo responsable.",
+    "rail": ["UNA OPERACIÓN", "UN RESPONSABLE", "UN RESULTADO MEDIBLE", "HECHO PARA OPERAR"]
   },
   "Problem": {
-    "label": "La brecha de infraestructura",
-    "title": "La IA no puede transformar una empresa",
-    "titleAccent": "que no puede entender.",
+    "label": "Dónde la IA gana su lugar",
+    "title": "Empiece por el movimiento de negocio.",
+    "titleAccent": "Construya sólo lo que lo hace posible.",
+    "intro": "El modelo rara vez es la parte difícil. Lo difícil es darle una decisión real, evidencia utilizable y un lugar dentro de la operación.",
     "points": [
-      {
-        "title": "Automatizaciones frágiles",
-        "description": "Workflows que se rompen cada semana. Integraciones mantenidas con cinta adhesiva. Cero confiabilidad."
-      },
-      {
-        "title": "Herramientas aisladas",
-        "description": "ChatGPT por acá, un bot por allá. Nada conectado, nada medible, nada escalable."
-      },
-      {
-        "title": "Horas desperdiciadas",
-        "description": "Tu equipo pierde tiempo en tareas que la IA podría resolver en segundos. Todos los días."
-      },
-      {
-        "title": "Prototipos que nunca llegan a producción",
-        "description": "Demos impresionantes que jamás se integran con tus sistemas reales. Inversión sin retorno."
-      }
-    ]
+      {"title": "Foco comercial", "description": "Convierta señales dispersas de mercado, CRM y conversaciones en cuentas, ofertas y próximas acciones priorizadas.", "outcome": "PRIORIZAR EL PRÓXIMO MOVIMIENTO"},
+      {"title": "Visibilidad operativa", "description": "Reconstruya cómo fluye realmente el trabajo entre sistemas, identifique fricción y rediseñe el proceso con evidencia.", "outcome": "VER EL PROCESO REAL"},
+      {"title": "Inteligencia financiera", "description": "Integre caja, proyecciones, riesgo y desempeño en un modelo compartido que la dirección pueda consultar y en el que pueda confiar.", "outcome": "MODELAR LA DECISIÓN"},
+      {"title": "Productos nativos de IA", "description": "Convierta conocimiento experto y flujos operativos en software útil para clientes y equipos internos.", "outcome": "CONVERTIR EXPERTISE EN PRODUCTO"}
+    ],
+    "statementLabel": "EL PRINCIPIO OPERATIVO",
+    "statement": "Los datos no son el resultado.",
+    "statementAccent": "Una mejor decisión sí."
+  },
+  "Marquee": {
+    "items": ["DECIDIR ANTES", "VER EL PROCESO REAL", "CONSTRUIR LO QUE IMPORTA", "APRENDER EN OPERACIÓN"]
   },
   "Services": {
-    "label": "Servicios",
-    "title": "Lo que construimos",
-    "subtitle": "Tres capas. Un solo sistema operativo gobernado.",
+    "label": "Cómo empezar",
+    "title": "Sume a NoCoda en la decisión que necesita tomar.",
+    "subtitle": "Alinee a la dirección, diseñe el sistema o incorpore un equipo forward-deployed para construirlo. Cada intervención termina en un próximo movimiento con dueño.",
     "items": [
       {
-        "title": "Una verdad utilizable",
-        "description": "Conectamos y preparamos la base tecnológica que tu empresa necesita para operar con IA de forma confiable.",
-        "features": [
-          "Servidores y APIs optimizados para IA",
-          "Pipelines de datos y bases vectoriales",
-          "Orquestación de modelos (OpenAI, Claude, open-source)",
-          "Integraciones con tus sistemas existentes"
-        ]
+        "eyebrow": "1,5 DÍAS · EQUIPO DIRECTIVO",
+        "title": "Alineación ejecutiva de IA",
+        "description": "Una sesión privada de trabajo para equipos directivos que necesitan una visión compartida de IA, prioridades claras y un roadmap gobernable de 90 días.",
+        "features": ["Inventario de decisiones y oportunidades", "Madurez de datos, procesos y gobierno", "Tres prioridades propias de la empresa", "Responsables, evidencia y primeras acciones"],
+        "output": "SALIDA / ROADMAP EJECUTIVO DE 90 DÍAS",
+        "link": "Explorar BEFORE AI"
       },
       {
-        "title": "Agentes con contexto operativo",
-        "description": "No chatbots: sistemas gobernados que entienden el trabajo, usan herramientas y toman acciones trazables.",
-        "features": [
-          "Agentes para WhatsApp, Slack y email",
-          "Copilots internos para ventas y soporte",
-          "Automatización de procesos completos",
-          "Agentes que se conectan a tus herramientas"
-        ]
+        "eyebrow": "2–4 SEMANAS · UNA OPERACIÓN",
+        "title": "Estrategia y diseño del sistema",
+        "description": "Definimos el movimiento de negocio, trazamos el proceso real y diseñamos los datos, la lógica, los controles y el producto necesarios para cambiarlo.",
+        "features": ["Problema operativo y modelo de valor", "Arquitectura de proceso y decisión", "Blueprint de datos e integraciones", "Plan de construcción con resultados medibles"],
+        "output": "SALIDA / BLUEPRINT DE EJECUCIÓN",
+        "link": ""
       },
       {
-        "title": "Software que tu operación puede controlar",
-        "description": "Aplicaciones completas con IA integrada: herramientas internas, sistemas de decisión y plataformas a medida.",
-        "features": [
-          "Apps web con IA integrada",
-          "Dashboards inteligentes con datos en tiempo real",
-          "Herramientas internas a medida",
-          "Plataformas SaaS listas para escalar"
-        ]
+        "eyebrow": "PILOTO → PRODUCCIÓN · INTEGRADO",
+        "title": "Construcción forward-deployed",
+        "description": "Un equipo senior trabaja dentro de la operación para construir, integrar y operar el software, los agentes y los sistemas de datos hasta que el resultado sea real.",
+        "features": ["Software y agentes de IA a medida", "Productos de datos e integraciones", "Controles humanos y trazabilidad", "Adopción, medición e iteración"],
+        "output": "SALIDA / UN SISTEMA EN PRODUCCIÓN",
+        "link": ""
       }
     ]
   },
   "HowWeWork": {
-    "label": "Proceso",
-    "title": "Cómo trabajamos",
-    "subtitle": "De un problema operativo real a un sistema medible en producción.",
+    "label": "De la decisión a la operación",
+    "title": "Una sola línea entre la pregunta de negocio y el sistema funcionando.",
+    "subtitle": "Sin handoff de estrategia. Sin construcción técnica aislada. Quienes definen el resultado siguen siendo responsables hasta producción.",
     "steps": [
-      {
-        "number": "01",
-        "title": "Diagnóstico",
-        "description": "Analizamos tu operación, identificamos oportunidades de IA y definimos el alcance del proyecto."
-      },
-      {
-        "number": "02",
-        "title": "Diseño",
-        "description": "Diseñamos la arquitectura técnica, los flujos de datos y la estrategia de integración."
-      },
-      {
-        "number": "03",
-        "title": "Construcción",
-        "description": "Desarrollamos con no-code + IA para entregar rápido sin sacrificar calidad."
-      },
-      {
-        "number": "04",
-        "title": "Entrega e iteración",
-        "description": "Desplegamos en producción, monitoreamos resultados y optimizamos continuamente."
-      }
+      {"number": "01", "title": "Definir el movimiento", "description": "Nombramos la decisión, su responsable, el valor económico y la evidencia que permitiría mejorarla."},
+      {"number": "02", "title": "Exponer la operación", "description": "Trazamos el flujo real, los datos, las reglas, las excepciones y el juicio humano detrás del resultado actual."},
+      {"number": "03", "title": "Construir el sistema", "description": "Entregamos el sistema completo más pequeño que conecta contexto con acción y tiene controles incorporados."},
+      {"number": "04", "title": "Operar y aprender", "description": "Lo incorporamos al equipo, medimos el resultado y mejoramos el circuito de decisión desde el uso real."}
     ]
   },
   "WhyNoCoda": {
-    "label": "Diferencial",
-    "title": "Por qué NoCoda",
-    "subtitle": "No agregamos IA para mostrar. Preparamos la operación que tiene que sostenerla.",
+    "label": "La diferencia NoCoda",
+    "title": "Estrategia sin handoff. Ingeniería sin visión de túnel.",
+    "subtitle": "Trabajamos entre la mesa directiva y la operación: con seniority para cuestionar la decisión y capacidad técnica para construir la respuesta.",
+    "seal": "EL EQUIPO ENTRE EL DECK DE ESTRATEGIA Y EL SISTEMA EN PRODUCCIÓN",
     "points": [
-      {
-        "title": "Entrega rápida",
-        "description": "Combinamos no-code con IA para entregar en semanas lo que otros tardan meses. Sin sacrificar calidad ni escalabilidad."
-      },
-      {
-        "title": "Integración profunda",
-        "description": "No creamos islas de tecnología. Conectamos todo con tus sistemas existentes: CRM, ERP, bases de datos, APIs."
-      },
-      {
-        "title": "Impacto real",
-        "description": "No vendemos demos. Entregamos sistemas que funcionan en producción y generan resultados medibles desde el día uno."
-      }
+      {"title": "Negocio antes que herramientas", "description": "Elegimos tecnología después de aclarar la decisión, el flujo de trabajo y la medida de éxito, nunca antes."},
+      {"title": "Responsabilidad full-stack", "description": "Estrategia, datos, software e IA quedan dentro de un solo equipo para que el resultado no se pierda entre proveedores."},
+      {"title": "La adopción es parte del sistema", "description": "Un sistema no está terminado cuando se despliega. Está terminado cuando la gente lo usa y cambia el resultado operativo."}
     ]
   },
   "CTA": {
-    "title": "Tráenos una operación que necesite funcionar mejor.",
-    "subtitle": "Vamos a mapear la decisión, los datos y el sistema necesario para llevarla a producción.",
-    "button": "Agendar diagnóstico"
+    "title": "Tráiganos la operación que todos saben que debería funcionar mejor.",
+    "subtitle": "En una conversación vamos a mapear la decisión, la fricción y el camino más creíble hacia un resultado medible.",
+    "button": "Mapear la operación",
+    "note": "30 MINUTOS · UN PROBLEMA REAL · SIN TEATRO COMERCIAL"
   },
   "Footer": {
-    "description": "Infraestructura de IA, agentes inteligentes y sistemas que generan impacto real.",
+    "description": "Estrategia, datos y sistemas de IA que cambian cómo funciona el negocio.",
     "navigation": "Navegación",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados.",

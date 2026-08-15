@@ -29,17 +29,17 @@ export async function generateMetadata({
     description: t("description"),
     metadataBase: new URL(SITE_URL),
     alternates: {
-      canonical: locale === "es" ? SITE_URL : `${SITE_URL}/en`,
+      canonical: `${SITE_URL}/${locale}`,
       languages: {
-        es: SITE_URL,
+        es: `${SITE_URL}/es`,
         en: `${SITE_URL}/en`,
-        "x-default": SITE_URL,
+        "x-default": `${SITE_URL}/es`,
       },
     },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: locale === "es" ? SITE_URL : `${SITE_URL}/en`,
+      url: `${SITE_URL}/${locale}`,
       siteName: SITE_NAME,
       locale: locale === "es" ? "es_AR" : "en_US",
       type: "website",
@@ -80,8 +80,8 @@ export default async function LocaleLayout({
     logo: `${SITE_URL}/logo.png`,
     description:
       locale === "es"
-        ? "Partner de infraestructura y automatizacion con IA"
-        : "AI infrastructure and automation partner",
+        ? "Estrategia, datos y sistemas de IA que convierten decisiones en cambios operativos medibles"
+        : "Strategy, data and AI systems that turn decisions into measurable operating change",
     sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.youtube],
   };
 

@@ -2,52 +2,52 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-const layers = [
-  { code: "01", title: "DATA", copy: "SOURCES / QUALITY / LINEAGE", y: 112 },
-  { code: "02", title: "LOGIC", copy: "RULES / CONTEXT / PERMISSIONS", y: 256 },
-  { code: "03", title: "ACTION", copy: "AGENTS / APPS / OPERATIONS", y: 400 },
+const nodes = [
+  { code: "01", label: "SIGNAL", x: 330, y: 84 },
+  { code: "02", label: "JUDGMENT", x: 544, y: 270 },
+  { code: "03", label: "ACTION", x: 330, y: 456 },
+  { code: "04", label: "LEARNING", x: 116, y: 270 },
 ];
 
 export default function OperatingSystemVisual({ label }: { label: string }) {
   const reduceMotion = useReducedMotion();
 
   return (
-    <div className="os-visual" role="img" aria-label={label}>
-      <div className="os-visual__top"><span>NOCODA / OPERATING LAYER</span><span><i /> SYSTEM ONLINE</span></div>
-      <div className="os-visual__canvas">
-        <svg viewBox="0 0 660 520" aria-hidden="true">
+    <div className="decision-visual" role="img" aria-label={label}>
+      <div className="decision-visual__top"><span>NOCODA / DECISION SYSTEM</span><span><i /> LOOP ACTIVE</span></div>
+      <div className="decision-visual__canvas">
+        <svg viewBox="0 0 660 540" aria-hidden="true">
           <defs>
-            <linearGradient id="os-plane" x1="0" x2="1"><stop offset="0" stopColor="#0205d3" stopOpacity=".04" /><stop offset=".55" stopColor="#8b8fff" stopOpacity=".19" /><stop offset="1" stopColor="#0205d3" stopOpacity=".03" /></linearGradient>
-            <linearGradient id="os-line" x1="0" x2="1"><stop offset="0" stopColor="#0205d3" /><stop offset=".55" stopColor="#8b8fff" /><stop offset="1" stopColor="#f4f4f5" /></linearGradient>
-            <filter id="os-glow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="6" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+            <radialGradient id="decision-core"><stop offset="0" stopColor="#3338e8" /><stop offset="1" stopColor="#0205d3" /></radialGradient>
+            <linearGradient id="decision-line" x1="0" x2="1"><stop stopColor="#0205d3" /><stop offset=".55" stopColor="#8b8fff" /><stop offset="1" stopColor="#f4f4f5" /></linearGradient>
+            <filter id="decision-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
           </defs>
 
-          {layers.map((layer, index) => (
-            <motion.g key={layer.code} initial={reduceMotion ? false : { opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.68, delay: 0.12 + index * 0.08, ease: [0.22, 1, 0.36, 1] }}>
-              <path d={`M142 ${layer.y} L334 ${layer.y - 48} L526 ${layer.y} L334 ${layer.y + 48} Z`} fill="url(#os-plane)" stroke="rgba(139,143,255,.24)" />
-              <circle cx="334" cy={layer.y} r="4" fill="#8b8fff" />
+          <circle cx="330" cy="270" r="216" fill="none" stroke="rgba(139,143,255,.1)" />
+          <circle cx="330" cy="270" r="164" fill="none" stroke="rgba(139,143,255,.14)" strokeDasharray="3 8" />
+          <motion.path d="M330 84 C456 84 544 150 544 270 C544 390 456 456 330 456 C204 456 116 390 116 270 C116 150 204 84 330 84 Z" fill="none" stroke="url(#decision-line)" strokeWidth="1.5" initial={reduceMotion ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }} />
+          <path d="M330 84 V196 M544 270 H414 M330 456 V344 M116 270 H246" fill="none" stroke="rgba(139,143,255,.22)" />
+
+          {nodes.map((node, index) => (
+            <motion.g key={node.code} initial={reduceMotion ? false : { scale: 0.82 }} animate={{ scale: 1 }} transition={{ duration: 0.55, delay: 0.12 + index * 0.07, ease: [0.22, 1, 0.36, 1] }} style={{ transformOrigin: `${node.x}px ${node.y}px` }}>
+              <circle cx={node.x} cy={node.y} r="28" fill="#0c0c11" stroke="rgba(139,143,255,.36)" />
+              <circle cx={node.x} cy={node.y} r="5" fill="#8b8fff" filter="url(#decision-glow)" />
             </motion.g>
           ))}
 
-          <motion.path d="M66 112 H142 M526 112 H594 M66 256 H142 M526 256 H594 M66 400 H142 M526 400 H594" fill="none" stroke="url(#os-line)" strokeWidth="1.5" initial={reduceMotion ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ duration: 1.1, delay: 0.25, ease: [0.22, 1, 0.36, 1] }} />
-          <motion.path d="M334 46 V466" fill="none" stroke="url(#os-line)" strokeWidth="2" filter="url(#os-glow)" initial={reduceMotion ? false : { pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.25, delay: 0.15, ease: [0.22, 1, 0.36, 1] }} />
-
-          {[112, 256, 400].map((y, index) => (
-            <motion.circle key={y} cx="66" cy={y} r="5" fill="#0205d3" filter="url(#os-glow)" animate={reduceMotion ? undefined : { x: [0, 528], opacity: [0, 1, 1, 0] }} transition={{ duration: 6.5, repeat: Infinity, delay: 1.5 + index * 1.8, ease: "linear" }} />
-          ))}
+          <motion.circle cx="330" cy="84" r="6" fill="white" filter="url(#decision-glow)" animate={reduceMotion ? undefined : { cx: [330, 544, 330, 116, 330], cy: [84, 270, 456, 270, 84] }} transition={{ duration: 8, repeat: Infinity, ease: "linear" }} />
+          <circle cx="330" cy="270" r="82" fill="url(#decision-core)" opacity=".96" />
+          <circle cx="330" cy="270" r="58" fill="none" stroke="rgba(255,255,255,.22)" />
         </svg>
 
-        <div className="os-visual__labels" aria-hidden="true">
-          {layers.map((layer) => <div key={layer.code}><span>{layer.code}</span><strong>{layer.title}</strong><small>{layer.copy}</small></div>)}
-        </div>
-        <div className="os-visual__source os-visual__source--a">CRM</div>
-        <div className="os-visual__source os-visual__source--b">ERP</div>
-        <div className="os-visual__source os-visual__source--c">DOCS</div>
-        <div className="os-visual__output os-visual__output--a">DECIDE</div>
-        <div className="os-visual__output os-visual__output--b">ACT</div>
-        <div className="os-visual__output os-visual__output--c">LEARN</div>
+        <div className="decision-visual__center" aria-hidden="true"><span>ONE</span><strong>BUSINESS<br />MOVE</strong><small>OWNED / MEASURED</small></div>
+        {nodes.map((node, index) => <div key={node.code} className={`decision-visual__node decision-visual__node--${index + 1}`} aria-hidden="true"><span>{node.code}</span><strong>{node.label}</strong></div>)}
+        <div className="decision-visual__outcome decision-visual__outcome--a">REVENUE</div>
+        <div className="decision-visual__outcome decision-visual__outcome--b">FINANCE</div>
+        <div className="decision-visual__outcome decision-visual__outcome--c">OPERATIONS</div>
+        <div className="decision-visual__outcome decision-visual__outcome--d">CX</div>
       </div>
-      <div className="os-visual__foot"><span>SOURCES / CONNECTED</span><span>DECISIONS / TRACEABLE</span><span>CONTROL / HUMAN</span></div>
+      <div className="decision-visual__foot"><span>DECISION / OWNED</span><span>ACTION / TRACEABLE</span><span>RESULT / MEASURED</span></div>
     </div>
   );
 }

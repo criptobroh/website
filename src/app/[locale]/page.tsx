@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
+import OutcomeMarquee from "@/components/sections/OutcomeMarquee";
 import Services from "@/components/sections/Services";
 import HowWeWork from "@/components/sections/HowWeWork";
 import WhyNoCoda from "@/components/sections/WhyNoCoda";
@@ -18,6 +19,7 @@ export default async function Home({
     <main id="main-content" className="flex-1">
       <Hero />
       <Problem />
+      <OutcomeMarquee />
       <Services />
       <HowWeWork />
       <WhyNoCoda />

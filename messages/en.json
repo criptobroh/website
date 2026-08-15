@@ -1,136 +1,105 @@
 {
   "Metadata": {
-    "title": "NoCoda | The operating layer for AI",
-    "description": "We connect data, business logic and AI action in production systems built for real operations."
+    "title": "NoCoda | AI systems that change how the business runs",
+    "description": "We identify the business decision worth improving, expose the data and operating logic behind it, and build the AI system that turns it into measurable operating change."
   },
   "Navbar": {
-    "services": "Services",
-    "howWeWork": "Process",
+    "services": "Ways to work",
+    "howWeWork": "Our process",
     "whyNoCoda": "Why NoCoda",
-    "cta": "Book a call"
+    "program": "Executive program",
+    "cta": "Map an operation"
   },
   "Hero": {
-    "badge": "DATA / LOGIC / ACTION",
-    "title": "We build the operating layer",
-    "titleAccent": "for AI.",
-    "subtitle": "We turn scattered data, hidden business rules and isolated AI experiments into systems your company can operate, measure and trust.",
-    "visualAlt": "NoCoda connects data sources, business logic and AI action in one governed operating system.",
-    "cta": "Book a call",
-    "secondaryCta": "See services"
+    "badge": "DECISIONS / OPERATIONS / GROWTH",
+    "title": "AI should change how the business",
+    "titleAccent": "runs.",
+    "subtitle": "NoCoda finds the decision worth improving, exposes the data and operating logic behind it, and builds the system that turns it into measurable operating change.",
+    "visualAlt": "A NoCoda decision system turns signals and operating context into traceable action and measurable learning.",
+    "cta": "Map an operation",
+    "secondaryCta": "See how it works",
+    "note": "Strategy, data and software in one accountable team.",
+    "rail": ["ONE OPERATION", "ONE OWNER", "ONE MEASURABLE RESULT", "BUILT TO RUN"]
   },
   "Problem": {
-    "label": "The infrastructure gap",
-    "title": "AI cannot transform a company",
-    "titleAccent": "it cannot understand.",
+    "label": "Where AI earns its place",
+    "title": "Start with the business move.",
+    "titleAccent": "Build only what makes it possible.",
+    "intro": "The model is rarely the hard part. The hard part is giving it a real decision, usable evidence and a place inside the operation.",
     "points": [
-      {
-        "title": "Fragile automations",
-        "description": "Workflows that break every week. Integrations held together with duct tape. Zero reliability."
-      },
-      {
-        "title": "Isolated tools",
-        "description": "ChatGPT here, a bot there. Nothing connected, nothing measurable, nothing scalable."
-      },
-      {
-        "title": "Wasted hours",
-        "description": "Your team spends time on tasks AI could solve in seconds. Every single day."
-      },
-      {
-        "title": "Prototypes that never ship",
-        "description": "Impressive demos that never integrate with your real systems. Investment with no return."
-      }
-    ]
+      {"title": "Commercial focus", "description": "Turn scattered market, CRM and conversation signals into prioritized accounts, offers and next actions.", "outcome": "PRIORITIZE THE NEXT MOVE"},
+      {"title": "Operating visibility", "description": "Reconstruct how work actually moves across systems, identify friction and redesign the process around evidence.", "outcome": "SEE THE REAL PROCESS"},
+      {"title": "Finance intelligence", "description": "Bring cash, forecast, risk and performance into a shared decision model leaders can interrogate and trust.", "outcome": "MODEL THE DECISION"},
+      {"title": "AI-native products", "description": "Turn expert knowledge and operational workflows into useful software for customers and internal teams.", "outcome": "TURN EXPERTISE INTO PRODUCT"}
+    ],
+    "statementLabel": "THE OPERATING PRINCIPLE",
+    "statement": "Data is not the outcome.",
+    "statementAccent": "A better decision is."
+  },
+  "Marquee": {
+    "items": ["DECIDE EARLIER", "SEE THE REAL PROCESS", "BUILD WHAT MATTERS", "LEARN IN OPERATION"]
   },
   "Services": {
-    "label": "Services",
-    "title": "What we build",
-    "subtitle": "Three layers. One governed operating system.",
+    "label": "Ways to work",
+    "title": "Meet NoCoda at the decision you need to make.",
+    "subtitle": "Align leadership, design the system or embed a forward-deployed team to build it. Every engagement ends in an owned next move.",
     "items": [
       {
-        "title": "A usable source of truth",
-        "description": "We connect and prepare the technical foundation your company needs to operate with AI reliably.",
-        "features": [
-          "AI-optimized servers and APIs",
-          "Data pipelines and vector databases",
-          "Model orchestration (OpenAI, Claude, open-source)",
-          "Integrations with your existing systems"
-        ]
+        "eyebrow": "1.5 DAYS · LEADERSHIP TEAM",
+        "title": "Executive AI alignment",
+        "description": "A private working session for leadership teams that need a shared view of AI, clear priorities and a governed 90-day roadmap.",
+        "features": ["Decision and opportunity inventory", "Data, process and governance readiness", "Three company-owned priorities", "Owners, evidence and first actions"],
+        "output": "OUTPUT / 90-DAY EXECUTIVE ROADMAP",
+        "link": "Explore BEFORE AI"
       },
       {
-        "title": "Agents with operating context",
-        "description": "Not chatbots: governed systems that understand the job, use tools and take traceable action.",
-        "features": [
-          "Agents for WhatsApp, Slack, and email",
-          "Internal copilots for sales and support",
-          "End-to-end process automation",
-          "Agents that connect to your tools"
-        ]
+        "eyebrow": "2–4 WEEKS · ONE OPERATION",
+        "title": "Strategy and system design",
+        "description": "We frame the business move, trace the real process and design the data, logic, controls and product required to change it.",
+        "features": ["Operating problem and value model", "Process and decision architecture", "Data and integration blueprint", "Build plan with measurable outcomes"],
+        "output": "OUTPUT / EXECUTION BLUEPRINT",
+        "link": ""
       },
       {
-        "title": "Software your operation can own",
-        "description": "Complete applications with integrated AI: internal tools, decision systems and custom platforms.",
-        "features": [
-          "Web apps with built-in AI",
-          "Smart dashboards with real-time data",
-          "Custom internal tools",
-          "SaaS platforms ready to scale"
-        ]
+        "eyebrow": "PILOT → PRODUCTION · EMBEDDED",
+        "title": "Forward-deployed build",
+        "description": "A senior team works inside the operation to build, integrate and run the software, agents and data systems until the result is real.",
+        "features": ["Custom software and AI agents", "Data products and integrations", "Human controls and traceability", "Adoption, measurement and iteration"],
+        "output": "OUTPUT / A SYSTEM IN PRODUCTION",
+        "link": ""
       }
     ]
   },
   "HowWeWork": {
-    "label": "Process",
-    "title": "How we work",
-    "subtitle": "From a real operating problem to a measurable production system.",
+    "label": "From decision to operation",
+    "title": "One continuous line from business question to working system.",
+    "subtitle": "No strategy handoff. No technical build in isolation. The people framing the result stay accountable through production.",
     "steps": [
-      {
-        "number": "01",
-        "title": "Diagnosis",
-        "description": "We analyze your operations, identify AI opportunities, and define the project scope."
-      },
-      {
-        "number": "02",
-        "title": "Design",
-        "description": "We design the technical architecture, data flows, and integration strategy."
-      },
-      {
-        "number": "03",
-        "title": "Build",
-        "description": "We develop with no-code + AI to deliver fast without sacrificing quality."
-      },
-      {
-        "number": "04",
-        "title": "Ship & iterate",
-        "description": "We deploy to production, monitor results, and continuously optimize."
-      }
+      {"number": "01", "title": "Frame the move", "description": "Name the decision, its owner, the economic value and the evidence that would make it better."},
+      {"number": "02", "title": "Expose the operation", "description": "Trace the real workflow, data, rules, exceptions and human judgment behind the current result."},
+      {"number": "03", "title": "Build the system", "description": "Ship the smallest complete system that connects context to action with controls built in."},
+      {"number": "04", "title": "Operate and learn", "description": "Put it inside the team, measure the result and improve the decision loop from real use."}
     ]
   },
   "WhyNoCoda": {
-    "label": "Why us",
-    "title": "Why NoCoda",
-    "subtitle": "We do not add an AI layer for show. We make the underlying operation ready to use it.",
+    "label": "The NoCoda difference",
+    "title": "Strategy without handoff. Engineering without tunnel vision.",
+    "subtitle": "We work between the boardroom and the operation: senior enough to challenge the decision, technical enough to build the answer.",
+    "seal": "THE TEAM BETWEEN THE STRATEGY DECK AND THE SYSTEM IN PRODUCTION",
     "points": [
-      {
-        "title": "Fast delivery",
-        "description": "We combine no-code with AI to deliver in weeks what others take months. Without sacrificing quality or scalability."
-      },
-      {
-        "title": "Deep integration",
-        "description": "We don't create technology islands. We connect everything with your existing systems: CRM, ERP, databases, APIs."
-      },
-      {
-        "title": "Real impact",
-        "description": "We don't sell demos. We deliver systems that work in production and generate measurable results from day one."
-      }
+      {"title": "Business before tooling", "description": "We choose technology after the decision, workflow and success measure are clear—not before."},
+      {"title": "Full-stack accountability", "description": "Strategy, data, software and AI stay inside one team, so the outcome does not disappear between vendors."},
+      {"title": "Adoption is part of the build", "description": "A system is not finished when it deploys. It is finished when people use it and the operating result changes."}
     ]
   },
   "CTA": {
-    "title": "Bring us one operation that needs to work better.",
-    "subtitle": "We will map the decision, the data and the system required to move it into production.",
-    "button": "Book a diagnosis call"
+    "title": "Bring us the operation everybody knows should work better.",
+    "subtitle": "In one conversation, we will map the decision, the friction and the most credible path to a measurable result.",
+    "button": "Map the operation",
+    "note": "30 MINUTES · ONE REAL PROBLEM · NO SALES THEATER"
   },
   "Footer": {
-    "description": "AI infrastructure, intelligent agents, and systems that drive real business impact.",
+    "description": "Strategy, data and AI systems that change how the business runs.",
     "navigation": "Navigation",
     "contact": "Contact",
     "rights": "All rights reserved.",

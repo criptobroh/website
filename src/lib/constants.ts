@@ -1,6 +1,7 @@
-export const SITE_URL = "https://nocoda.ai";
+export const SITE_URL = "https://www.nocoda.ai";
 export const SITE_NAME = "NoCoda";
 export const CALENDLY_URL = "https://calendly.com/hola-nocoda/30min";
+export const LEARN_URL = "https://learn.nocoda.ai";
 
 export const SOCIAL_LINKS = {
   linkedin: "https://linkedin.com/company/nocoda",
