@@ -1,18 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useState, useEffect, useRef } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { CALENDLY_URL, NAV_SECTIONS } from "@/lib/constants";
 import { fadeUp, staggerContainer } from "@/components/motion/variants";
+import { Link } from "@/i18n/navigation";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
+  const locale = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const firstMobileLinkRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -21,8 +25,16 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = mobileOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    if (!mobileOpen) return;
+    firstMobileLinkRef.current?.focus();
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
   }, [mobileOpen]);
 
   return (
@@ -40,16 +52,16 @@ export default function Navbar() {
 
       <nav className="max-w-[1200px] mx-auto px-6 md:px-8 flex items-center justify-between h-[72px]">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.png"
             alt="NoCoda - AI Infrastructure & Automation Partner"
-            width={120}
+            width={32}
             height={32}
             className="h-8 w-auto rounded-lg"
             priority
           />
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -80,9 +92,12 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
+          ref={menuButtonRef}
           className="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Menu"
+          aria-label={mobileOpen ? (locale === "es" ? "Cerrar menú" : "Close menu") : (locale === "es" ? "Abrir menú" : "Open menu")}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-navigation"
         >
           <span
             className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
@@ -106,6 +121,7 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            id="mobile-navigation"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -118,8 +134,9 @@ export default function Navbar() {
               initial="hidden"
               animate="visible"
             >
-              {NAV_SECTIONS.map((section) => (
+              {NAV_SECTIONS.map((section, index) => (
                 <motion.a
+                  ref={index === 0 ? firstMobileLinkRef : undefined}
                   key={section.id}
                   href={`#${section.id}`}
                   variants={fadeUp}

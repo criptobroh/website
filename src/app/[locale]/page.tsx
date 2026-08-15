@@ -15,7 +15,7 @@ export default async function Home({
   setRequestLocale(locale);
 
   return (
-    <main className="flex-1">
+    <main id="main-content" className="flex-1">
       <Hero />
       <Problem />
       <Services />

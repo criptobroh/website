@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "NoCoda | AI Infrastructure & Automation Partner",
-    "description": "We transform companies into AI-first organizations. AI infrastructure, intelligent agents, and systems that drive real business impact."
+    "title": "NoCoda | The operating layer for AI",
+    "description": "We connect data, business logic and AI action in production systems built for real operations."
   },
   "Navbar": {
     "services": "Services",
@@ -10,17 +10,18 @@
     "cta": "Book a call"
   },
   "Hero": {
-    "badge": "AI Infrastructure Partner",
-    "title": "Your company needs AI infrastructure.",
-    "titleAccent": "Not another chatbot.",
-    "subtitle": "We build the AI systems that transform your operations. Infrastructure, agents, and internal tools that work from day one.",
+    "badge": "DATA / LOGIC / ACTION",
+    "title": "We build the operating layer",
+    "titleAccent": "for AI.",
+    "subtitle": "We turn scattered data, hidden business rules and isolated AI experiments into systems your company can operate, measure and trust.",
+    "visualAlt": "NoCoda connects data sources, business logic and AI action in one governed operating system.",
     "cta": "Book a call",
     "secondaryCta": "See services"
   },
   "Problem": {
-    "label": "The problem",
-    "title": "Most companies don't have an AI problem.",
-    "titleAccent": "They have an infrastructure problem.",
+    "label": "The infrastructure gap",
+    "title": "AI cannot transform a company",
+    "titleAccent": "it cannot understand.",
     "points": [
       {
         "title": "Fragile automations",
@@ -43,11 +44,11 @@
   "Services": {
     "label": "Services",
     "title": "What we build",
-    "subtitle": "Three pillars to transform your operations with AI.",
+    "subtitle": "Three layers. One governed operating system.",
     "items": [
       {
-        "title": "AI Infrastructure",
-        "description": "The technical foundation your company needs to operate with AI reliably.",
+        "title": "A usable source of truth",
+        "description": "We connect and prepare the technical foundation your company needs to operate with AI reliably.",
         "features": [
           "AI-optimized servers and APIs",
           "Data pipelines and vector databases",
@@ -56,8 +57,8 @@
         ]
       },
       {
-        "title": "AI Agents",
-        "description": "Autonomous agents that work for your team. Not chatbots: systems that take action.",
+        "title": "Agents with operating context",
+        "description": "Not chatbots: governed systems that understand the job, use tools and take traceable action.",
         "features": [
           "Agents for WhatsApp, Slack, and email",
           "Internal copilots for sales and support",
@@ -66,8 +67,8 @@
         ]
       },
       {
-        "title": "AI Systems / SaaS",
-        "description": "Complete applications with integrated AI. Dashboards, internal tools, and custom platforms.",
+        "title": "Software your operation can own",
+        "description": "Complete applications with integrated AI: internal tools, decision systems and custom platforms.",
         "features": [
           "Web apps with built-in AI",
           "Smart dashboards with real-time data",
@@ -80,7 +81,7 @@
   "HowWeWork": {
     "label": "Process",
     "title": "How we work",
-    "subtitle": "From idea to production in weeks, not months.",
+    "subtitle": "From a real operating problem to a measurable production system.",
     "steps": [
       {
         "number": "01",
@@ -107,7 +108,7 @@
   "WhyNoCoda": {
     "label": "Why us",
     "title": "Why NoCoda",
-    "subtitle": "We're not a generic AI agency. We're your infrastructure partner.",
+    "subtitle": "We do not add an AI layer for show. We make the underlying operation ready to use it.",
     "points": [
       {
         "title": "Fast delivery",
@@ -124,9 +125,9 @@
     ]
   },
   "CTA": {
-    "title": "Ready to transform your company?",
-    "subtitle": "Book a free diagnosis call. No commitment, no sales pitch. Just a technical conversation about what your company needs.",
-    "button": "Book a free call"
+    "title": "Bring us one operation that needs to work better.",
+    "subtitle": "We will map the decision, the data and the system required to move it into production.",
+    "button": "Book a diagnosis call"
   },
   "Footer": {
     "description": "AI infrastructure, intelligent agents, and systems that drive real business impact.",

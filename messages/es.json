@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "NoCoda | Infraestructura y Automatizacion con IA",
-    "description": "Transformamos empresas en organizaciones AI-first. Infraestructura de IA, agentes inteligentes y sistemas que generan impacto real."
+    "title": "NoCoda | La capa operativa para la IA",
+    "description": "Conectamos datos, lógica de negocio y acción con IA en sistemas construidos para operaciones reales."
   },
   "Navbar": {
     "services": "Servicios",
@@ -10,17 +10,18 @@
     "cta": "Agendar llamada"
   },
   "Hero": {
-    "badge": "Partner de infraestructura IA",
-    "title": "Tu empresa necesita infraestructura de IA.",
-    "titleAccent": "No otro chatbot.",
-    "subtitle": "Construimos los sistemas de IA que transforman tu operacion. Infraestructura, agentes y herramientas internas que funcionan desde el dia uno.",
+    "badge": "DATOS / LÓGICA / ACCIÓN",
+    "title": "Construimos la capa operativa",
+    "titleAccent": "para la IA.",
+    "subtitle": "Convertimos datos dispersos, reglas de negocio ocultas y experimentos aislados en sistemas que tu empresa puede operar, medir y gobernar.",
+    "visualAlt": "NoCoda conecta fuentes de datos, lógica de negocio y acciones de inteligencia artificial en un solo sistema gobernado.",
     "cta": "Agendar llamada",
     "secondaryCta": "Ver servicios"
   },
   "Problem": {
-    "label": "El problema",
-    "title": "La mayoria de las empresas no tiene un problema de IA.",
-    "titleAccent": "Tiene un problema de infraestructura.",
+    "label": "La brecha de infraestructura",
+    "title": "La IA no puede transformar una empresa",
+    "titleAccent": "que no puede entender.",
     "points": [
       {
         "title": "Automatizaciones fragiles",
@@ -43,11 +44,11 @@
   "Services": {
     "label": "Servicios",
     "title": "Lo que construimos",
-    "subtitle": "Tres pilares para transformar tu operacion con IA.",
+    "subtitle": "Tres capas. Un solo sistema operativo gobernado.",
     "items": [
       {
-        "title": "Infraestructura IA",
-        "description": "La base tecnologica que tu empresa necesita para operar con IA de forma confiable.",
+        "title": "Una verdad utilizable",
+        "description": "Conectamos y preparamos la base tecnológica que tu empresa necesita para operar con IA de forma confiable.",
         "features": [
           "Servidores y APIs optimizados para IA",
           "Pipelines de datos y bases vectoriales",
@@ -56,8 +57,8 @@
         ]
       },
       {
-        "title": "Agentes IA",
-        "description": "Agentes autonomos que trabajan por tu equipo. No chatbots: sistemas que toman accion.",
+        "title": "Agentes con contexto operativo",
+        "description": "No chatbots: sistemas gobernados que entienden el trabajo, usan herramientas y toman acciones trazables.",
         "features": [
           "Agentes para WhatsApp, Slack y email",
           "Copilots internos para ventas y soporte",
@@ -66,8 +67,8 @@
         ]
       },
       {
-        "title": "Sistemas IA / SaaS",
-        "description": "Aplicaciones completas con IA integrada. Dashboards, herramientas internas y plataformas a medida.",
+        "title": "Software que tu operación puede controlar",
+        "description": "Aplicaciones completas con IA integrada: herramientas internas, sistemas de decisión y plataformas a medida.",
         "features": [
           "Apps web con IA integrada",
           "Dashboards inteligentes con datos en tiempo real",
@@ -80,7 +81,7 @@
   "HowWeWork": {
     "label": "Proceso",
     "title": "Como trabajamos",
-    "subtitle": "De la idea a produccion en semanas, no meses.",
+    "subtitle": "De un problema operativo real a un sistema medible en producción.",
     "steps": [
       {
         "number": "01",
@@ -107,7 +108,7 @@
   "WhyNoCoda": {
     "label": "Diferencial",
     "title": "Por que NoCoda",
-    "subtitle": "No somos una agencia de IA generica. Somos tu partner de infraestructura.",
+    "subtitle": "No agregamos IA para mostrar. Preparamos la operación que tiene que sostenerla.",
     "points": [
       {
         "title": "Entrega rapida",
@@ -124,9 +125,9 @@
     ]
   },
   "CTA": {
-    "title": "Listo para transformar tu empresa?",
-    "subtitle": "Agenda una llamada de diagnostico gratuita. Sin compromiso, sin pitch de ventas. Solo una conversacion tecnica sobre lo que tu empresa necesita.",
-    "button": "Agendar llamada gratuita"
+    "title": "Traenos una operación que necesite funcionar mejor.",
+    "subtitle": "Vamos a mapear la decisión, los datos y el sistema necesario para llevarla a producción.",
+    "button": "Agendar diagnóstico"
   },
   "Footer": {
     "description": "Infraestructura de IA, agentes inteligentes y sistemas que generan impacto real.",

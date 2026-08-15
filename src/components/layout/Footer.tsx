@@ -15,7 +15,7 @@ export default async function Footer() {
             <Image
               src="/logo.png"
               alt={SITE_NAME}
-              width={120}
+              width={32}
               height={32}
               className="h-8 w-auto rounded-lg"
             />
@@ -84,7 +84,7 @@ export default async function Footer() {
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-brand hover:text-brand-light transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-[#8b8fff] hover:text-white transition-colors"
             >
               {tNav("cta")}
               <svg
@@ -106,7 +106,7 @@ export default async function Footer() {
 
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border text-center">
-          <p className="text-sm text-text-muted">
+          <p className="text-sm text-text-secondary">
             &copy; {new Date().getFullYear()} {SITE_NAME}. {t("rights")}
           </p>
         </div>

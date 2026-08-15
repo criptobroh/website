@@ -8,6 +8,8 @@ import { inter, spaceGrotesk } from "@/lib/fonts";
 import { SITE_URL, SITE_NAME, SOCIAL_LINKS } from "@/lib/constants";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollProgress from "@/components/motion/ScrollProgress";
+import MotionProvider from "@/components/motion/MotionProvider";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -95,10 +97,14 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-bg-primary text-text-primary">
+        <a className="skip-link" href="#main-content">{locale === "es" ? "Saltar al contenido" : "Skip to content"}</a>
         <NextIntlClientProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <MotionProvider>
+            <ScrollProgress />
+            <Navbar />
+            {children}
+            <Footer />
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

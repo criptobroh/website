@@ -1,101 +1,53 @@
 "use client";
 
+import { motion, useMotionValueEvent, useReducedMotion, useScroll } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
-import SectionWrapper from "@/components/ui/SectionWrapper";
-import GlowCard from "@/components/ui/GlowCard";
-import ScrollReveal from "@/components/motion/ScrollReveal";
-import { staggerSlow, fadeUpSpring } from "@/components/motion/variants";
-
-const serviceIcons = [
-  <svg key="0" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>,
-  <svg key="1" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>,
-  <svg key="2" className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>,
-];
+import { useRef, useState } from "react";
 
 export default function Services() {
   const t = useTranslations("Services");
-
+  const ref = useRef<HTMLElement>(null);
+  const [active, setActive] = useState(0);
+  const reduceMotion = useReducedMotion();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
   const items = [0, 1, 2].map((i) => ({
     title: t(`items.${i}.title`),
     description: t(`items.${i}.description`),
     features: [0, 1, 2, 3].map((j) => t(`items.${i}.features.${j}`)),
   }));
 
+  useMotionValueEvent(scrollYProgress, "change", (value) => {
+    if (reduceMotion) return;
+    const next = value < 0.34 ? 0 : value < 0.67 ? 1 : 2;
+    setActive((current) => current === next ? current : next);
+  });
+
   return (
-    <SectionWrapper id="servicios">
-      <ScrollReveal>
-        <div className="text-center mb-16">
-          <span className="inline-block text-sm font-medium text-brand uppercase tracking-wider mb-4">
-            {t("label")}
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            {t("title")}
-          </h2>
-          <p className="text-text-secondary text-lg max-w-xl mx-auto">
-            {t("subtitle")}
-          </p>
+    <section ref={ref} id="servicios" className="services-piano">
+      <div className="services-piano__sticky">
+        <div className="services-piano__content">
+          <div className="services-piano__intro"><p className="editorial-kicker">{t("label")}</p><h2>{t("title")}</h2><p>{t("subtitle")}</p></div>
+          <div className="services-piano__chapters">
+            {items.map((item, index) => (
+              <article key={item.title} className={index === active ? "is-active" : ""}>
+                <span>0{index + 1}</span><h3>{item.title}</h3><p>{item.description}</p>
+                <ul>{item.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>
+              </article>
+            ))}
+          </div>
         </div>
-      </ScrollReveal>
 
-      <motion.div
-        className="grid grid-cols-1 lg:grid-cols-3 gap-6"
-        variants={staggerSlow}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-      >
-        {items.map((item, i) => (
-          <GlowCard
-            key={i}
-            className="p-8 bg-bg-card border border-border flex flex-col h-full"
-          >
-            {/* Icon */}
-            <motion.div
-              className="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center text-brand mb-6 pulse-ring"
-              whileHover={{
-                scale: 1.1,
-                backgroundColor: "rgba(2, 5, 211, 0.2)",
-              }}
-              transition={{ type: "spring", stiffness: 300, damping: 15 }}
-            >
-              {serviceIcons[i]}
-            </motion.div>
-
-            <h3 className="text-xl font-display font-bold mb-3">
-              {item.title}
-            </h3>
-            <p className="text-text-secondary text-sm leading-relaxed mb-6">
-              {item.description}
-            </p>
-
-            {/* Features */}
-            <ul className="mt-auto space-y-3">
-              {item.features.map((feature, j) => (
-                <li
-                  key={j}
-                  className="flex items-start gap-3 text-sm text-text-secondary"
-                >
-                  <svg
-                    className="w-4 h-4 mt-0.5 text-brand flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </GlowCard>
-        ))}
-      </motion.div>
-    </SectionWrapper>
+        <div className={`services-piano__visual is-stage-${active + 1}`} aria-hidden="true">
+          <div className="services-piano__visual-head"><span>SYSTEM / 0{active + 1}</span><strong>{["FOUNDATION", "DELEGATION", "PRODUCT"][active]}</strong></div>
+          <div className="system-topology">
+            <div className="system-topology__axis" />
+            {["SOURCE", "CONTEXT", "ACTION"].map((label, index) => <motion.div key={label} className={`system-topology__node system-topology__node--${index + 1}`} animate={{ scale: index === active ? 1.08 : 1, opacity: index <= active ? 1 : 0.38 }} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}><span>0{index + 1}</span><strong>{label}</strong><i /></motion.div>)}
+            <motion.div className="system-topology__pulse" animate={{ x: active * 174 }} transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }} />
+          </div>
+          <div className="services-piano__visual-foot"><span>TRACE / ACTIVE</span><span>HUMAN / IN CONTROL</span></div>
+        </div>
+        <div className="services-piano__markers" aria-hidden="true">{items.map((item, index) => <span key={item.title} className={index <= active ? "is-active" : ""} />)}</div>
+      </div>
+    </section>
   );
 }
