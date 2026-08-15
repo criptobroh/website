@@ -110,7 +110,11 @@
     "label": "La diferencia NoCoda",
     "title": "Estrategia sin handoff. Ingeniería sin visión de túnel.",
     "subtitle": "Trabajamos entre la mesa directiva y la operación: con seniority para cuestionar la decisión y capacidad técnica para construir la respuesta.",
-    "seal": "EL EQUIPO ENTRE EL DECK DE ESTRATEGIA Y EL SISTEMA EN PRODUCCIÓN",
+    "portalStatus": "EN VIVO / AUTÓNOMO",
+    "portalTitle": "Este diario no tiene redacción.",
+    "portalDescription": "NoCoda.TV es redactado, ilustrado y publicado las 24 horas por un sistema de IA construido por NoCoda.",
+    "portalCta": "Ver el sistema funcionando",
+    "portalAria": "NoCoda.TV — ver el sistema autónomo de noticias de IA funcionando en una pestaña nueva",
     "points": [
       {"title": "Negocio antes que herramientas", "description": "Elegimos tecnología después de aclarar la decisión, el flujo de trabajo y la medida de éxito, nunca antes."},
       {"title": "Responsabilidad full-stack", "description": "Estrategia, datos, software e IA quedan dentro de un solo equipo para que el resultado no se pierda entre proveedores."},

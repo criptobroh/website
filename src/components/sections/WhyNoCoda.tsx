@@ -13,7 +13,24 @@ export default function WhyNoCoda() {
         <p className="editorial-kicker">{t("label")}</p>
         <h2>{t("title")}</h2>
         <p>{t("subtitle")}</p>
-        <div className="why-system__seal" aria-label={t("seal")}><span>NOCODA</span><i aria-hidden="true" /><strong>{t("seal")}</strong></div>
+        <a
+          className="why-system__seal"
+          href="https://nocoda.tv"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t("portalAria")}
+        >
+          <span className="why-system__seal-head">
+            <strong>NOCODA.TV</strong>
+            <em><i aria-hidden="true" />{t("portalStatus")}</em>
+          </span>
+          <i className="why-system__seal-orbit" aria-hidden="true" />
+          <span className="why-system__seal-copy">
+            <strong>{t("portalTitle")}</strong>
+            <small>{t("portalDescription")}</small>
+          </span>
+          <b>{t("portalCta")} <span aria-hidden="true">↗</span></b>
+        </a>
       </div>
       <div className="why-system__principles">
         {points.map((point, index) => (

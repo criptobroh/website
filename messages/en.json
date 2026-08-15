@@ -110,7 +110,11 @@
     "label": "The NoCoda difference",
     "title": "Strategy without handoff. Engineering without tunnel vision.",
     "subtitle": "We work between the boardroom and the operation: senior enough to challenge the decision, technical enough to build the answer.",
-    "seal": "THE TEAM BETWEEN THE STRATEGY DECK AND THE SYSTEM IN PRODUCTION",
+    "portalStatus": "LIVE / AUTONOMOUS",
+    "portalTitle": "This newsroom has no editors.",
+    "portalDescription": "NoCoda.TV is written, illustrated and published around the clock by an AI system built by NoCoda.",
+    "portalCta": "See the system running",
+    "portalAria": "NoCoda.TV — see the autonomous AI news system running in a new tab",
     "points": [
       {"title": "Business before tooling", "description": "We choose technology after the decision, workflow and success measure are clear—not before."},
       {"title": "Full-stack accountability", "description": "Strategy, data, software and AI stay inside one team, so the outcome does not disappear between vendors."},
