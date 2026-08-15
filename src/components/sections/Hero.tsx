@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="nocoda-hero__beam" aria-hidden="true" />
       <div className="nocoda-hero__inner">
         <motion.div className="nocoda-hero__copy" style={{ y: copyY }}>
-          <motion.p initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }} className="editorial-kicker">{t("badge")}</motion.p>
+          <motion.p initial={reduceMotion ? false : { y: 12 }} animate={{ y: 0 }} transition={{ duration: 0.58, ease: [0.22, 1, 0.36, 1] }} className="editorial-kicker">{t("badge")}</motion.p>
           <motion.h1 initial={reduceMotion ? false : { opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.72, delay: 0.06, ease: [0.22, 1, 0.36, 1] }}>
             {t("title")} <span>{t("titleAccent")}</span>
           </motion.h1>

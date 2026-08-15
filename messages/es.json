@@ -6,7 +6,7 @@
   "Navbar": {
     "services": "Servicios",
     "howWeWork": "Proceso",
-    "whyNoCoda": "Por que NoCoda",
+    "whyNoCoda": "Por qué NoCoda",
     "cta": "Agendar llamada"
   },
   "Hero": {
@@ -24,20 +24,20 @@
     "titleAccent": "que no puede entender.",
     "points": [
       {
-        "title": "Automatizaciones fragiles",
+        "title": "Automatizaciones frágiles",
         "description": "Workflows que se rompen cada semana. Integraciones mantenidas con cinta adhesiva. Cero confiabilidad."
       },
       {
         "title": "Herramientas aisladas",
-        "description": "ChatGPT por aca, un bot por alla. Nada conectado, nada medible, nada escalable."
+        "description": "ChatGPT por acá, un bot por allá. Nada conectado, nada medible, nada escalable."
       },
       {
         "title": "Horas desperdiciadas",
-        "description": "Tu equipo pierde tiempo en tareas que la IA podria resolver en segundos. Todos los dias."
+        "description": "Tu equipo pierde tiempo en tareas que la IA podría resolver en segundos. Todos los días."
       },
       {
-        "title": "Prototipos que nunca llegan a produccion",
-        "description": "Demos impresionantes que jamas se integran con tus sistemas reales. Inversion sin retorno."
+        "title": "Prototipos que nunca llegan a producción",
+        "description": "Demos impresionantes que jamás se integran con tus sistemas reales. Inversión sin retorno."
       }
     ]
   },
@@ -52,7 +52,7 @@
         "features": [
           "Servidores y APIs optimizados para IA",
           "Pipelines de datos y bases vectoriales",
-          "Orquestacion de modelos (OpenAI, Claude, open-source)",
+          "Orquestación de modelos (OpenAI, Claude, open-source)",
           "Integraciones con tus sistemas existentes"
         ]
       },
@@ -62,7 +62,7 @@
         "features": [
           "Agentes para WhatsApp, Slack y email",
           "Copilots internos para ventas y soporte",
-          "Automatizacion de procesos completos",
+          "Automatización de procesos completos",
           "Agentes que se conectan a tus herramientas"
         ]
       },
@@ -80,58 +80,58 @@
   },
   "HowWeWork": {
     "label": "Proceso",
-    "title": "Como trabajamos",
+    "title": "Cómo trabajamos",
     "subtitle": "De un problema operativo real a un sistema medible en producción.",
     "steps": [
       {
         "number": "01",
-        "title": "Diagnostico",
-        "description": "Analizamos tu operacion, identificamos oportunidades de IA y definimos el alcance del proyecto."
+        "title": "Diagnóstico",
+        "description": "Analizamos tu operación, identificamos oportunidades de IA y definimos el alcance del proyecto."
       },
       {
         "number": "02",
-        "title": "Diseno",
-        "description": "Disenamos la arquitectura tecnica, los flujos de datos y la estrategia de integracion."
+        "title": "Diseño",
+        "description": "Diseñamos la arquitectura técnica, los flujos de datos y la estrategia de integración."
       },
       {
         "number": "03",
-        "title": "Construccion",
-        "description": "Desarrollamos con no-code + IA para entregar rapido sin sacrificar calidad."
+        "title": "Construcción",
+        "description": "Desarrollamos con no-code + IA para entregar rápido sin sacrificar calidad."
       },
       {
         "number": "04",
-        "title": "Entrega e iteracion",
-        "description": "Desplegamos en produccion, monitoreamos resultados y optimizamos continuamente."
+        "title": "Entrega e iteración",
+        "description": "Desplegamos en producción, monitoreamos resultados y optimizamos continuamente."
       }
     ]
   },
   "WhyNoCoda": {
     "label": "Diferencial",
-    "title": "Por que NoCoda",
+    "title": "Por qué NoCoda",
     "subtitle": "No agregamos IA para mostrar. Preparamos la operación que tiene que sostenerla.",
     "points": [
       {
-        "title": "Entrega rapida",
+        "title": "Entrega rápida",
         "description": "Combinamos no-code con IA para entregar en semanas lo que otros tardan meses. Sin sacrificar calidad ni escalabilidad."
       },
       {
-        "title": "Integracion profunda",
-        "description": "No creamos islas de tecnologia. Conectamos todo con tus sistemas existentes: CRM, ERP, bases de datos, APIs."
+        "title": "Integración profunda",
+        "description": "No creamos islas de tecnología. Conectamos todo con tus sistemas existentes: CRM, ERP, bases de datos, APIs."
       },
       {
         "title": "Impacto real",
-        "description": "No vendemos demos. Entregamos sistemas que funcionan en produccion y generan resultados medibles desde el dia uno."
+        "description": "No vendemos demos. Entregamos sistemas que funcionan en producción y generan resultados medibles desde el día uno."
       }
     ]
   },
   "CTA": {
-    "title": "Traenos una operación que necesite funcionar mejor.",
+    "title": "Tráenos una operación que necesite funcionar mejor.",
     "subtitle": "Vamos a mapear la decisión, los datos y el sistema necesario para llevarla a producción.",
     "button": "Agendar diagnóstico"
   },
   "Footer": {
     "description": "Infraestructura de IA, agentes inteligentes y sistemas que generan impacto real.",
-    "navigation": "Navegacion",
+    "navigation": "Navegación",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados.",
     "home": "Inicio"
