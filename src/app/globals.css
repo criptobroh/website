@@ -218,7 +218,7 @@ a { text-underline-offset: .25em; }
   .decision-artifact__words span { font-size: clamp(2rem,13vw,3.5rem); }
   .decision-artifact__caption, .decision-artifact__rail { display: none; }
   .decision-artifact__conclusion { top: 1.6rem; left: 1.2rem; }
-  .decision-artifact__lens, .decision-artifact__words, .decision-artifact__line, .decision-artifact__conclusion { opacity: 1 !important; transform: none !important; }
+  .decision-artifact__lens, .decision-artifact__words, .decision-artifact__words span, .decision-artifact__line, .decision-artifact__conclusion { opacity: 1 !important; transform: none !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -226,7 +226,7 @@ a { text-underline-offset: .25em; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .decision-story { height: auto; }
   .decision-artifact { position: relative; top: auto; height: clamp(38rem,62vw,47rem); }
-  .decision-artifact__lens, .decision-artifact__words, .decision-artifact__line, .decision-artifact__conclusion { opacity: 1 !important; transform: none !important; }
+  .decision-artifact__lens, .decision-artifact__words, .decision-artifact__words span, .decision-artifact__line, .decision-artifact__conclusion { opacity: 1 !important; transform: none !important; }
   .decision-artifact__caption, .decision-artifact__rail { display: none; }
 }
 
