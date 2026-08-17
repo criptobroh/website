@@ -10,6 +10,5 @@ export const SOCIAL_LINKS = {
 
 export const NAV_SECTIONS = [
   { id: "servicios", labelKey: "services" },
-  { id: "como-trabajamos", labelKey: "howWeWork" },
   { id: "por-que-nocoda", labelKey: "whyNoCoda" },
 ] as const;

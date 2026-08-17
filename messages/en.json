@@ -12,9 +12,9 @@
   },
   "Hero": {
     "badge": "DECISIONS / OPERATIONS / GROWTH",
-    "title": "AI should change how the business",
-    "titleAccent": "runs.",
-    "subtitle": "NoCoda finds the decision worth improving, exposes the data and operating logic behind it, and builds the system that turns it into measurable operating change.",
+    "title": "AI should move",
+    "titleAccent": "the business.",
+    "subtitle": "We choose a decision, build the system and measure the change.",
     "visualAlt": "A NoCoda decision system turns signals and operating context into traceable action and measurable learning.",
     "cta": "Map an operation",
     "secondaryCta": "See how it works",
@@ -41,13 +41,13 @@
   },
   "Services": {
     "label": "Ways to work",
-    "title": "Meet NoCoda at the decision you need to make.",
+    "title": "Three ways to start.",
     "subtitle": "Align leadership, design the system or embed a forward-deployed team to build it. Every engagement ends in an owned next move.",
     "items": [
       {
         "eyebrow": "1.5 DAYS · LEADERSHIP TEAM",
         "title": "Executive AI alignment",
-        "description": "A private working session for leadership teams that need a shared view of AI, clear priorities and a governed 90-day roadmap.",
+        "description": "Leadership leaves with three priorities and its own 90-day roadmap.",
         "features": ["Decision and opportunity inventory", "Data, process and governance readiness", "Three company-owned priorities", "Owners, evidence and first actions"],
         "output": "OUTPUT / 90-DAY EXECUTIVE ROADMAP",
         "link": "Explore BEFORE AI"
@@ -55,7 +55,7 @@
       {
         "eyebrow": "2–4 WEEKS · ONE OPERATION",
         "title": "Strategy and system design",
-        "description": "We frame the business move, trace the real process and design the data, logic, controls and product required to change it.",
+        "description": "We trace one operation and design the smallest system that can change it.",
         "features": ["Operating problem and value model", "Process and decision architecture", "Data and integration blueprint", "Build plan with measurable outcomes"],
         "output": "OUTPUT / EXECUTION BLUEPRINT",
         "link": ""
@@ -63,7 +63,7 @@
       {
         "eyebrow": "PILOT → PRODUCTION · EMBEDDED",
         "title": "Forward-deployed build",
-        "description": "A senior team works inside the operation to build, integrate and run the software, agents and data systems until the result is real.",
+        "description": "A senior team builds and runs the solution inside the business.",
         "features": ["Custom software and AI agents", "Data products and integrations", "Human controls and traceability", "Adoption, measurement and iteration"],
         "output": "OUTPUT / A SYSTEM IN PRODUCTION",
         "link": ""
@@ -89,7 +89,7 @@
     "environment": "CLOUD DATA ENVIRONMENTS",
     "badge": "VENDOR-AWARE / OUTCOME-LED",
     "cardLabel": "DESIGNED FOR SNOWFLAKE ENVIRONMENTS",
-    "cardTitle": "From cloud data platform to operating advantage.",
+    "cardTitle": "Snowflake, connected to the decision.",
     "cardDescription": "We connect the warehouse to the decision: the business logic, controls, products and operating routines required to make the investment perform.",
     "capabilities": [
       "Decision and workload architecture before warehouse spend",
@@ -108,10 +108,10 @@
   },
   "WhyNoCoda": {
     "label": "The NoCoda difference",
-    "title": "Strategy without handoff. Engineering without tunnel vision.",
-    "subtitle": "We work between the boardroom and the operation: senior enough to challenge the decision, technical enough to build the answer.",
+    "title": "Judgment to decide. Capability to build.",
+    "subtitle": "From boardroom to production, one team stays accountable.",
     "portalStatus": "LIVE / AUTONOMOUS",
-    "portalTitle": "This newsroom has no editors.",
+    "portalTitle": "An autonomous newsroom, live.",
     "portalDescription": "NoCoda.TV is written, illustrated and published around the clock by an AI system built by NoCoda.",
     "portalCta": "See the system running",
     "portalAria": "NoCoda.TV — see the autonomous AI news system running in a new tab",
@@ -122,7 +122,7 @@
     ]
   },
   "CTA": {
-    "title": "Bring us the operation everybody knows should work better.",
+    "title": "Bring us an operation that should work better.",
     "subtitle": "In one conversation, we will map the decision, the friction and the most credible path to a measurable result.",
     "button": "Map the operation",
     "note": "30 MINUTES · ONE REAL PROBLEM · NO SALES THEATER"

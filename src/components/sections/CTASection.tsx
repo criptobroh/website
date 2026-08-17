@@ -10,7 +10,7 @@ export default function CTASection() {
 
   return (
     <section className="system-cta">
-      <motion.div className="system-cta__copy" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}><h2>{t("title")}</h2><p>{t("subtitle")}</p></motion.div>
+      <motion.div className="system-cta__copy" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}><h2>{t("title")}</h2></motion.div>
       <div className="system-cta__action"><Button href={CALENDLY_URL} size="lg">{t("button")}<span aria-hidden="true">↗</span></Button><small>{t("note")}</small></div>
     </section>
   );

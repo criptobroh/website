@@ -10,7 +10,6 @@ export default function Services() {
     eyebrow: t(`items.${index}.eyebrow`),
     title: t(`items.${index}.title`),
     description: t(`items.${index}.description`),
-    features: [0, 1, 2, 3].map((feature) => t(`items.${index}.features.${feature}`)),
     output: t(`items.${index}.output`),
     link: t(`items.${index}.link`),
   }));
@@ -21,7 +20,6 @@ export default function Services() {
         <div className="engagements__intro">
           <p className="editorial-kicker">{t("label")}</p>
           <h2>{t("title")}</h2>
-          <p>{t("subtitle")}</p>
         </div>
 
         <div className="engagements__chapters">
@@ -40,7 +38,6 @@ export default function Services() {
                   <p>{item.description}</p>
                 </div>
                 <div className="engagements__details">
-                  <ul>{item.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>
                   <strong>{item.output}</strong>
                   {item.link ? <a href={LEARN_URL}>{item.link}<span aria-hidden="true">↗</span></a> : null}
                 </div>

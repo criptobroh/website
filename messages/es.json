@@ -12,9 +12,9 @@
   },
   "Hero": {
     "badge": "DECISIONES / OPERACIÓN / CRECIMIENTO",
-    "title": "La IA debería cambiar cómo funciona",
+    "title": "La IA debería mover",
     "titleAccent": "el negocio.",
-    "subtitle": "NoCoda encuentra la decisión que vale la pena mejorar, expone los datos y la lógica operativa detrás de ella y construye el sistema que la convierte en un cambio operativo medible.",
+    "subtitle": "Elegimos una decisión, construimos el sistema y medimos el cambio.",
     "visualAlt": "Un sistema de decisión de NoCoda convierte señales y contexto operativo en acción trazable y aprendizaje medible.",
     "cta": "Mapear una operación",
     "secondaryCta": "Ver cómo funciona",
@@ -41,13 +41,13 @@
   },
   "Services": {
     "label": "Cómo empezar",
-    "title": "Sume a NoCoda en la decisión que necesita tomar.",
+    "title": "Tres formas de empezar.",
     "subtitle": "Alinee a la dirección, diseñe el sistema o incorpore un equipo forward-deployed para construirlo. Cada intervención termina en un próximo movimiento con dueño.",
     "items": [
       {
         "eyebrow": "1,5 DÍAS · EQUIPO DIRECTIVO",
         "title": "Alineación ejecutiva de IA",
-        "description": "Una sesión privada de trabajo para equipos directivos que necesitan una visión compartida de IA, prioridades claras y un roadmap gobernable de 90 días.",
+        "description": "La dirección sale con tres prioridades y un roadmap propio de 90 días.",
         "features": ["Inventario de decisiones y oportunidades", "Madurez de datos, procesos y gobierno", "Tres prioridades propias de la empresa", "Responsables, evidencia y primeras acciones"],
         "output": "SALIDA / ROADMAP EJECUTIVO DE 90 DÍAS",
         "link": "Explorar BEFORE AI"
@@ -55,7 +55,7 @@
       {
         "eyebrow": "2–4 SEMANAS · UNA OPERACIÓN",
         "title": "Estrategia y diseño del sistema",
-        "description": "Definimos el movimiento de negocio, trazamos el proceso real y diseñamos los datos, la lógica, los controles y el producto necesarios para cambiarlo.",
+        "description": "Trazamos una operación y diseñamos el sistema mínimo para cambiarla.",
         "features": ["Problema operativo y modelo de valor", "Arquitectura de proceso y decisión", "Blueprint de datos e integraciones", "Plan de construcción con resultados medibles"],
         "output": "SALIDA / BLUEPRINT DE EJECUCIÓN",
         "link": ""
@@ -63,7 +63,7 @@
       {
         "eyebrow": "PILOTO → PRODUCCIÓN · INTEGRADO",
         "title": "Construcción forward-deployed",
-        "description": "Un equipo senior trabaja dentro de la operación para construir, integrar y operar el software, los agentes y los sistemas de datos hasta que el resultado sea real.",
+        "description": "Un equipo senior construye y opera la solución dentro del negocio.",
         "features": ["Software y agentes de IA a medida", "Productos de datos e integraciones", "Controles humanos y trazabilidad", "Adopción, medición e iteración"],
         "output": "SALIDA / UN SISTEMA EN PRODUCCIÓN",
         "link": ""
@@ -89,7 +89,7 @@
     "environment": "ENTORNOS DE DATOS EN LA NUBE",
     "badge": "CONOCE LA PLATAFORMA / PRIORIZA EL RESULTADO",
     "cardLabel": "DISEÑADO PARA ENTORNOS SNOWFLAKE",
-    "cardTitle": "De plataforma de datos a ventaja operativa.",
+    "cardTitle": "Snowflake, conectado a la decisión.",
     "cardDescription": "Conectamos el warehouse con la decisión: la lógica de negocio, los controles, los productos y las rutinas operativas que hacen rendir la inversión.",
     "capabilities": [
       "Arquitectura de decisiones y cargas antes de invertir en cómputo",
@@ -108,10 +108,10 @@
   },
   "WhyNoCoda": {
     "label": "La diferencia NoCoda",
-    "title": "Estrategia sin handoff. Ingeniería sin visión de túnel.",
-    "subtitle": "Trabajamos entre la mesa directiva y la operación: con seniority para cuestionar la decisión y capacidad técnica para construir la respuesta.",
+    "title": "Criterio para decidir. Capacidad para construir.",
+    "subtitle": "De la mesa directiva a producción, responde el mismo equipo.",
     "portalStatus": "EN VIVO / AUTÓNOMO",
-    "portalTitle": "Este diario no tiene redacción.",
+    "portalTitle": "Un newsroom autónomo, en vivo.",
     "portalDescription": "NoCoda.TV es redactado, ilustrado y publicado las 24 horas por un sistema de IA construido por NoCoda.",
     "portalCta": "Ver el sistema funcionando",
     "portalAria": "NoCoda.TV — ver el sistema autónomo de noticias de IA funcionando en una pestaña nueva",
@@ -122,7 +122,7 @@
     ]
   },
   "CTA": {
-    "title": "Tráiganos la operación que todos saben que debería funcionar mejor.",
+    "title": "Traigan una operación que debería funcionar mejor.",
     "subtitle": "En una conversación vamos a mapear la decisión, la fricción y el camino más creíble hacia un resultado medible.",
     "button": "Mapear la operación",
     "note": "30 MINUTOS · UN PROBLEMA REAL · SIN TEATRO COMERCIAL"

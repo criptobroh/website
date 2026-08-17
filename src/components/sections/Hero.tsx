@@ -30,7 +30,6 @@ export default function Hero() {
               {t("secondaryCta")}<span aria-hidden="true">↓</span>
             </a>
           </div>
-          <p className="nocoda-hero__note">{t("note")}</p>
         </motion.div>
         <DecisionArtifact label={t("visualAlt")} />
       </div>
