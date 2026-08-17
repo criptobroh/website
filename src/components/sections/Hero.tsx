@@ -13,8 +13,8 @@ export default function Hero() {
       <div className="nocoda-hero__inner">
         <motion.div
           className="nocoda-hero__copy"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 12 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="editorial-kicker">{t("badge")}</p>
