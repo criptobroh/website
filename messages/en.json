@@ -8,7 +8,8 @@
     "howWeWork": "Our process",
     "whyNoCoda": "Why NoCoda",
     "program": "Executive program",
-    "cta": "Map an operation"
+    "cta": "Map an operation",
+    "clients": "Clients"
   },
   "Hero": {
     "badge": "DECISIONS / OPERATIONS / GROWTH",
@@ -19,7 +20,12 @@
     "cta": "Map an operation",
     "secondaryCta": "See how it works",
     "note": "Strategy, data and software in one accountable team.",
-    "rail": ["ONE OPERATION", "ONE OWNER", "ONE MEASURABLE RESULT", "BUILT TO RUN"]
+    "rail": [
+      "ONE OPERATION",
+      "ONE OWNER",
+      "ONE MEASURABLE RESULT",
+      "BUILT TO RUN"
+    ]
   },
   "Problem": {
     "label": "Where AI earns its place",
@@ -27,17 +33,38 @@
     "titleAccent": "Build only what makes it possible.",
     "intro": "The model is rarely the hard part. The hard part is giving it a real decision, usable evidence and a place inside the operation.",
     "points": [
-      {"title": "Commercial focus", "description": "Turn scattered market, CRM and conversation signals into prioritized accounts, offers and next actions.", "outcome": "PRIORITIZE THE NEXT MOVE"},
-      {"title": "Operating visibility", "description": "Reconstruct how work actually moves across systems, identify friction and redesign the process around evidence.", "outcome": "SEE THE REAL PROCESS"},
-      {"title": "Finance intelligence", "description": "Bring cash, forecast, risk and performance into a shared decision model leaders can interrogate and trust.", "outcome": "MODEL THE DECISION"},
-      {"title": "AI-native products", "description": "Turn expert knowledge and operational workflows into useful software for customers and internal teams.", "outcome": "TURN EXPERTISE INTO PRODUCT"}
+      {
+        "title": "Commercial focus",
+        "description": "Turn scattered market, CRM and conversation signals into prioritized accounts, offers and next actions.",
+        "outcome": "PRIORITIZE THE NEXT MOVE"
+      },
+      {
+        "title": "Operating visibility",
+        "description": "Reconstruct how work actually moves across systems, identify friction and redesign the process around evidence.",
+        "outcome": "SEE THE REAL PROCESS"
+      },
+      {
+        "title": "Finance intelligence",
+        "description": "Bring cash, forecast, risk and performance into a shared decision model leaders can interrogate and trust.",
+        "outcome": "MODEL THE DECISION"
+      },
+      {
+        "title": "AI-native products",
+        "description": "Turn expert knowledge and operational workflows into useful software for customers and internal teams.",
+        "outcome": "TURN EXPERTISE INTO PRODUCT"
+      }
     ],
     "statementLabel": "THE OPERATING PRINCIPLE",
     "statement": "Data is not the outcome.",
     "statementAccent": "A better decision is."
   },
   "Marquee": {
-    "items": ["DECIDE EARLIER", "SEE THE REAL PROCESS", "BUILD WHAT MATTERS", "LEARN IN OPERATION"]
+    "items": [
+      "DECIDE EARLIER",
+      "SEE THE REAL PROCESS",
+      "BUILD WHAT MATTERS",
+      "LEARN IN OPERATION"
+    ]
   },
   "Services": {
     "label": "Ways to work",
@@ -48,7 +75,12 @@
         "eyebrow": "1.5 DAYS · LEADERSHIP TEAM",
         "title": "Executive AI alignment",
         "description": "Leadership leaves with three priorities and its own 90-day roadmap.",
-        "features": ["Decision and opportunity inventory", "Data, process and governance readiness", "Three company-owned priorities", "Owners, evidence and first actions"],
+        "features": [
+          "Decision and opportunity inventory",
+          "Data, process and governance readiness",
+          "Three company-owned priorities",
+          "Owners, evidence and first actions"
+        ],
         "output": "OUTPUT / 90-DAY EXECUTIVE ROADMAP",
         "link": "Explore BEFORE AI"
       },
@@ -56,7 +88,12 @@
         "eyebrow": "2–4 WEEKS · ONE OPERATION",
         "title": "Strategy and system design",
         "description": "We trace one operation and design the smallest system that can change it.",
-        "features": ["Operating problem and value model", "Process and decision architecture", "Data and integration blueprint", "Build plan with measurable outcomes"],
+        "features": [
+          "Operating problem and value model",
+          "Process and decision architecture",
+          "Data and integration blueprint",
+          "Build plan with measurable outcomes"
+        ],
         "output": "OUTPUT / EXECUTION BLUEPRINT",
         "link": ""
       },
@@ -64,21 +101,129 @@
         "eyebrow": "PILOT → PRODUCTION · EMBEDDED",
         "title": "Forward-deployed build",
         "description": "A senior team builds and runs the solution inside the business.",
-        "features": ["Custom software and AI agents", "Data products and integrations", "Human controls and traceability", "Adoption, measurement and iteration"],
+        "features": [
+          "Custom software and AI agents",
+          "Data products and integrations",
+          "Human controls and traceability",
+          "Adoption, measurement and iteration"
+        ],
         "output": "OUTPUT / A SYSTEM IN PRODUCTION",
         "link": ""
       }
     ]
+  },
+  "Clients": {
+    "label": "Clients",
+    "title": "Ten systems in production,",
+    "titleAccent": "four countries.",
+    "subtitle": "Each one is a real operation that runs differently today. Tap a company to see what it does and what we built with it.",
+    "stats": {
+      "systems": "Custom systems delivered and running in production.",
+      "countries": "Spain, Argentina, Mexico and the United States.",
+      "scaleValue": "4.5",
+      "scaleUnit": "B",
+      "scale": "Dollars in assets under management and volume processed by the companies we work with."
+    },
+    "mapAlt": "Dotted world map with markers over Spain, Argentina, Mexico and the United States, where NoCoda has clients.",
+    "filterAria": "Filter clients by country",
+    "filterAll": "All",
+    "countries": {
+      "ar": "Argentina",
+      "es": "Spain",
+      "mx": "Mexico",
+      "us": "United States"
+    },
+    "countriesShort": {
+      "ar": "ARGENTINA",
+      "es": "SPAIN",
+      "mx": "MEXICO",
+      "us": "U.S."
+    },
+    "flipHint": "See what we built",
+    "didLabel": "What we built:",
+    "closeAria": "Flip the card back",
+    "foot": "The figure combines Grupo IEB's assets under management (over USD 3.5 billion) and seQura's annual processed volume (close to €1 billion), from each company's public reporting. It does not represent NoCoda revenue.",
+    "ctaLabel": "Next",
+    "ctaTitle": "Your operation here.",
+    "ctaNote": "Let's map one decision in 30 minutes",
+    "cards": {
+      "sequra": {
+        "sector": "Payments · BNPL",
+        "what": "Barcelona fintech financing checkout for over 5,000 merchants across Southern Europe, moving around €1 billion a year.",
+        "did": "We built the seQura Brain: their own CRM, natural-language segmentation and an email marketing pipeline run by five AI agents that replaced their campaign stack."
+      },
+      "ieb": {
+        "sector": "Capital markets",
+        "what": "Argentine financial group with more than USD 3.5 billion under management: brokerage, funds, private banking, real estate and construction.",
+        "did": "We are their AI and custom software layer: the group's internal platform, the construction control system that reads invoices with AI, the real estate back offices and the CMS behind every site."
+      },
+      "alveo": {
+        "sector": "Road infrastructure",
+        "what": "Mexican manufacturer of road-safety signage and industrial rotomolded plastics, with its own plant in Mexico City and public infrastructure among its clients.",
+        "did": "We turned what we solved for one company into product for an industry: AI-powered tech products for road infrastructure, sold as a reusable asset."
+      },
+      "seeds": {
+        "sector": "External talent",
+        "what": "Talent consultancy across LATAM and the United States: over 70,000 professionals in its network and more than 500 projects delivered for leading companies.",
+        "did": "We rebuilt their operation with AI inside: their own app with a chat over their knowledge base, a 17-screen back office, automated workflows and a custom server wired to their CRM."
+      },
+      "martis": {
+        "sector": "E-commerce · Auto parts",
+        "what": "Auto parts importer buying in Miami and delivering door to door in Argentina, with an all-in final price in local currency.",
+        "did": "A turnkey marketplace: a real catalog of 2,958 parts with 21,481 vehicle fitments, a Miami-to-pesos pricing engine, checkout, AI chat and a full back office."
+      },
+      "psima": {
+        "sector": "Mental health",
+        "what": "Online psychology practice with more than 200 professionals serving the Spanish-speaking world over video.",
+        "did": "We built and run their back office: patients, practitioners, payments, reconciliation, WhatsApp support, retention and metrics — plus a security audit across 599 endpoints."
+      },
+      "elliecare": {
+        "sector": "Health · AgeTech",
+        "what": "Elder care healthtech: a standalone watch with fall detection and FDA-cleared cognitive analysis from voice. 4,000 users across seven countries.",
+        "did": "We built their legacy films: from a handful of photos and a prompt, the AI writes the story, narrates it, animates the images and delivers the finished film."
+      },
+      "scuticchio": {
+        "sector": "Event production",
+        "what": "Buenos Aires event production company with over 30 years in sound, lighting, video and streaming for conventions and live shows.",
+        "did": "A custom back office that replaced their Bubble app: bilingual quote exports, 3,359 clients and 9,543 events migrated, and 2,486 inventory units tracked with QR codes."
+      },
+      "ulc": {
+        "sector": "Logistics · Trade",
+        "what": "Argentine logistics and foreign trade operator prospecting importers and exporters as clients.",
+        "did": "Their own prospecting CRM: it finds companies by tariff code in customs data, enriches the contacts and ranks leads against their ideal profile."
+      },
+      "muecas": {
+        "sector": "Food · Consumer",
+        "what": "Argentine real-snacks brand — bars, chocolates and alfajores — sold through distributors and its own channels.",
+        "did": "A full AI program: an internal assistant answering from the company's real documentation, custom automations and training so the team runs them itself."
+      }
+    }
   },
   "HowWeWork": {
     "label": "From decision to operation",
     "title": "One continuous line from business question to working system.",
     "subtitle": "No strategy handoff. No technical build in isolation. The people framing the result stay accountable through production.",
     "steps": [
-      {"number": "01", "title": "Frame the move", "description": "Name the decision, its owner, the economic value and the evidence that would make it better."},
-      {"number": "02", "title": "Expose the operation", "description": "Trace the real workflow, data, rules, exceptions and human judgment behind the current result."},
-      {"number": "03", "title": "Build the system", "description": "Ship the smallest complete system that connects context to action with controls built in."},
-      {"number": "04", "title": "Operate and learn", "description": "Put it inside the team, measure the result and improve the decision loop from real use."}
+      {
+        "number": "01",
+        "title": "Frame the move",
+        "description": "Name the decision, its owner, the economic value and the evidence that would make it better."
+      },
+      {
+        "number": "02",
+        "title": "Expose the operation",
+        "description": "Trace the real workflow, data, rules, exceptions and human judgment behind the current result."
+      },
+      {
+        "number": "03",
+        "title": "Build the system",
+        "description": "Ship the smallest complete system that connects context to action with controls built in."
+      },
+      {
+        "number": "04",
+        "title": "Operate and learn",
+        "description": "Put it inside the team, measure the result and improve the decision loop from real use."
+      }
     ]
   },
   "Snowflake": {
@@ -100,7 +245,12 @@
     "visualAlt": "A system diagram showing signals moving through governed Snowflake data into a business decision and operating action.",
     "systemLabel": "OPERATING ARCHITECTURE",
     "systemStatus": "LIVE DECISION LINE",
-    "stages": ["SIGNAL", "GOVERN", "DECIDE", "ACT"],
+    "stages": [
+      "SIGNAL",
+      "GOVERN",
+      "DECIDE",
+      "ACT"
+    ],
     "systemFootLeft": "DATA / LOGIC / CONTROL",
     "systemFootRight": "MEASURABLE ACTION",
     "principle": "PLATFORM CAPABILITY / INDEPENDENT JUDGMENT",
@@ -116,9 +266,18 @@
     "portalCta": "See the system running",
     "portalAria": "NoCoda.TV — see the autonomous AI news system running in a new tab",
     "points": [
-      {"title": "Business before tooling", "description": "We choose technology after the decision, workflow and success measure are clear—not before."},
-      {"title": "Full-stack accountability", "description": "Strategy, data, software and AI stay inside one team, so the outcome does not disappear between vendors."},
-      {"title": "Adoption is part of the build", "description": "A system is not finished when it deploys. It is finished when people use it and the operating result changes."}
+      {
+        "title": "Business before tooling",
+        "description": "We choose technology after the decision, workflow and success measure are clear—not before."
+      },
+      {
+        "title": "Full-stack accountability",
+        "description": "Strategy, data, software and AI stay inside one team, so the outcome does not disappear between vendors."
+      },
+      {
+        "title": "Adoption is part of the build",
+        "description": "A system is not finished when it deploys. It is finished when people use it and the operating result changes."
+      }
     ]
   },
   "CTA": {

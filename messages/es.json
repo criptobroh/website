@@ -8,7 +8,8 @@
     "howWeWork": "Nuestro proceso",
     "whyNoCoda": "Por qué NoCoda",
     "program": "Programa ejecutivo",
-    "cta": "Mapear una operación"
+    "cta": "Mapear una operación",
+    "clients": "Clientes"
   },
   "Hero": {
     "badge": "DECISIONES / OPERACIÓN / CRECIMIENTO",
@@ -19,7 +20,12 @@
     "cta": "Mapear una operación",
     "secondaryCta": "Ver cómo funciona",
     "note": "Estrategia, datos y software en un solo equipo responsable.",
-    "rail": ["UNA OPERACIÓN", "UN RESPONSABLE", "UN RESULTADO MEDIBLE", "HECHO PARA OPERAR"]
+    "rail": [
+      "UNA OPERACIÓN",
+      "UN RESPONSABLE",
+      "UN RESULTADO MEDIBLE",
+      "HECHO PARA OPERAR"
+    ]
   },
   "Problem": {
     "label": "Dónde la IA gana su lugar",
@@ -27,17 +33,38 @@
     "titleAccent": "Construya sólo lo que lo hace posible.",
     "intro": "El modelo rara vez es la parte difícil. Lo difícil es darle una decisión real, evidencia utilizable y un lugar dentro de la operación.",
     "points": [
-      {"title": "Foco comercial", "description": "Convierta señales dispersas de mercado, CRM y conversaciones en cuentas, ofertas y próximas acciones priorizadas.", "outcome": "PRIORIZAR EL PRÓXIMO MOVIMIENTO"},
-      {"title": "Visibilidad operativa", "description": "Reconstruya cómo fluye realmente el trabajo entre sistemas, identifique fricción y rediseñe el proceso con evidencia.", "outcome": "VER EL PROCESO REAL"},
-      {"title": "Inteligencia financiera", "description": "Integre caja, proyecciones, riesgo y desempeño en un modelo compartido que la dirección pueda consultar y en el que pueda confiar.", "outcome": "MODELAR LA DECISIÓN"},
-      {"title": "Productos nativos de IA", "description": "Convierta conocimiento experto y flujos operativos en software útil para clientes y equipos internos.", "outcome": "CONVERTIR EXPERTISE EN PRODUCTO"}
+      {
+        "title": "Foco comercial",
+        "description": "Convierta señales dispersas de mercado, CRM y conversaciones en cuentas, ofertas y próximas acciones priorizadas.",
+        "outcome": "PRIORIZAR EL PRÓXIMO MOVIMIENTO"
+      },
+      {
+        "title": "Visibilidad operativa",
+        "description": "Reconstruya cómo fluye realmente el trabajo entre sistemas, identifique fricción y rediseñe el proceso con evidencia.",
+        "outcome": "VER EL PROCESO REAL"
+      },
+      {
+        "title": "Inteligencia financiera",
+        "description": "Integre caja, proyecciones, riesgo y desempeño en un modelo compartido que la dirección pueda consultar y en el que pueda confiar.",
+        "outcome": "MODELAR LA DECISIÓN"
+      },
+      {
+        "title": "Productos nativos de IA",
+        "description": "Convierta conocimiento experto y flujos operativos en software útil para clientes y equipos internos.",
+        "outcome": "CONVERTIR EXPERTISE EN PRODUCTO"
+      }
     ],
     "statementLabel": "EL PRINCIPIO OPERATIVO",
     "statement": "Los datos no son el resultado.",
     "statementAccent": "Una mejor decisión sí."
   },
   "Marquee": {
-    "items": ["DECIDIR ANTES", "VER EL PROCESO REAL", "CONSTRUIR LO QUE IMPORTA", "APRENDER EN OPERACIÓN"]
+    "items": [
+      "DECIDIR ANTES",
+      "VER EL PROCESO REAL",
+      "CONSTRUIR LO QUE IMPORTA",
+      "APRENDER EN OPERACIÓN"
+    ]
   },
   "Services": {
     "label": "Cómo empezar",
@@ -48,7 +75,12 @@
         "eyebrow": "1,5 DÍAS · EQUIPO DIRECTIVO",
         "title": "Alineación ejecutiva de IA",
         "description": "La dirección sale con tres prioridades y un roadmap propio de 90 días.",
-        "features": ["Inventario de decisiones y oportunidades", "Madurez de datos, procesos y gobierno", "Tres prioridades propias de la empresa", "Responsables, evidencia y primeras acciones"],
+        "features": [
+          "Inventario de decisiones y oportunidades",
+          "Madurez de datos, procesos y gobierno",
+          "Tres prioridades propias de la empresa",
+          "Responsables, evidencia y primeras acciones"
+        ],
         "output": "SALIDA / ROADMAP EJECUTIVO DE 90 DÍAS",
         "link": "Explorar BEFORE AI"
       },
@@ -56,7 +88,12 @@
         "eyebrow": "2–4 SEMANAS · UNA OPERACIÓN",
         "title": "Estrategia y diseño del sistema",
         "description": "Trazamos una operación y diseñamos el sistema mínimo para cambiarla.",
-        "features": ["Problema operativo y modelo de valor", "Arquitectura de proceso y decisión", "Blueprint de datos e integraciones", "Plan de construcción con resultados medibles"],
+        "features": [
+          "Problema operativo y modelo de valor",
+          "Arquitectura de proceso y decisión",
+          "Blueprint de datos e integraciones",
+          "Plan de construcción con resultados medibles"
+        ],
         "output": "SALIDA / BLUEPRINT DE EJECUCIÓN",
         "link": ""
       },
@@ -64,21 +101,129 @@
         "eyebrow": "PILOTO → PRODUCCIÓN · INTEGRADO",
         "title": "Construcción forward-deployed",
         "description": "Un equipo senior construye y opera la solución dentro del negocio.",
-        "features": ["Software y agentes de IA a medida", "Productos de datos e integraciones", "Controles humanos y trazabilidad", "Adopción, medición e iteración"],
+        "features": [
+          "Software y agentes de IA a medida",
+          "Productos de datos e integraciones",
+          "Controles humanos y trazabilidad",
+          "Adopción, medición e iteración"
+        ],
         "output": "SALIDA / UN SISTEMA EN PRODUCCIÓN",
         "link": ""
       }
     ]
+  },
+  "Clients": {
+    "label": "Clientes",
+    "title": "Diez sistemas en producción,",
+    "titleAccent": "cuatro países.",
+    "subtitle": "Cada uno es una operación real que hoy funciona distinta. Tocá una empresa para ver qué hace y qué construimos con ella.",
+    "stats": {
+      "systems": "Sistemas propios entregados y funcionando en producción.",
+      "countries": "España, Argentina, México y Estados Unidos.",
+      "scaleValue": "4,5",
+      "scaleUnit": "B",
+      "scale": "Dólares en activos administrados y volumen procesado por las empresas con las que trabajamos."
+    },
+    "mapAlt": "Mapa mundial punteado con marcadores en España, Argentina, México y Estados Unidos, donde NoCoda tiene clientes.",
+    "filterAria": "Filtrar clientes por país",
+    "filterAll": "Todos",
+    "countries": {
+      "ar": "Argentina",
+      "es": "España",
+      "mx": "México",
+      "us": "Estados Unidos"
+    },
+    "countriesShort": {
+      "ar": "ARGENTINA",
+      "es": "ESPAÑA",
+      "mx": "MÉXICO",
+      "us": "EE. UU."
+    },
+    "flipHint": "Ver qué hicimos",
+    "didLabel": "Qué construimos:",
+    "closeAria": "Volver al frente de la tarjeta",
+    "foot": "La cifra combina los activos bajo administración de Grupo IEB (más de USD 3.500 millones) y el volumen anual procesado por seQura (cerca de €1.000 millones), según datos públicos de cada empresa. No representa facturación de NoCoda.",
+    "ctaLabel": "El próximo",
+    "ctaTitle": "Su operación acá.",
+    "ctaNote": "Mapeemos una decisión en 30 minutos",
+    "cards": {
+      "sequra": {
+        "sector": "Pagos · BNPL",
+        "what": "Fintech de Barcelona que financia la compra en el checkout de más de 5.000 comercios del sur de Europa. Mueve unos €1.000 millones al año.",
+        "did": "Les construimos el Cerebro de seQura: CRM propio, segmentación en lenguaje natural y un pipeline de email marketing con cinco agentes de IA que reemplazó su stack de campañas."
+      },
+      "ieb": {
+        "sector": "Mercado de capitales",
+        "what": "Grupo financiero argentino con más de USD 3.500 millones bajo administración: bróker, fondos, banca privada, real estate y construcción.",
+        "did": "Somos su capa de IA y software a medida: la plataforma interna del grupo, el control de gestión de obra que lee facturas con IA, los backoffices de real estate y el CMS que sirve todas sus webs."
+      },
+      "alveo": {
+        "sector": "Vialidad industrial",
+        "what": "Fabricante mexicano de señalamiento vial y plásticos industriales por rotomoldeo, con planta propia en CDMX y obra pública entre sus clientes.",
+        "did": "Convertimos lo que resolvimos para una empresa en producto para una industria: productos tech con IA para vialidad industrial, vendidos como activo reutilizable."
+      },
+      "seeds": {
+        "sector": "Talento externo",
+        "what": "Consultora de talento externo de LATAM y Estados Unidos: más de 70.000 profesionales en red y más de 500 proyectos ejecutados para empresas líderes.",
+        "did": "Les montamos la operación con IA adentro: app propia con chat sobre su conocimiento, backoffice de 17 pantallas, workflows automatizados y un servidor a medida conectado a su CRM."
+      },
+      "martis": {
+        "sector": "E-commerce · Autopartes",
+        "what": "Importador de autopartes que compra en Miami y entrega puerta a puerta en Argentina, con precio final en pesos y todo incluido.",
+        "did": "Marketplace llave en mano: catálogo real de 2.958 piezas con 21.481 compatibilidades, motor de precios de Miami a pesos, checkout, chat con IA y back office completo."
+      },
+      "psima": {
+        "sector": "Salud mental",
+        "what": "Clínica de psicología online con más de 200 profesionales que atiende a la comunidad hispanohablante en todo el mundo por videollamada.",
+        "did": "Construimos y operamos su backoffice: pacientes, profesionales, pagos, conciliaciones, atención por WhatsApp, retención y métricas. Más una auditoría de seguridad de 599 endpoints."
+      },
+      "elliecare": {
+        "sector": "Salud · AgeTech",
+        "what": "Healthtech de cuidado del adulto mayor: reloj autónomo con detección de caídas y análisis cognitivo por voz con aprobación de la FDA. 4.000 usuarios en siete países.",
+        "did": "Les construimos las películas de legado: de un puñado de fotos y una consigna, la IA escribe la historia, la narra, anima las imágenes y entrega la película terminada."
+      },
+      "scuticchio": {
+        "sector": "Producción de eventos",
+        "what": "Productora integral de eventos de Buenos Aires con más de 30 años: sonido, iluminación, video y streaming para convenciones y espectáculos.",
+        "did": "Backoffice a medida que reemplazó su Bubble: presupuestos con exportación bilingüe, 3.359 clientes y 9.543 eventos migrados, e inventario de 2.486 unidades con QR."
+      },
+      "ulc": {
+        "sector": "Logística · Comex",
+        "what": "Operador argentino de logística y comercio exterior que prospecta importadores y exportadores como clientes.",
+        "did": "CRM de prospección propio: busca empresas por posición arancelaria en data aduanera, enriquece los contactos y ordena los leads según su perfil ideal."
+      },
+      "muecas": {
+        "sector": "Alimentos · Consumo",
+        "what": "Marca argentina de snacks reales: barras, chocolates y alfajores, con venta por distribuidores y canales propios.",
+        "did": "Programa completo de IA: un asistente interno que responde sobre la documentación real de la empresa, automatizaciones propias y capacitación al equipo para operarlas."
+      }
+    }
   },
   "HowWeWork": {
     "label": "De la decisión a la operación",
     "title": "Una sola línea entre la pregunta de negocio y el sistema funcionando.",
     "subtitle": "Sin handoff de estrategia. Sin construcción técnica aislada. Quienes definen el resultado siguen siendo responsables hasta producción.",
     "steps": [
-      {"number": "01", "title": "Definir el movimiento", "description": "Nombramos la decisión, su responsable, el valor económico y la evidencia que permitiría mejorarla."},
-      {"number": "02", "title": "Exponer la operación", "description": "Trazamos el flujo real, los datos, las reglas, las excepciones y el juicio humano detrás del resultado actual."},
-      {"number": "03", "title": "Construir el sistema", "description": "Entregamos el sistema completo más pequeño que conecta contexto con acción y tiene controles incorporados."},
-      {"number": "04", "title": "Operar y aprender", "description": "Lo incorporamos al equipo, medimos el resultado y mejoramos el circuito de decisión desde el uso real."}
+      {
+        "number": "01",
+        "title": "Definir el movimiento",
+        "description": "Nombramos la decisión, su responsable, el valor económico y la evidencia que permitiría mejorarla."
+      },
+      {
+        "number": "02",
+        "title": "Exponer la operación",
+        "description": "Trazamos el flujo real, los datos, las reglas, las excepciones y el juicio humano detrás del resultado actual."
+      },
+      {
+        "number": "03",
+        "title": "Construir el sistema",
+        "description": "Entregamos el sistema completo más pequeño que conecta contexto con acción y tiene controles incorporados."
+      },
+      {
+        "number": "04",
+        "title": "Operar y aprender",
+        "description": "Lo incorporamos al equipo, medimos el resultado y mejoramos el circuito de decisión desde el uso real."
+      }
     ]
   },
   "Snowflake": {
@@ -100,7 +245,12 @@
     "visualAlt": "Un diagrama de sistema muestra señales que pasan por datos gobernados en Snowflake hasta una decisión de negocio y una acción operativa.",
     "systemLabel": "ARQUITECTURA OPERATIVA",
     "systemStatus": "LÍNEA DE DECISIÓN ACTIVA",
-    "stages": ["SEÑAL", "GOBERNAR", "DECIDIR", "ACTUAR"],
+    "stages": [
+      "SEÑAL",
+      "GOBERNAR",
+      "DECIDIR",
+      "ACTUAR"
+    ],
     "systemFootLeft": "DATOS / LÓGICA / CONTROL",
     "systemFootRight": "ACCIÓN MEDIBLE",
     "principle": "CAPACIDAD DE PLATAFORMA / CRITERIO INDEPENDIENTE",
@@ -116,9 +266,18 @@
     "portalCta": "Ver el sistema funcionando",
     "portalAria": "NoCoda.TV — ver el sistema autónomo de noticias de IA funcionando en una pestaña nueva",
     "points": [
-      {"title": "Negocio antes que herramientas", "description": "Elegimos tecnología después de aclarar la decisión, el flujo de trabajo y la medida de éxito, nunca antes."},
-      {"title": "Responsabilidad full-stack", "description": "Estrategia, datos, software e IA quedan dentro de un solo equipo para que el resultado no se pierda entre proveedores."},
-      {"title": "La adopción es parte del sistema", "description": "Un sistema no está terminado cuando se despliega. Está terminado cuando la gente lo usa y cambia el resultado operativo."}
+      {
+        "title": "Negocio antes que herramientas",
+        "description": "Elegimos tecnología después de aclarar la decisión, el flujo de trabajo y la medida de éxito, nunca antes."
+      },
+      {
+        "title": "Responsabilidad full-stack",
+        "description": "Estrategia, datos, software e IA quedan dentro de un solo equipo para que el resultado no se pierda entre proveedores."
+      },
+      {
+        "title": "La adopción es parte del sistema",
+        "description": "Un sistema no está terminado cuando se despliega. Está terminado cuando la gente lo usa y cambia el resultado operativo."
+      }
     ]
   },
   "CTA": {
