@@ -16,6 +16,7 @@ const LABEL_OFFSET: Record<CityKey, { dx: number; dy: number; anchor: "start" | 
   cdmx: { dx: -14, dy: 10, anchor: "end" },
   miami: { dx: 14, dy: 2, anchor: "start" },
   madrid: { dx: 14, dy: 4, anchor: "start" },
+  sevilla: { dx: -14, dy: 12, anchor: "end" },
 };
 
 function hostOf(url: string) {
@@ -33,6 +34,8 @@ export default function ClientsWorld() {
 
   const visible = filter === "all" ? CLIENTS : CLIENTS.filter((c) => c.country === filter);
 
+  // Un punto por ciudad, pero un solo rótulo por país (con el total del país) anclado
+  // en su ciudad principal: si no, España mostraría dos veces "ESPAÑA · 1".
   const markers = useMemo(() => {
     const byCity = new Map<CityKey, { country: CountryCode; count: number }>();
     for (const c of CLIENTS) {
@@ -40,10 +43,18 @@ export default function ClientsWorld() {
       entry.count += 1;
       byCity.set(c.city, entry);
     }
-    return [...byCity.entries()].map(([city, { country, count }]) => ({
+    const byCountry = new Map<CountryCode, { total: number; mainCity: CityKey }>();
+    for (const [city, { country, count }] of byCity) {
+      const entry = byCountry.get(country) ?? { total: 0, mainCity: city };
+      entry.total += count;
+      if (count > (byCity.get(entry.mainCity)?.count ?? 0)) entry.mainCity = city;
+      byCountry.set(country, entry);
+    }
+    return [...byCity.entries()].map(([city, { country }]) => ({
       city,
       country,
-      count,
+      countryTotal: byCountry.get(country)!.total,
+      showLabel: byCountry.get(country)!.mainCity === city,
       point: CITY_POINTS[city],
     }));
   }, []);
@@ -101,7 +112,7 @@ export default function ClientsWorld() {
         <ScrollReveal className="world-clients__map">
           <svg viewBox={MAP_VIEWBOX} role="img" aria-label={t("mapAlt")}>
             <path className="world-map__dots" d={WORLD_DOTS_PATH} />
-            {markers.map(({ city, country, count, point: [x, y] }) => {
+            {markers.map(({ city, country, countryTotal, showLabel, point: [x, y] }) => {
               const label = LABEL_OFFSET[city];
               return (
                 <g
@@ -112,9 +123,11 @@ export default function ClientsWorld() {
                 >
                   <circle cx={x} cy={y} r={5} />
                   <circle className="world-map__pulse" cx={x} cy={y} r={7} />
-                  <text x={x + label.dx} y={y + label.dy} textAnchor={label.anchor}>
-                    {t(`countriesShort.${country}`)} <tspan>· {count}</tspan>
-                  </text>
+                  {showLabel ? (
+                    <text x={x + label.dx} y={y + label.dy} textAnchor={label.anchor}>
+                      {t(`countriesShort.${country}`)} <tspan>· {countryTotal}</tspan>
+                    </text>
+                  ) : null}
                 </g>
               );
             })}

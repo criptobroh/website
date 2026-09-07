@@ -114,7 +114,7 @@
   },
   "Clients": {
     "label": "Clients",
-    "title": "Ten systems in production,",
+    "title": "Twelve systems in production,",
     "titleAccent": "four countries.",
     "subtitle": "Each one is a real operation that runs differently today. Tap a company to see what it does and what we built with it.",
     "stats": {
@@ -155,7 +155,12 @@
       "ieb": {
         "sector": "Capital markets",
         "what": "Argentine financial group with more than USD 3.5 billion under management: brokerage, funds, private banking, real estate and construction.",
-        "did": "We are their AI and custom software layer: the group's internal platform, the construction control system that reads invoices with AI, the real estate back offices and the CMS behind every site."
+        "did": "We are their AI and custom-software layer: the group's internal platform, the real estate and private banking back offices, and the CMS behind all their websites."
+      },
+      "iebc": {
+        "sector": "Construction · Infrastructure",
+        "what": "Publicly listed Argentine construction firm, successor to DYCASA: over 55 years and more than 200 projects, including the Atucha II plant and the Subte H line.",
+        "did": "Their site-control system: certificates, costs, daily reports and equipment in one app wired to their ERP, reading supplier invoices with AI."
       },
       "alveo": {
         "sector": "Road infrastructure",
@@ -172,6 +177,11 @@
         "what": "Auto parts importer buying in Miami and delivering door to door in Argentina, with an all-in final price in local currency.",
         "did": "A turnkey marketplace: a real catalog of 2,958 parts with 21,481 vehicle fitments, a Miami-to-pesos pricing engine, checkout, AI chat and a full back office."
       },
+      "areafit": {
+        "sector": "Gyms · Fitness",
+        "what": "Seville-based gym chain running close to twenty centers across Spain, from premium to low cost. It billed 18 million euros in 2025.",
+        "did": "The control panel for Fiti, their AI assistant on WhatsApp and Instagram: it centralizes conversations from every center and tracks ratings, contacts and inquiry topics."
+      },
       "psima": {
         "sector": "Mental health",
         "what": "Online psychology practice with more than 200 professionals serving the Spanish-speaking world over video.",
@@ -184,7 +194,7 @@
       },
       "scuticchio": {
         "sector": "Event production",
-        "what": "Buenos Aires event production company with over 30 years in sound, lighting, video and streaming for conventions and live shows.",
+        "what": "Buenos Aires event production company running since 1990: sound, lighting, video and streaming for conventions and shows, across four divisions.",
         "did": "A custom back office that replaced their Bubble app: bilingual quote exports, 3,359 clients and 9,543 events migrated, and 2,486 inventory units tracked with QR codes."
       },
       "ulc": {

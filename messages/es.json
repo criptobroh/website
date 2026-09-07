@@ -114,7 +114,7 @@
   },
   "Clients": {
     "label": "Clientes",
-    "title": "Diez sistemas en producción,",
+    "title": "Doce sistemas en producción,",
     "titleAccent": "cuatro países.",
     "subtitle": "Cada uno es una operación real que hoy funciona distinta. Tocá una empresa para ver qué hace y qué construimos con ella.",
     "stats": {
@@ -155,7 +155,12 @@
       "ieb": {
         "sector": "Mercado de capitales",
         "what": "Grupo financiero argentino con más de USD 3.500 millones bajo administración: bróker, fondos, banca privada, real estate y construcción.",
-        "did": "Somos su capa de IA y software a medida: la plataforma interna del grupo, el control de gestión de obra que lee facturas con IA, los backoffices de real estate y el CMS que sirve todas sus webs."
+        "did": "Somos su capa de IA y software a medida: la plataforma interna del grupo, los backoffices de real estate y banca privada, y el CMS que sirve todas sus webs."
+      },
+      "iebc": {
+        "sector": "Construcción e infraestructura",
+        "what": "Constructora argentina que cotiza en bolsa, continuadora de DYCASA: más de 55 años y más de 200 obras, entre ellas Atucha II y el Subte H.",
+        "did": "Su control de gestión de obra: certificados, costos, partes diarios y equipos en una sola app conectada a su ERP, que lee las facturas de proveedores con IA."
       },
       "alveo": {
         "sector": "Vialidad industrial",
@@ -172,6 +177,11 @@
         "what": "Importador de autopartes que compra en Miami y entrega puerta a puerta en Argentina, con precio final en pesos y todo incluido.",
         "did": "Marketplace llave en mano: catálogo real de 2.958 piezas con 21.481 compatibilidades, motor de precios de Miami a pesos, checkout, chat con IA y back office completo."
       },
+      "areafit": {
+        "sector": "Gimnasios · Fitness",
+        "what": "Cadena de gimnasios sevillana con cerca de veinte centros en España, del premium al low cost. Facturó 18 millones de euros en 2025.",
+        "did": "El panel de control de Fiti, su asistente de IA en WhatsApp e Instagram: centraliza las conversaciones de todos los centros y mide valoraciones, contactos y temas de consulta."
+      },
       "psima": {
         "sector": "Salud mental",
         "what": "Clínica de psicología online con más de 200 profesionales que atiende a la comunidad hispanohablante en todo el mundo por videollamada.",
@@ -184,7 +194,7 @@
       },
       "scuticchio": {
         "sector": "Producción de eventos",
-        "what": "Productora integral de eventos de Buenos Aires con más de 30 años: sonido, iluminación, video y streaming para convenciones y espectáculos.",
+        "what": "Productora integral de eventos de Buenos Aires, desde 1990: sonido, iluminación, video y streaming para convenciones y espectáculos, en cuatro divisiones.",
         "did": "Backoffice a medida que reemplazó su Bubble: presupuestos con exportación bilingüe, 3.359 clientes y 9.543 eventos migrados, e inventario de 2.486 unidades con QR."
       },
       "ulc": {
