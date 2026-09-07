@@ -148,11 +148,11 @@
     "ctaNote": "Mapeemos una decisión en 30 minutos",
     "markerAria": "{country}: {count, plural, one {# cliente} other {# clientes}}. Tocá para filtrar.",
     "panelCount": "{count, plural, one {# cliente} other {# clientes}}",
-    "panelHint": "Tocá el punto para filtrar",
     "pagerAria": "Paginación de clientes",
     "prev": "Anteriores",
     "next": "Siguientes",
     "swipeHint": "Deslizá para ver más",
+    "panelIdle": "Pasá el mouse por un país para ver sus clientes.",
     "cards": {
       "sequra": {
         "sector": "Pagos · BNPL",

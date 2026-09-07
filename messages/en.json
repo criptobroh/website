@@ -148,11 +148,11 @@
     "ctaNote": "Let's map one decision in 30 minutes",
     "markerAria": "{country}: {count, plural, one {# client} other {# clients}}. Tap to filter.",
     "panelCount": "{count, plural, one {# client} other {# clients}}",
-    "panelHint": "Tap the dot to filter",
     "pagerAria": "Client pagination",
     "prev": "Previous",
     "next": "Next",
     "swipeHint": "Swipe to see more",
+    "panelIdle": "Hover a country to see its clients.",
     "cards": {
       "sequra": {
         "sector": "Payments · BNPL",

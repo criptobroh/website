@@ -44,7 +44,9 @@ export default function ClientsWorld() {
   const [filter, setFilter] = useState<Filter>("all");
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
   const [page, setPage] = useState(0);
-  const [hovered, setHovered] = useState<CountryCode | null>(null);
+  const [hoveredCountry, setHoveredCountry] = useState<CountryCode | null>(null);
+  const [focusedCountry, setFocusedCountry] = useState<CountryCode | null>(null);
+  const hovered = focusedCountry ?? hoveredCountry;
 
   const isMobile = useSyncExternalStore(
     subscribeToMobile,
@@ -204,43 +206,49 @@ export default function ClientsWorld() {
                   country: t(`countries.${country}`),
                   count: list.length,
                 })}
-                onMouseEnter={() => setHovered(country)}
-                onMouseLeave={() => setHovered((c) => (c === country ? null : c))}
-                onFocus={() => setHovered(country)}
-                onBlur={() => setHovered((c) => (c === country ? null : c))}
+                onMouseEnter={() => setHoveredCountry(country)}
+                onMouseLeave={() => setHoveredCountry((c) => (c === country ? null : c))}
+                onFocus={() => setFocusedCountry(country)}
+                onBlur={() => setFocusedCountry((c) => (c === country ? null : c))}
                 onKeyDown={(e) => {
                   // WCAG 1.4.13: el panel se descarta sin mover el foco.
-                  if (e.key === "Escape") setHovered(null);
+                  if (e.key === "Escape") {
+                    setFocusedCountry(null);
+                    setHoveredCountry(null);
+                  }
                 }}
                 onClick={() => {
                   setCountry(country);
                   // En touch no llega un mouseleave fiable: el panel quedaría pegado.
-                  setHovered(null);
+                  setHoveredCountry(null);
+                  setFocusedCountry(null);
                 }}
               />
             ))}
 
+          </div>
+
+          {/* Franja fija: un panel flotante no entra en un marco que mide 0,47 × su ancho. */}
+          <div className="world-map__readout" aria-hidden="true">
             {active ? (
-              <div
-                className={`world-map__panel ${active.top > 50 ? "is-above" : "is-below"}`}
-                style={{ left: `${active.left}%`, top: `${active.top}%` }}
-                aria-hidden="true"
-              >
-                <p className="world-map__panel-head">
+              <>
+                <p className="world-map__readout-head">
                   <i>{t(`countries.${active.country}`)}</i>
                   <span>{t("panelCount", { count: active.list.length })}</span>
                 </p>
                 {active.list.length === 1 ? (
-                  <div className="world-map__panel-solo">
-                    <strong>{active.list[0].mark}</strong>
-                    <em>{t(`cards.${active.list[0].key}.sector`)}</em>
+                  <div className="world-map__readout-solo">
+                    <strong>
+                      {active.list[0].mark}
+                      <em>{t(`cards.${active.list[0].key}.sector`)}</em>
+                    </strong>
                     <p>{t(`cards.${active.list[0].key}.what`)}</p>
                     <p>
                       <b>{t("didLabel")}</b> {t(`cards.${active.list[0].key}.did`)}
                     </p>
                   </div>
                 ) : (
-                  <ul className="world-map__panel-list">
+                  <ul className="world-map__readout-list">
                     {active.list.map((c) => (
                       <li key={c.key}>
                         <strong>{c.mark}</strong>
@@ -249,9 +257,10 @@ export default function ClientsWorld() {
                     ))}
                   </ul>
                 )}
-                <p className="world-map__panel-foot">{t("panelHint")}</p>
-              </div>
-            ) : null}
+              </>
+            ) : (
+              <p className="world-map__readout-idle">{t("panelIdle")}</p>
+            )}
           </div>
         </ScrollReveal>
 
@@ -343,18 +352,13 @@ export default function ClientsWorld() {
               </li>
             );
           })}
-          <li
-            className={`client-card client-card--cta ${
-              !isMobile && current < pageCount - 1 ? "is-off-page" : ""
-            }`}
-          >
+          <li className="client-card client-card--cta">
             <div className="client-card__body">
               <a
                 className="client-card__front"
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                tabIndex={!isMobile && current < pageCount - 1 ? -1 : 0}
               >
                 <span className="client-card__meta">
                   <i>{t("ctaLabel")}</i>
@@ -369,7 +373,7 @@ export default function ClientsWorld() {
           </li>
         </ul>
 
-        {visible.length > 1 ? (
+        {visible.length >= 1 ? (
           <p className="world-clients__swipe">
             {t("swipeHint")}{" "}
             <span aria-hidden="true">→</span>
