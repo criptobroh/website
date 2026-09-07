@@ -146,11 +146,18 @@
     "ctaLabel": "Next",
     "ctaTitle": "Your operation here.",
     "ctaNote": "Let's map one decision in 30 minutes",
+    "markerAria": "{country}: {count, plural, one {# client} other {# clients}}. Tap to filter.",
+    "panelCount": "{count, plural, one {# client} other {# clients}}",
+    "panelHint": "Tap the dot to filter",
+    "pagerAria": "Client pagination",
+    "prev": "Previous",
+    "next": "Next",
+    "swipeHint": "Swipe to see more",
     "cards": {
       "sequra": {
         "sector": "Payments · BNPL",
         "what": "Barcelona fintech financing checkout for over 5,000 merchants across Southern Europe, moving around €1 billion a year.",
-        "did": "We built the seQura Brain: their own CRM, natural-language segmentation and an email marketing pipeline run by five AI agents that replaced their campaign stack."
+        "did": "We built autonomous agents that improve their merchant onboarding: the step that decides how quickly a new merchant starts operating with seQura."
       },
       "ieb": {
         "sector": "Capital markets",

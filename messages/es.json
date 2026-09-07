@@ -146,11 +146,18 @@
     "ctaLabel": "El próximo",
     "ctaTitle": "Su operación acá.",
     "ctaNote": "Mapeemos una decisión en 30 minutos",
+    "markerAria": "{country}: {count, plural, one {# cliente} other {# clientes}}. Tocá para filtrar.",
+    "panelCount": "{count, plural, one {# cliente} other {# clientes}}",
+    "panelHint": "Tocá el punto para filtrar",
+    "pagerAria": "Paginación de clientes",
+    "prev": "Anteriores",
+    "next": "Siguientes",
+    "swipeHint": "Deslizá para ver más",
     "cards": {
       "sequra": {
         "sector": "Pagos · BNPL",
         "what": "Fintech de Barcelona que financia la compra en el checkout de más de 5.000 comercios del sur de Europa. Mueve unos €1.000 millones al año.",
-        "did": "Les construimos el Cerebro de seQura: CRM propio, segmentación en lenguaje natural y un pipeline de email marketing con cinco agentes de IA que reemplazó su stack de campañas."
+        "did": "Les construimos agentes autónomos que mejoran su proceso de incorporación de merchants: el paso que define qué tan rápido un comercio nuevo empieza a operar con seQura."
       },
       "ieb": {
         "sector": "Mercado de capitales",
