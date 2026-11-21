@@ -1,10 +1,11 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { SITE_NAME, SOCIAL_LINKS, NAV_SECTIONS, CALENDLY_URL } from "@/lib/constants";
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
   const tNav = await getTranslations("Navbar");
+  const homePath = `/${await getLocale()}`;
 
   return (
     <footer className="nocoda-footer">
@@ -56,7 +57,7 @@ export default async function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href={homePath}
                   className="text-sm text-text-secondary hover:text-text-primary transition-colors"
                 >
                   {t("home")}
@@ -65,7 +66,7 @@ export default async function Footer() {
               {NAV_SECTIONS.map((section) => (
                 <li key={section.id}>
                   <a
-                    href={`#${section.id}`}
+                    href={`${homePath}#${section.id}`}
                     className="text-sm text-text-secondary hover:text-text-primary transition-colors"
                   >
                     {tNav(section.labelKey)}

@@ -112,17 +112,22 @@
       }
     ]
   },
+  "DataCenters": {
+    "eyebrow": "CRITICAL INFRASTRUCTURE · NEW BUILDS AND EXPANSIONS",
+    "title": "Data center feasibility and construction",
+    "description": "We assess the site, power, connectivity and cooling. We coordinate design, construction and commissioning with specialists.",
+    "output": "OUTPUT / PHASED PLAN AND PRELIMINARY BUDGET",
+    "link": "Discuss your data center project"
+  },
   "Clients": {
     "label": "Clients",
-    "title": "Twelve systems in production,",
+    "title": "Systems in production,",
     "titleAccent": "four countries.",
     "subtitle": "Each one is a real operation that runs differently today. Tap a company to see what it does and what we built with it.",
     "stats": {
       "systems": "Custom systems delivered and running in production.",
       "countries": "Spain, Argentina, Mexico and the United States.",
-      "scaleValue": "4.5",
-      "scaleUnit": "B",
-      "scale": "Dollars in assets under management and volume processed by the companies we work with."
+      "cities": "Cities where our clients operate."
     },
     "mapAlt": "Dotted world map with markers over Spain, Argentina, Mexico and the United States, where NoCoda has clients.",
     "filterAria": "Filter clients by country",
@@ -142,7 +147,6 @@
     "flipHint": "See what we built",
     "didLabel": "What we built:",
     "closeAria": "Flip the card back",
-    "foot": "The figure combines Grupo IEB's assets under management (over USD 3.5 billion) and seQura's annual processed volume (close to €1 billion), from each company's public reporting. It does not represent NoCoda revenue.",
     "ctaLabel": "Next",
     "ctaTitle": "Your operation here.",
     "ctaNote": "Let's map one decision in 30 minutes",
@@ -158,16 +162,6 @@
         "sector": "Payments · BNPL",
         "what": "Barcelona fintech financing checkout for over 5,000 merchants across Southern Europe, moving around €1 billion a year.",
         "did": "We built autonomous agents that improve their merchant onboarding: the step that decides how quickly a new merchant starts operating with seQura."
-      },
-      "ieb": {
-        "sector": "Capital markets",
-        "what": "Argentine financial group with more than USD 3.5 billion under management: brokerage, funds, private banking, real estate and construction.",
-        "did": "We are their AI and custom-software layer: the group's internal platform, the real estate and private banking back offices, and the CMS behind all their websites."
-      },
-      "iebc": {
-        "sector": "Construction · Infrastructure",
-        "what": "Publicly listed Argentine construction firm, successor to DYCASA: over 55 years and more than 200 projects, including the Atucha II plant and the Subte H line.",
-        "did": "Their site-control system: certificates, costs, daily reports and equipment in one app wired to their ERP, reading supplier invoices with AI."
       },
       "alveo": {
         "sector": "Road infrastructure",

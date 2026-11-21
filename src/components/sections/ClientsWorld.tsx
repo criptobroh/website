@@ -159,11 +159,8 @@ export default function ClientsWorld() {
               <span>{t("stats.countries")}</span>
             </article>
             <article>
-              <strong>
-                {t("stats.scaleValue")}
-                <small>{t("stats.scaleUnit")}</small>
-              </strong>
-              <span>{t("stats.scale")}</span>
+              <strong>{byCity.size}</strong>
+              <span>{t("stats.cities")}</span>
             </article>
           </div>
         </ScrollReveal>
@@ -406,7 +403,6 @@ export default function ClientsWorld() {
           </nav>
         ) : null}
 
-        <p className="world-clients__foot">{t("foot")}</p>
       </div>
     </section>
   );

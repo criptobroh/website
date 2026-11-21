@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { inter, spaceGrotesk } from "@/lib/fonts";
@@ -70,6 +70,8 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
+  const clientMessages = { ...await getMessages() };
+  delete clientMessages.DataCenters;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -97,7 +99,7 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-bg-primary text-text-primary">
         <a className="skip-link" href="#main-content">{locale === "es" ? "Saltar al contenido" : "Skip to content"}</a>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={clientMessages}>
           <MotionProvider>
             <Navbar />
             {children}

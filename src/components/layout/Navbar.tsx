@@ -7,7 +7,7 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { CALENDLY_URL, LEARN_URL, NAV_SECTIONS } from "@/lib/constants";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const mobileMenuList: Variants = {
   hidden: {},
@@ -22,6 +22,7 @@ const mobileMenuItem: Variants = {
 export default function Navbar() {
   const t = useTranslations("Navbar");
   const locale = useLocale();
+  const homePath = usePathname() === "/" ? "" : `/${locale}`;
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -67,7 +68,7 @@ export default function Navbar() {
           {NAV_SECTIONS.map((section) => (
             <a
               key={section.id}
-              href={`#${section.id}`}
+              href={`${homePath}#${section.id}`}
               className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
             >
               {t(section.labelKey)}
@@ -132,7 +133,7 @@ export default function Navbar() {
                 <motion.a
                   ref={index === 0 ? firstMobileLinkRef : undefined}
                   key={section.id}
-                  href={`#${section.id}`}
+                  href={`${homePath}#${section.id}`}
                   variants={mobileMenuItem}
                   className="text-lg text-text-secondary hover:text-text-primary transition-colors"
                   onClick={() => setMobileOpen(false)}

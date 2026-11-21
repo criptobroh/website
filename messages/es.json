@@ -112,17 +112,22 @@
       }
     ]
   },
+  "DataCenters": {
+    "eyebrow": "INFRAESTRUCTURA CRÍTICA · OBRA NUEVA Y AMPLIACIONES",
+    "title": "Factibilidad y construcción de data centers",
+    "description": "Evaluamos predio, potencia eléctrica, conectividad y refrigeración. Coordinamos con especialistas el diseño, la obra y la puesta en marcha.",
+    "output": "SALIDA / PLAN POR ETAPAS Y PRESUPUESTO PRELIMINAR",
+    "link": "Hablemos de tu data center"
+  },
   "Clients": {
     "label": "Clientes",
-    "title": "Doce sistemas en producción,",
+    "title": "Sistemas en producción,",
     "titleAccent": "cuatro países.",
     "subtitle": "Cada uno es una operación real que hoy funciona distinta. Tocá una empresa para ver qué hace y qué construimos con ella.",
     "stats": {
       "systems": "Sistemas propios entregados y funcionando en producción.",
       "countries": "España, Argentina, México y Estados Unidos.",
-      "scaleValue": "4,5",
-      "scaleUnit": "B",
-      "scale": "Dólares en activos administrados y volumen procesado por las empresas con las que trabajamos."
+      "cities": "Ciudades donde nuestros clientes operan."
     },
     "mapAlt": "Mapa mundial punteado con marcadores en España, Argentina, México y Estados Unidos, donde NoCoda tiene clientes.",
     "filterAria": "Filtrar clientes por país",
@@ -142,7 +147,6 @@
     "flipHint": "Ver qué hicimos",
     "didLabel": "Qué construimos:",
     "closeAria": "Volver al frente de la tarjeta",
-    "foot": "La cifra combina los activos bajo administración de Grupo IEB (más de USD 3.500 millones) y el volumen anual procesado por seQura (cerca de €1.000 millones), según datos públicos de cada empresa. No representa facturación de NoCoda.",
     "ctaLabel": "El próximo",
     "ctaTitle": "Su operación acá.",
     "ctaNote": "Mapeemos una decisión en 30 minutos",
@@ -158,16 +162,6 @@
         "sector": "Pagos · BNPL",
         "what": "Fintech de Barcelona que financia la compra en el checkout de más de 5.000 comercios del sur de Europa. Mueve unos €1.000 millones al año.",
         "did": "Les construimos agentes autónomos que mejoran su proceso de incorporación de merchants: el paso que define qué tan rápido un comercio nuevo empieza a operar con seQura."
-      },
-      "ieb": {
-        "sector": "Mercado de capitales",
-        "what": "Grupo financiero argentino con más de USD 3.500 millones bajo administración: bróker, fondos, banca privada, real estate y construcción.",
-        "did": "Somos su capa de IA y software a medida: la plataforma interna del grupo, los backoffices de real estate y banca privada, y el CMS que sirve todas sus webs."
-      },
-      "iebc": {
-        "sector": "Construcción e infraestructura",
-        "what": "Constructora argentina que cotiza en bolsa, continuadora de DYCASA: más de 55 años y más de 200 obras, entre ellas Atucha II y el Subte H.",
-        "did": "Su control de gestión de obra: certificados, costos, partes diarios y equipos en una sola app conectada a su ERP, que lee las facturas de proveedores con IA."
       },
       "alveo": {
         "sector": "Vialidad industrial",
