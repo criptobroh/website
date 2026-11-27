@@ -1,28 +1,33 @@
-"use client";
+import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
-
-export default function HowWeWork() {
-  const t = useTranslations("HowWeWork");
-  const steps = [0, 1, 2, 3].map((index) => ({
-    number: t(`steps.${index}.number`),
-    title: t(`steps.${index}.title`),
-    description: t(`steps.${index}.description`),
-  }));
+export default async function HowWeWork() {
+  const t = await getTranslations("HowWeWork");
+  const steps: { title: string; description: string }[] = t.raw("steps");
 
   return (
-    <section id="como-trabajamos" className="operating-line">
-      <div className="operating-line__heading">
-        <div><p className="editorial-kicker">{t("label")}</p><h2>{t("title")}</h2></div>
-        <p>{t("subtitle")}</p>
-      </div>
-      <div className="operating-line__track">
-        {steps.map((step, index) => (
-          <motion.article key={step.number} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.65 }} transition={{ duration: 0.6, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}>
-            <span>{step.number}</span><h3>{step.title}</h3><p>{step.description}</p>
-          </motion.article>
-        ))}
+    <section id="como-trabajamos" className="field-method" aria-labelledby="method-title">
+      <div id="por-que-nocoda" className="studio-wrap">
+        <p className="studio-eyebrow"><span className="signal-line" aria-hidden="true" />{t("label")}</p>
+        <div className="field-method__heading">
+          <h2 id="method-title">{t("title")} <em>{t("accent")}</em></h2>
+          <p>{t("intro")}</p>
+        </div>
+        <div className="field-method__body">
+          <figure className="field-method__portrait">
+            <Image src="/images/pablo-estudio.webp" alt={t("photoAlt")} width={720} height={866}
+              sizes="(max-width: 660px) 100vw, (max-width: 1400px) 38vw, 480px" />
+            <figcaption><span>Pablo Loyúdice</span><span>NoCoda</span></figcaption>
+          </figure>
+          <ol className="field-method__steps">
+            {steps.map((step, i) => (
+              <li key={step.title}>
+                <span className="field-method__index" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+                <div><h3>{step.title}</h3><p>{step.description}</p></div>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );

@@ -1,42 +1,25 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
+import { DATA_CENTERS_PATH } from "@/lib/constants";
 
 export default function LanguageSwitcher() {
-  const locale = useLocale();
-  const router = useRouter();
+  const current = useLocale();
   const pathname = usePathname();
-
-  function switchLocale(newLocale: "es" | "en") {
-    router.replace(pathname, { locale: newLocale });
-  }
-
   return (
-    <div className="flex items-center gap-1 text-sm">
-      <button
-        onClick={() => switchLocale("es")}
-        className={`px-2 py-1 rounded transition-colors cursor-pointer ${
-          locale === "es"
-            ? "text-text-primary font-medium"
-            : "text-text-muted hover:text-text-secondary"
-        }`}
-        aria-label="Cambiar a espanol"
-      >
-        ES
-      </button>
-      <span className="text-text-muted">/</span>
-      <button
-        onClick={() => switchLocale("en")}
-        className={`px-2 py-1 rounded transition-colors cursor-pointer ${
-          locale === "en"
-            ? "text-text-primary font-medium"
-            : "text-text-muted hover:text-text-secondary"
-        }`}
-        aria-label="Switch to English"
-      >
-        EN
-      </button>
+    <div className="studio-languages" role="group" aria-label={current === "es" ? "Idioma" : "Language"}>
+      {(["es", "en"] as const).map((lang) => {
+        const prefix = lang === "es" && pathname === DATA_CENTERS_PATH ? "" : `/${lang}`;
+        const href = `${prefix}${pathname === "/" ? "" : pathname}`;
+        return (
+          <a key={lang} href={href} hrefLang={lang} lang={lang}
+            aria-current={current === lang ? "true" : undefined}
+            aria-label={lang === "es" ? "Español" : "English"}>
+            {lang.toUpperCase()}
+          </a>
+        );
+      })}
     </div>
   );
 }

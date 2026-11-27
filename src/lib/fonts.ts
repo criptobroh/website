@@ -1,13 +1,16 @@
-import { Inter, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 
-export const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
+export const inter = localFont({
+  src: "./fonts/inter-latin.woff2",
+  weight: "400 800",
+  variable: "--type-inter",
   display: "swap",
 });
 
-export const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-display",
+export const instrumentSerif = localFont({
+  src: "./fonts/instrument-serif-italic-latin.woff2",
+  weight: "400",
+  style: "italic",
+  variable: "--type-instrument",
   display: "swap",
 });

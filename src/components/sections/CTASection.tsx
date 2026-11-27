@@ -1,17 +1,19 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
-import Button from "@/components/ui/Button";
+import { getTranslations } from "next-intl/server";
 import { CALENDLY_URL } from "@/lib/constants";
 
-export default function CTASection() {
-  const t = useTranslations("CTA");
-
+export default async function CTASection() {
+  const t = await getTranslations("CTA");
   return (
-    <section className="system-cta">
-      <motion.div className="system-cta__copy" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}><h2>{t("title")}</h2></motion.div>
-      <div className="system-cta__action"><Button href={CALENDLY_URL} size="lg">{t("button")}<span aria-hidden="true">↗</span></Button><small>{t("note")}</small></div>
+    <section id="contacto" className="field-contact" aria-labelledby="contact-title">
+      <div className="studio-wrap field-contact__inner">
+        <div><p className="studio-eyebrow">{t("label")}</p>
+          <h2 id="contact-title">{t("title")} <em>{t("accent")}</em></h2>
+        </div>
+        <div className="field-contact__action">
+          <p>{t("subtitle")}</p>
+          <a className="studio-button studio-button--ink" href={CALENDLY_URL}>{t("button")} <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </section>
   );
 }

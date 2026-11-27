@@ -35,7 +35,7 @@ for (let lat = -56; lat <= 84; lat += STEP) {
 const CITIES = {
   "buenos-aires": [-58.3816, -34.6037],
   barcelona: [2.1734, 41.3851],
-  madrid: [-3.7038, 40.4168],
+  sydney: [151.2093, -33.8688],
   sevilla: [-5.9845, 37.3891],
   cdmx: [-99.1332, 19.4326],
   miami: [-80.1918, 25.7617],
@@ -64,15 +64,14 @@ const box = [
 const viewBox = `${box[0]} ${box[1]} ${box[2] - box[0]} ${box[3] - box[1]}`;
 
 const out = `// Autogenerado por scripts/generate-world-dots.mjs — no editar a mano.
-export const MAP_W = ${W};
-export const MAP_H = ${H};
 export const MAP_VIEWBOX = ${JSON.stringify(viewBox)};
 export type CityKey = ${Object.keys(CITIES)
   .map((k) => `"${k}"`)
   .join(" | ")};
 export const CITY_POINTS: Record<CityKey, [number, number]> = ${JSON.stringify(cities)};
-export const WORLD_DOTS_PATH = ${JSON.stringify(dotsPath)};
 `;
 
 writeFileSync(new URL("../src/lib/world-map.ts", import.meta.url), out);
+const atlas = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}"><path fill="none" stroke="#7d8075" stroke-width="3.3" stroke-linecap="round" d="${dotsPath}"/></svg>\n`;
+writeFileSync(new URL("../public/client-atlas.svg", import.meta.url), atlas);
 console.log(`world-map.ts: ${dots.length} dots, ${Object.keys(cities).length} ciudades`);

@@ -1,0 +1,257 @@
+.page,
+.notFound {
+  --paper: #f4f2ea;
+  --ink: #171815;
+  --orange: #ff6337;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  flex: 1;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.hero,
+.scopeGrid,
+.result,
+.errorContent {
+  width: min(100% - 2 * var(--gutter), 82rem);
+  margin-inline: auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.13fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 6rem);
+  padding-block: clamp(6.8rem, 10vw, 10rem) clamp(4rem, 7vw, 7rem);
+}
+
+.intro,
+.scopeHeading {
+  min-width: 0;
+}
+
+.label,
+.figure figcaption {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  font: 600 .7rem/1.5 ui-monospace, monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.label::before {
+  width: .5rem;
+  height: .5rem;
+  flex: none;
+  background: var(--orange);
+  content: "";
+}
+
+.intro h1 {
+  margin-block: clamp(2rem, 5vw, 4.5rem) 1.6rem;
+  font-size: clamp(4rem, 7.3vw, 7rem);
+  font-weight: 550;
+  letter-spacing: -.075em;
+  line-height: .95;
+}
+
+.intro h1 em,
+.resultTitle {
+  display: block;
+  font-family: var(--type-instrument, Georgia), "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.065em;
+}
+
+.description,
+.scopeHeading p,
+.topics dd {
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.description {
+  max-width: 33rem;
+  color: #45463e;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  padding: .8rem 1.2rem;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: .92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color .2s, color .2s;
+}
+
+.button:hover {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  color: var(--ink);
+  background: var(--orange);
+}
+
+.figure {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #282923;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 4.35;
+  object-fit: cover;
+}
+
+.figure figcaption {
+  position: absolute;
+  inset: auto auto 0 0;
+  max-width: 100%;
+  padding: .75rem 1rem;
+  background: var(--paper);
+}
+
+.scope {
+  padding-block: clamp(4.5rem, 8vw, 8rem);
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.scopeGrid {
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+  gap: clamp(3rem, 9vw, 9rem);
+}
+
+.scopeHeading h2 {
+  max-width: 12ch;
+  font-size: clamp(2.75rem, 5.1vw, 5.25rem);
+  font-weight: 500;
+  letter-spacing: -.07em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.scopeHeading p {
+  max-width: 31rem;
+  margin-top: 1.5rem;
+  color: #c7c7bd;
+}
+
+.topics {
+  margin: 0;
+}
+
+.topics > div {
+  padding-block: 1.5rem;
+  border-top: 1px solid #575951;
+}
+
+.topics > div:last-child {
+  border-bottom: 1px solid #575951;
+}
+
+.topics dt {
+  font-size: clamp(1.35rem, 2.25vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -.04em;
+}
+
+.topics dd {
+  max-width: 48ch;
+  margin: .7rem 0 0;
+  color: #c7c7bd;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+  align-items: baseline;
+  gap: clamp(1.5rem, 9vw, 9rem);
+  margin-top: clamp(3rem, 6vw, 6rem);
+  padding-top: 2rem;
+  border-top: 1px solid #575951;
+}
+
+.resultTitle {
+  max-width: 22ch;
+  font-size: clamp(2rem, 3.6vw, 3.75rem);
+  line-height: 1.1;
+}
+
+.notFound {
+  display: grid;
+  min-height: 75svh;
+  align-content: center;
+  padding-block: 8rem 4rem;
+}
+
+.errorContent {
+  border-top: 1px solid var(--ink);
+  padding-block: 1rem 2rem;
+}
+
+.errorCode {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: .25rem .65rem;
+  background: var(--orange);
+  font: 600 1.15rem/1.3 ui-monospace, monospace;
+}
+
+.errorContent h1 {
+  max-width: 13ch;
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  font-weight: 550;
+  letter-spacing: -.075em;
+  line-height: .98;
+}
+
+@media (max-width: 740px) {
+  .hero,
+  .scopeGrid,
+  .result {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero {
+    gap: 2.25rem;
+  }
+
+  .intro h1 {
+    margin-top: 1.5rem;
+    font-size: clamp(3.45rem, 11.5vw, 5rem);
+  }
+
+  .figure img {
+    aspect-ratio: 1.45;
+  }
+
+  .scopeGrid {
+    gap: 2rem;
+  }
+
+  .result {
+    gap: 1rem;
+  }
+}

@@ -1,31 +1,25 @@
 {
   "Metadata": {
-    "title": "NoCoda | Sistemas de IA que cambian cómo opera el negocio",
-    "description": "Identificamos la decisión de negocio que vale la pena mejorar, exponemos los datos y la lógica operativa detrás de ella y construimos el sistema de IA que la convierte en un cambio operativo medible."
+    "title": "NoCoda | Ingeniería de software e IA dentro de tu operación",
+    "description": "Nos sentamos con tu equipo, entendemos cómo trabaja y construimos a medida el software, la infraestructura y la IA que necesita."
   },
   "Navbar": {
-    "services": "Cómo empezar",
-    "howWeWork": "Nuestro proceso",
-    "whyNoCoda": "Por qué NoCoda",
-    "program": "Programa ejecutivo",
-    "cta": "Mapear una operación",
-    "clients": "Clientes"
+    "services": "Qué construimos",
+    "howWeWork": "Cómo trabajamos",
+    "clients": "Clientes",
+    "navigation": "Navegación principal",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "cta": "Hablemos"
   },
   "Hero": {
-    "badge": "DECISIONES / OPERACIÓN / CRECIMIENTO",
-    "title": "La IA debería mover",
-    "titleAccent": "el negocio.",
-    "subtitle": "Elegimos una decisión, construimos el sistema y medimos el cambio.",
-    "visualAlt": "Un sistema de decisión de NoCoda convierte señales y contexto operativo en acción trazable y aprendizaje medible.",
-    "cta": "Mapear una operación",
-    "secondaryCta": "Ver cómo funciona",
-    "note": "Estrategia, datos y software en un solo equipo responsable.",
-    "rail": [
-      "UNA OPERACIÓN",
-      "UN RESPONSABLE",
-      "UN RESULTADO MEDIBLE",
-      "HECHO PARA OPERAR"
-    ]
+    "badge": "Estudio de ingeniería aplicada",
+    "title": "Mostranos",
+    "titleAccent": "cómo trabajás.",
+    "subtitle": "Nos sentamos con tu equipo, seguimos un caso real y construimos el software, la infraestructura y la IA que hacen falta para resolverlo.",
+    "cta": "Agendar una charla",
+    "secondaryCta": "Explorá ejemplos",
+    "clients": "Trabajamos con"
   },
   "Problem": {
     "label": "Dónde la IA gana su lugar",
@@ -113,127 +107,126 @@
     ]
   },
   "DataCenters": {
-    "eyebrow": "INFRAESTRUCTURA CRÍTICA · OBRA NUEVA Y AMPLIACIONES",
+    "eyebrow": "Infraestructura crítica",
     "title": "Factibilidad y construcción de data centers",
-    "description": "Evaluamos predio, potencia eléctrica, conectividad y refrigeración. Coordinamos con especialistas el diseño, la obra y la puesta en marcha.",
-    "output": "SALIDA / PLAN POR ETAPAS Y PRESUPUESTO PRELIMINAR",
-    "link": "Hablemos de tu data center"
+    "lead": "Del predio al",
+    "accent": "data center.",
+    "description": "Evaluamos la viabilidad de tu próximo data center y coordinamos con especialistas el diseño, la obra y la puesta en marcha.",
+    "scope": "Obra nueva y ampliaciones",
+    "link": "Hablemos de tu proyecto",
+    "workTitle": "Qué hace falta para construir.",
+    "workIntro": "Antes de definir la obra, contrastamos lo que necesita la operación con lo que puede sostener el predio.",
+    "site": "Predio y potencia",
+    "siteDetail": "Revisamos el espacio disponible, la potencia eléctrica y el margen para crecer.",
+    "systems": "Conectividad y refrigeración",
+    "systemsDetail": "Con los especialistas, evaluamos cómo llegarán los enlaces al sitio y cómo se disipará el calor de los equipos.",
+    "delivery": "Obra y puesta en marcha",
+    "deliveryDetail": "Ordenamos las etapas, coordinamos a quienes intervienen y acompañamos la puesta en servicio.",
+    "outputLabel": "Qué te llevás",
+    "output": "Un plan por etapas y un presupuesto preliminar.",
+    "imageAlt": "Pasillo entre racks de servidores con tendidos de fibra naranja."
   },
   "Clients": {
     "label": "Clientes",
-    "title": "Sistemas en producción,",
-    "titleAccent": "cuatro países.",
-    "subtitle": "Cada uno es una operación real que hoy funciona distinta. Tocá una empresa para ver qué hace y qué construimos con ella.",
-    "stats": {
-      "systems": "Sistemas propios entregados y funcionando en producción.",
-      "countries": "España, Argentina, México y Estados Unidos.",
-      "cities": "Ciudades donde nuestros clientes operan."
-    },
-    "mapAlt": "Mapa mundial punteado con marcadores en España, Argentina, México y Estados Unidos, donde NoCoda tiene clientes.",
+    "title": "Lo que construimos juntos.",
+    "subtitle": "Detrás de cada nombre hay un trabajo concreto. Explorá los proyectos por país y conocé qué hicimos con cada equipo.",
+    "teams": "clientes",
+    "countriesLabel": "países",
+    "mapAlt": "Mapa de los países donde están nuestros clientes",
+    "mapHint": "Elegí un país para explorar sus proyectos.",
     "filterAria": "Filtrar clientes por país",
-    "filterAll": "Todos",
+    "all": "Todos",
     "countries": {
       "ar": "Argentina",
+      "au": "Australia",
       "es": "España",
-      "mx": "México",
-      "us": "Estados Unidos"
+      "us": "Estados Unidos",
+      "mx": "México"
     },
-    "countriesShort": {
-      "ar": "ARGENTINA",
-      "es": "ESPAÑA",
-      "mx": "MÉXICO",
-      "us": "EE. UU."
-    },
-    "flipHint": "Ver qué hicimos",
-    "didLabel": "Qué construimos:",
-    "closeAria": "Volver al frente de la tarjeta",
-    "ctaLabel": "El próximo",
-    "ctaTitle": "Su operación acá.",
-    "ctaNote": "Mapeemos una decisión en 30 minutos",
-    "markerAria": "{country}: {count, plural, one {# cliente} other {# clientes}}. Tocá para filtrar.",
-    "panelCount": "{count, plural, one {# cliente} other {# clientes}}",
-    "pagerAria": "Paginación de clientes",
-    "prev": "Anteriores",
-    "next": "Siguientes",
-    "swipeHint": "Deslizá para ver más",
-    "panelIdle": "Pasá el mouse por un país para ver sus clientes.",
+    "marker": "{country}, {count, plural, one {# cliente} other {# clientes}}",
+    "resultCount": "{count, plural, one {# cliente en la selección} other {# clientes en la selección}}",
+    "showAll": "Ver los {count} clientes",
+    "showFewer": "Mostrar menos",
     "cards": {
       "sequra": {
-        "sector": "Pagos · BNPL",
-        "what": "Fintech de Barcelona que financia la compra en el checkout de más de 5.000 comercios del sur de Europa. Mueve unos €1.000 millones al año.",
-        "did": "Les construimos agentes autónomos que mejoran su proceso de incorporación de merchants: el paso que define qué tan rápido un comercio nuevo empieza a operar con seQura."
-      },
-      "alveo": {
-        "sector": "Vialidad industrial",
-        "what": "Fabricante mexicano de señalamiento vial y plásticos industriales por rotomoldeo, con planta propia en CDMX y obra pública entre sus clientes.",
-        "did": "Convertimos lo que resolvimos para una empresa en producto para una industria: productos tech con IA para vialidad industrial, vendidos como activo reutilizable."
-      },
-      "seeds": {
-        "sector": "Talento externo",
-        "what": "Consultora de talento externo de LATAM y Estados Unidos: más de 70.000 profesionales en red y más de 500 proyectos ejecutados para empresas líderes.",
-        "did": "Les montamos la operación con IA adentro: app propia con chat sobre su conocimiento, backoffice de 17 pantallas, workflows automatizados y un servidor a medida conectado a su CRM."
-      },
-      "martis": {
-        "sector": "E-commerce · Autopartes",
-        "what": "Importador de autopartes que compra en Miami y entrega puerta a puerta en Argentina, con precio final en pesos y todo incluido.",
-        "did": "Marketplace llave en mano: catálogo real de 2.958 piezas con 21.481 compatibilidades, motor de precios de Miami a pesos, checkout, chat con IA y back office completo."
-      },
-      "areafit": {
-        "sector": "Gimnasios · Fitness",
-        "what": "Cadena de gimnasios sevillana con cerca de veinte centros en España, del premium al low cost. Facturó 18 millones de euros en 2025.",
-        "did": "El panel de control de Fiti, su asistente de IA en WhatsApp e Instagram: centraliza las conversaciones de todos los centros y mide valoraciones, contactos y temas de consulta."
-      },
-      "psima": {
-        "sector": "Salud mental",
-        "what": "Clínica de psicología online con más de 200 profesionales que atiende a la comunidad hispanohablante en todo el mundo por videollamada.",
-        "did": "Construimos y operamos su backoffice: pacientes, profesionales, pagos, conciliaciones, atención por WhatsApp, retención y métricas. Más una auditoría de seguridad de 599 endpoints."
-      },
-      "elliecare": {
-        "sector": "Salud · AgeTech",
-        "what": "Healthtech de cuidado del adulto mayor: reloj autónomo con detección de caídas y análisis cognitivo por voz con aprobación de la FDA. 4.000 usuarios en siete países.",
-        "did": "Les construimos las películas de legado: de un puñado de fotos y una consigna, la IA escribe la historia, la narra, anima las imágenes y entrega la película terminada."
+        "sector": "Pagos",
+        "what": "seQura financia compras en el momento del pago para comercios del sur de Europa.",
+        "did": "Construimos agentes de IA para acompañar el alta de comercios, desde la incorporación de un nuevo negocio hasta que puede ofrecer financiación en su tienda."
       },
       "scuticchio": {
         "sector": "Producción de eventos",
-        "what": "Productora integral de eventos de Buenos Aires, desde 1990: sonido, iluminación, video y streaming para convenciones y espectáculos, en cuatro divisiones.",
-        "did": "Backoffice a medida que reemplazó su Bubble: presupuestos con exportación bilingüe, 3.359 clientes y 9.543 eventos migrados, e inventario de 2.486 unidades con QR."
+        "what": "Productora de sonido, iluminación, video y streaming de Buenos Aires.",
+        "did": "Reemplazamos su sistema de gestión y migramos el historial de más de 9.500 eventos. El equipo prepara presupuestos bilingües y usa códigos QR para identificar cada pieza de su inventario."
+      },
+      "legalwise": {
+        "sector": "Formación jurídica",
+        "what": "Legalwise Seminars ofrece formación profesional continua para abogados en Australia.",
+        "did": "Diseñamos y construimos un portal para estudios jurídicos. Quienes coordinan la formación pueden distribuir horas entre abogados, consultar su avance y reunir certificados para los reportes del estudio."
+      },
+      "alveo": {
+        "sector": "Vialidad industrial",
+        "what": "Alveo fabrica señalización vial y piezas plásticas en Ciudad de México.",
+        "did": "Trabajamos con su equipo para convertir una solución de IA propia en productos que otras empresas de vialidad industrial también pueden usar."
+      },
+      "seeds": {
+        "sector": "Talento",
+        "what": "Seeds conecta empresas con profesionales independientes en Latinoamérica y Estados Unidos.",
+        "did": "Conectamos el CRM, un panel de operaciones y un asistente que consulta el conocimiento interno. El equipo puede buscar información y automatizar tareas de seguimiento con datos de sus propios sistemas."
+      },
+      "martis": {
+        "sector": "Comercio electrónico",
+        "what": "Marti’s lleva autopartes desde Miami hasta la puerta del comprador en Argentina.",
+        "did": "Construimos una tienda que cruza 2.958 piezas con más de 21.000 compatibilidades. El comprador identifica la pieza correcta y ve el precio final en pesos. El equipo administra catálogo, precios y pedidos desde el mismo sistema."
+      },
+      "areafit": {
+        "sector": "Gimnasios",
+        "what": "AreaFit opera una red de gimnasios en España.",
+        "did": "Construimos el panel de Fiti, su asistente en WhatsApp e Instagram. El equipo de la cadena puede leer conversaciones de cada sede, ver los temas más frecuentes y revisar cómo valoran la atención sus clientes."
+      },
+      "psima": {
+        "sector": "Salud mental",
+        "what": "Psi Mammoliti atiende por videollamada a pacientes de la comunidad hispanohablante.",
+        "did": "Construimos y operamos el sistema que conecta pacientes, profesionales, pagos y conciliaciones. También reúne el seguimiento por WhatsApp y las métricas que usa el equipo en su trabajo diario."
+      },
+      "elliecare": {
+        "sector": "Tecnología para el cuidado",
+        "what": "Ellie Care desarrolla tecnología para personas mayores y sus familias.",
+        "did": "Construimos un sistema que transforma fotos familiares y un recuerdo escrito en una película narrada. La IA arma la historia, genera la voz, anima las imágenes y entrega el video."
       },
       "ulc": {
-        "sector": "Logística · Comex",
-        "what": "Operador argentino de logística y comercio exterior que prospecta importadores y exportadores como clientes.",
-        "did": "CRM de prospección propio: busca empresas por posición arancelaria en data aduanera, enriquece los contactos y ordena los leads según su perfil ideal."
+        "sector": "Logística",
+        "what": "ULC trabaja con importadores y exportadores en Argentina.",
+        "did": "Creamos un CRM que encuentra empresas según los productos que importan o exportan. Cruza datos aduaneros, completa los contactos y ordena los prospectos según el perfil que busca el equipo comercial."
       },
       "muecas": {
-        "sector": "Alimentos · Consumo",
-        "what": "Marca argentina de snacks reales: barras, chocolates y alfajores, con venta por distribuidores y canales propios.",
-        "did": "Programa completo de IA: un asistente interno que responde sobre la documentación real de la empresa, automatizaciones propias y capacitación al equipo para operarlas."
+        "sector": "Alimentos",
+        "what": "Muecas produce y distribuye barras, chocolates y alfajores.",
+        "did": "Construimos un asistente que responde preguntas a partir de la documentación de la empresa, automatizamos tareas internas y capacitamos al equipo para mantenerlas."
       }
     }
   },
   "HowWeWork": {
-    "label": "De la decisión a la operación",
-    "title": "Una sola línea entre la pregunta de negocio y el sistema funcionando.",
-    "subtitle": "Sin handoff de estrategia. Sin construcción técnica aislada. Quienes definen el resultado siguen siendo responsables hasta producción.",
+    "label": "El método FDE",
+    "title": "El equipo que te escucha",
+    "accent": "es el que construye.",
+    "intro": "A eso le llamamos Forward Deployed Engineering. Nuestros ingenieros trabajan junto a las personas que conocen la operación y siguen involucrados cuando el sistema entra en uso.",
+    "photoAlt": "Pablo Loyúdice en el estudio de NoCoda.",
     "steps": [
       {
-        "number": "01",
-        "title": "Definir el movimiento",
-        "description": "Nombramos la decisión, su responsable, el valor económico y la evidencia que permitiría mejorarla."
+        "title": "Seguimos un caso real.",
+        "description": "Pedimos ver el último pedido, reclamo o cierre. Quien lo resolvió nos muestra cada paso, incluida esa planilla que solo conoce su equipo."
       },
       {
-        "number": "02",
-        "title": "Exponer la operación",
-        "description": "Trazamos el flujo real, los datos, las reglas, las excepciones y el juicio humano detrás del resultado actual."
+        "title": "Diseñamos con quienes lo usan.",
+        "description": "Dibujamos el recorrido de los datos, ubicamos la traba y acordamos qué tendría que cambiar. Probamos una primera versión con la misma gente que nos abrió la puerta."
       },
       {
-        "number": "03",
-        "title": "Construir el sistema",
-        "description": "Entregamos el sistema completo más pequeño que conecta contexto con acción y tiene controles incorporados."
+        "title": "Construimos la infraestructura.",
+        "description": "Conectamos las herramientas existentes, ordenamos los datos y definimos permisos. La aplicación, los modelos de IA y las integraciones comparten una base que el equipo puede operar."
       },
       {
-        "number": "04",
-        "title": "Operar y aprender",
-        "description": "Lo incorporamos al equipo, medimos el resultado y mejoramos el circuito de decisión desde el uso real."
+        "title": "Nos quedamos en producción.",
+        "description": "Acompañamos las primeras semanas de uso, monitoreamos errores y ajustamos con casos nuevos. El equipo aprende a operar el sistema y sabe a quién llamar cuando algo cambia."
       }
     ]
   },
@@ -292,16 +285,18 @@
     ]
   },
   "CTA": {
-    "title": "Traigan una operación que debería funcionar mejor.",
-    "subtitle": "En una conversación vamos a mapear la decisión, la fricción y el camino más creíble hacia un resultado medible.",
-    "button": "Mapear la operación",
-    "note": "30 MINUTOS · UN PROBLEMA REAL · SIN TEATRO COMERCIAL"
+    "label": "Contacto",
+    "title": "¿Dónde se traba",
+    "accent": "tu operación?",
+    "subtitle": "Traé un caso a una charla de 30 minutos. Puede ser la última factura que hubo que revisar o un pedido que pasó por cinco manos. Arrancamos por ahí.",
+    "button": "Agendar una charla"
   },
   "Footer": {
-    "description": "Estrategia, datos y sistemas de IA que cambian cómo funciona el negocio.",
-    "navigation": "Navegación",
+    "description": "Ingeniería de software, infraestructura e IA junto a quienes hacen el trabajo.",
+    "explore": "Más de NoCoda",
+    "program": "Formación ejecutiva",
+    "newsroom": "Redacción con IA",
     "contact": "Contacto",
-    "rights": "Todos los derechos reservados.",
-    "home": "Inicio"
+    "top": "Volver arriba"
   }
 }

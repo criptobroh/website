@@ -4,11 +4,10 @@ import { notFound } from "next/navigation";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
-import { inter, spaceGrotesk } from "@/lib/fonts";
+import { inter, instrumentSerif } from "@/lib/fonts";
 import { SITE_URL, SITE_NAME, SOCIAL_LINKS } from "@/lib/constants";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import MotionProvider from "@/components/motion/MotionProvider";
 import "../globals.css";
 
 export function generateStaticParams() {
@@ -22,6 +21,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  const socialImage = { url: `/images/nocoda-${locale}.jpg`, width: 1200, height: 630, alt: t("title") };
 
   return {
     title: t("title"),
@@ -42,9 +43,11 @@ export async function generateMetadata({
       siteName: SITE_NAME,
       locale: locale === "es" ? "es_AR" : "en_US",
       type: "website",
+      images: [socialImage],
     },
     twitter: {
       card: "summary_large_image",
+      images: [socialImage],
       title: t("title"),
       description: t("description"),
     },
@@ -70,8 +73,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const clientMessages = { ...await getMessages() };
-  delete clientMessages.DataCenters;
+  const { Navbar: navMessages, Clients: clientMessages } = await getMessages();
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -81,15 +83,15 @@ export default async function LocaleLayout({
     logo: `${SITE_URL}/logo.png`,
     description:
       locale === "es"
-        ? "Estrategia, datos y sistemas de IA que convierten decisiones en cambios operativos medibles"
-        : "Strategy, data and AI systems that turn decisions into measurable operating change",
+        ? "Estudio de ingeniería que construye software, infraestructura y sistemas de IA junto a los equipos que los usan."
+        : "An engineering studio building software, infrastructure and AI systems alongside the teams that use them.",
     sameAs: [SOCIAL_LINKS.linkedin, SOCIAL_LINKS.youtube],
   };
 
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
+      className={`${inter.variable} ${instrumentSerif.variable} antialiased`}
     >
       <head>
         <script
@@ -99,12 +101,10 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-bg-primary text-text-primary">
         <a className="skip-link" href="#main-content">{locale === "es" ? "Saltar al contenido" : "Skip to content"}</a>
-        <NextIntlClientProvider messages={clientMessages}>
-          <MotionProvider>
-            <Navbar />
-            {children}
-            <Footer />
-          </MotionProvider>
+        <NextIntlClientProvider messages={{ Navbar: navMessages, Clients: clientMessages }}>
+          <Navbar />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

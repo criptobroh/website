@@ -1,6 +1,6 @@
 import type { CityKey } from "./world-map";
 
-export type CountryCode = "ar" | "es" | "mx" | "us";
+export type CountryCode = "ar" | "au" | "es" | "mx" | "us";
 
 export type Client = {
   key: string;
@@ -11,17 +11,18 @@ export type Client = {
   url: string;
 };
 
-export const COUNTRY_ORDER: CountryCode[] = ["ar", "es", "mx", "us"];
+export const COUNTRY_ORDER: CountryCode[] = ["ar", "au", "es", "us", "mx"];
 
 export const CLIENTS: Client[] = [
   { key: "sequra", mark: "seQura", country: "es", city: "barcelona", url: "https://sequra.com" },
+  { key: "scuticchio", mark: "Scuticchio Convention Support", country: "ar", city: "buenos-aires", url: "https://scuticchio.com.ar" },
+  { key: "legalwise", mark: "Legalwise Seminars", country: "au", city: "sydney", url: "https://legalwiseseminars.com.au" },
   { key: "alveo", mark: "Alveo Trafiplastic", country: "mx", city: "cdmx", url: "https://alveo.mx" },
   { key: "seeds", mark: "Seeds", country: "ar", city: "buenos-aires", url: "https://www.weareseeds.com" },
   { key: "martis", mark: "Marti’s", country: "us", city: "miami", url: "https://martis.lat" },
   { key: "areafit", mark: "Areafit", country: "es", city: "sevilla", url: "https://www.areafit.es" },
   { key: "psima", mark: "Psi Mammoliti", country: "ar", city: "buenos-aires", url: "https://www.psimammoliti.com" },
   { key: "elliecare", mark: "Ellie Care", country: "ar", city: "buenos-aires", url: "https://www.elliecare.com" },
-  { key: "scuticchio", mark: "Scuticchio Convention Support", country: "ar", city: "buenos-aires", url: "https://scuticchio.com.ar" },
   { key: "ulc", mark: "ULC", country: "ar", city: "buenos-aires", url: "https://www.ulc.today" },
   { key: "muecas", mark: "Muecas", country: "ar", city: "buenos-aires", url: "https://muecas.com.ar" },
 ];

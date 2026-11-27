@@ -1,165 +1,59 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { AnimatePresence, motion, type Variants } from "framer-motion";
-import Image from "next/image";
-import Button from "@/components/ui/Button";
+import { usePathname } from "@/i18n/navigation";
+import Brand from "./Brand";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { CALENDLY_URL, LEARN_URL, NAV_SECTIONS } from "@/lib/constants";
-import { Link, usePathname } from "@/i18n/navigation";
-
-const mobileMenuList: Variants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.045, delayChildren: 0.02 } },
-};
-
-const mobileMenuItem: Variants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.24, ease: [0.22, 1, 0.36, 1] } },
-};
+import { CALENDLY_URL, NAV_SECTIONS } from "@/lib/constants";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
   const locale = useLocale();
-  const homePath = usePathname() === "/" ? "" : `/${locale}`;
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const menuButtonRef = useRef<HTMLButtonElement>(null);
-  const firstMobileLinkRef = useRef<HTMLAnchorElement>(null);
+  const home = usePathname() === "/" ? "" : `/${locale}`;
+  const [open, setOpen] = useState(false);
+  const header = useRef<HTMLElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => {
-    if (!mobileOpen) return;
-    firstMobileLinkRef.current?.focus();
-    const closeOnEscape = (event: KeyboardEvent) => {
+    if (!open) return;
+    function dismiss(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setMobileOpen(false);
-        menuButtonRef.current?.focus();
+        setOpen(false);
+        trigger.current?.focus();
       }
+    }
+    function outside(event: PointerEvent) {
+      if (event.target instanceof Node && !header.current?.contains(event.target)) setOpen(false);
+    }
+    document.addEventListener("keydown", dismiss);
+    document.addEventListener("pointerdown", outside);
+    return () => {
+      document.removeEventListener("keydown", dismiss);
+      document.removeEventListener("pointerdown", outside);
     };
-    window.addEventListener("keydown", closeOnEscape);
-    return () => window.removeEventListener("keydown", closeOnEscape);
-  }, [mobileOpen]);
+  }, [open]);
 
   return (
-    <header
-      className={`nocoda-nav fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "is-scrolled" : ""}`}
-    >
-      <nav className="nocoda-nav__frame max-w-[1240px] mx-auto px-5 flex items-center justify-between h-[56px]">
-        <Link href="/" className="nocoda-nav__brand flex items-center gap-2.5">
-          <Image
-            src="/logo.png"
-            alt="NoCoda"
-            width={32}
-            height={32}
-            className="h-8 w-auto rounded-lg"
-            preload
-          />
-          <span>NoCoda</span>
-        </Link>
-
-        <div className="hidden md:flex items-center gap-8">
-          {NAV_SECTIONS.map((section) => (
-            <a
-              key={section.id}
-              href={`${homePath}#${section.id}`}
-              className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-200"
-            >
-              {t(section.labelKey)}
-            </a>
-          ))}
-          <a href={LEARN_URL} className="text-sm text-text-secondary hover:text-text-primary transition-all duration-200">{t("program")}</a>
-        </div>
-
-        <div className="hidden md:flex items-center gap-4">
-          <LanguageSwitcher />
-          <div>
-            <Button href={CALENDLY_URL} size="sm">
-              {t("cta")}
-            </Button>
-          </div>
-        </div>
-
-        <button
-          ref={menuButtonRef}
-          className="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? (locale === "es" ? "Cerrar menú" : "Close menu") : (locale === "es" ? "Abrir menú" : "Open menu")}
-          aria-expanded={mobileOpen}
-          aria-controls="mobile-navigation"
-        >
-          <span
-            className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
-              mobileOpen ? "rotate-45 translate-y-2" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
-              mobileOpen ? "opacity-0" : ""
-            }`}
-          />
-          <span
-            className={`block w-6 h-0.5 bg-text-primary transition-all duration-300 ${
-              mobileOpen ? "-rotate-45 -translate-y-2" : ""
-            }`}
-          />
+    <header className="studio-nav" ref={header} onBlur={(event) => {
+      if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+    }}>
+      <nav className="studio-wrap studio-nav__row" aria-label={t("navigation")}>
+        <Brand />
+        <button className="studio-menu-button" ref={trigger} aria-expanded={open}
+          aria-controls="studio-nav-links" onClick={() => setOpen(!open)}>
+          {open ? t("close") : t("menu")} <span aria-hidden="true">{open ? "×" : "☰"}</span>
         </button>
+        <div id="studio-nav-links" className="studio-nav__links" data-open={open}>
+          <div className="studio-nav__sections">
+            {NAV_SECTIONS.map(({ id, labelKey }) => (
+              <a key={id} href={`${home}#${id}`} onClick={() => setOpen(false)}>{t(labelKey)}</a>
+            ))}
+          </div>
+          <LanguageSwitcher />
+          <a className="studio-nav__talk" href={CALENDLY_URL}>{t("cta")} <span aria-hidden="true">↗</span></a>
+        </div>
       </nav>
-
-      <AnimatePresence>
-        {mobileOpen && (
-          <motion.div
-            id="mobile-navigation"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            style={{ pointerEvents: "auto" }}
-            className="nocoda-nav__mobile-menu md:hidden glass-strong overflow-hidden"
-          >
-            <motion.div
-              className="px-6 py-8 flex flex-col gap-6"
-              variants={mobileMenuList}
-              initial="hidden"
-              animate="visible"
-            >
-              {NAV_SECTIONS.map((section, index) => (
-                <motion.a
-                  ref={index === 0 ? firstMobileLinkRef : undefined}
-                  key={section.id}
-                  href={`${homePath}#${section.id}`}
-                  variants={mobileMenuItem}
-                  className="text-lg text-text-secondary hover:text-text-primary transition-colors"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {t(section.labelKey)}
-                </motion.a>
-              ))}
-              <motion.a
-                href={LEARN_URL}
-                variants={mobileMenuItem}
-                className="text-lg text-text-secondary hover:text-text-primary transition-colors"
-                onClick={() => setMobileOpen(false)}
-              >
-                {t("program")}
-              </motion.a>
-              <motion.div
-                variants={mobileMenuItem}
-                className="pt-4 border-t border-border flex flex-col gap-4"
-              >
-                <LanguageSwitcher />
-                <Button href={CALENDLY_URL}>{t("cta")}</Button>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </header>
   );
 }

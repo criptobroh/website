@@ -1,31 +1,25 @@
 {
   "Metadata": {
-    "title": "NoCoda | AI systems that change how the business runs",
-    "description": "We identify the business decision worth improving, expose the data and operating logic behind it, and build the AI system that turns it into measurable operating change."
+    "title": "NoCoda | Software and AI engineering inside your operation",
+    "description": "We work alongside your team to understand the job and build the software, infrastructure and AI it takes to do it well."
   },
   "Navbar": {
-    "services": "Ways to work",
-    "howWeWork": "Our process",
-    "whyNoCoda": "Why NoCoda",
-    "program": "Executive program",
-    "cta": "Map an operation",
-    "clients": "Clients"
+    "services": "What we build",
+    "howWeWork": "How we work",
+    "clients": "Clients",
+    "navigation": "Main navigation",
+    "menu": "Menu",
+    "close": "Close",
+    "cta": "Let’s talk"
   },
   "Hero": {
-    "badge": "DECISIONS / OPERATIONS / GROWTH",
-    "title": "AI should move",
-    "titleAccent": "the business.",
-    "subtitle": "We choose a decision, build the system and measure the change.",
-    "visualAlt": "A NoCoda decision system turns signals and operating context into traceable action and measurable learning.",
-    "cta": "Map an operation",
-    "secondaryCta": "See how it works",
-    "note": "Strategy, data and software in one accountable team.",
-    "rail": [
-      "ONE OPERATION",
-      "ONE OWNER",
-      "ONE MEASURABLE RESULT",
-      "BUILT TO RUN"
-    ]
+    "badge": "Applied engineering studio",
+    "title": "Show us",
+    "titleAccent": "how you work.",
+    "subtitle": "We sit down with your team, follow a real case from start to finish, and build the software, infrastructure and AI it takes to solve it.",
+    "cta": "Book a conversation",
+    "secondaryCta": "Explore examples",
+    "clients": "Teams we work with"
   },
   "Problem": {
     "label": "Where AI earns its place",
@@ -113,127 +107,126 @@
     ]
   },
   "DataCenters": {
-    "eyebrow": "CRITICAL INFRASTRUCTURE · NEW BUILDS AND EXPANSIONS",
+    "eyebrow": "Critical infrastructure",
     "title": "Data center feasibility and construction",
-    "description": "We assess the site, power, connectivity and cooling. We coordinate design, construction and commissioning with specialists.",
-    "output": "OUTPUT / PHASED PLAN AND PRELIMINARY BUDGET",
-    "link": "Discuss your data center project"
+    "lead": "From site to",
+    "accent": "data center.",
+    "description": "We assess the feasibility of your next data center and coordinate design, construction and commissioning with specialists.",
+    "scope": "New builds and expansions",
+    "link": "Discuss your project",
+    "workTitle": "What it takes to build.",
+    "workIntro": "Before defining the build, we compare what the operation needs with what the site can support.",
+    "site": "Site and power",
+    "siteDetail": "We review the available space, electrical capacity and room for future expansion.",
+    "systems": "Connectivity and cooling",
+    "systemsDetail": "With the specialists, we assess how network links will reach the site and how the facility will remove heat from the equipment.",
+    "delivery": "Construction and commissioning",
+    "deliveryDetail": "We sequence the work, coordinate the specialists involved and support the facility through commissioning.",
+    "outputLabel": "What you get",
+    "output": "A phased plan and a preliminary budget.",
+    "imageAlt": "A server aisle lined with equipment racks and orange fiber cables."
   },
   "Clients": {
     "label": "Clients",
-    "title": "Systems in production,",
-    "titleAccent": "four countries.",
-    "subtitle": "Each one is a real operation that runs differently today. Tap a company to see what it does and what we built with it.",
-    "stats": {
-      "systems": "Custom systems delivered and running in production.",
-      "countries": "Spain, Argentina, Mexico and the United States.",
-      "cities": "Cities where our clients operate."
-    },
-    "mapAlt": "Dotted world map with markers over Spain, Argentina, Mexico and the United States, where NoCoda has clients.",
+    "title": "What we built together.",
+    "subtitle": "Each name here has a different job to do. Explore the projects by country and see what we built with each team.",
+    "teams": "clients",
+    "countriesLabel": "countries",
+    "mapAlt": "Map of the countries where our clients are based",
+    "mapHint": "Choose a country to explore its projects.",
     "filterAria": "Filter clients by country",
-    "filterAll": "All",
+    "all": "All",
     "countries": {
       "ar": "Argentina",
+      "au": "Australia",
       "es": "Spain",
-      "mx": "Mexico",
-      "us": "United States"
+      "us": "United States",
+      "mx": "Mexico"
     },
-    "countriesShort": {
-      "ar": "ARGENTINA",
-      "es": "SPAIN",
-      "mx": "MEXICO",
-      "us": "U.S."
-    },
-    "flipHint": "See what we built",
-    "didLabel": "What we built:",
-    "closeAria": "Flip the card back",
-    "ctaLabel": "Next",
-    "ctaTitle": "Your operation here.",
-    "ctaNote": "Let's map one decision in 30 minutes",
-    "markerAria": "{country}: {count, plural, one {# client} other {# clients}}. Tap to filter.",
-    "panelCount": "{count, plural, one {# client} other {# clients}}",
-    "pagerAria": "Client pagination",
-    "prev": "Previous",
-    "next": "Next",
-    "swipeHint": "Swipe to see more",
-    "panelIdle": "Hover a country to see its clients.",
+    "marker": "{country}, {count, plural, one {# client} other {# clients}}",
+    "resultCount": "{count, plural, one {# client in this selection} other {# clients in this selection}}",
+    "showAll": "See all {count} clients",
+    "showFewer": "Show fewer",
     "cards": {
       "sequra": {
-        "sector": "Payments · BNPL",
-        "what": "Barcelona fintech financing checkout for over 5,000 merchants across Southern Europe, moving around €1 billion a year.",
-        "did": "We built autonomous agents that improve their merchant onboarding: the step that decides how quickly a new merchant starts operating with seQura."
-      },
-      "alveo": {
-        "sector": "Road infrastructure",
-        "what": "Mexican manufacturer of road-safety signage and industrial rotomolded plastics, with its own plant in Mexico City and public infrastructure among its clients.",
-        "did": "We turned what we solved for one company into product for an industry: AI-powered tech products for road infrastructure, sold as a reusable asset."
-      },
-      "seeds": {
-        "sector": "External talent",
-        "what": "Talent consultancy across LATAM and the United States: over 70,000 professionals in its network and more than 500 projects delivered for leading companies.",
-        "did": "We rebuilt their operation with AI inside: their own app with a chat over their knowledge base, a 17-screen back office, automated workflows and a custom server wired to their CRM."
-      },
-      "martis": {
-        "sector": "E-commerce · Auto parts",
-        "what": "Auto parts importer buying in Miami and delivering door to door in Argentina, with an all-in final price in local currency.",
-        "did": "A turnkey marketplace: a real catalog of 2,958 parts with 21,481 vehicle fitments, a Miami-to-pesos pricing engine, checkout, AI chat and a full back office."
-      },
-      "areafit": {
-        "sector": "Gyms · Fitness",
-        "what": "Seville-based gym chain running close to twenty centers across Spain, from premium to low cost. It billed 18 million euros in 2025.",
-        "did": "The control panel for Fiti, their AI assistant on WhatsApp and Instagram: it centralizes conversations from every center and tracks ratings, contacts and inquiry topics."
-      },
-      "psima": {
-        "sector": "Mental health",
-        "what": "Online psychology practice with more than 200 professionals serving the Spanish-speaking world over video.",
-        "did": "We built and run their back office: patients, practitioners, payments, reconciliation, WhatsApp support, retention and metrics — plus a security audit across 599 endpoints."
-      },
-      "elliecare": {
-        "sector": "Health · AgeTech",
-        "what": "Elder care healthtech: a standalone watch with fall detection and FDA-cleared cognitive analysis from voice. 4,000 users across seven countries.",
-        "did": "We built their legacy films: from a handful of photos and a prompt, the AI writes the story, narrates it, animates the images and delivers the finished film."
+        "sector": "Payments",
+        "what": "seQura provides checkout financing for merchants across southern Europe.",
+        "did": "We built AI agents to support merchant onboarding, from the moment a business joins seQura until it can offer financing at checkout."
       },
       "scuticchio": {
         "sector": "Event production",
-        "what": "Buenos Aires event production company running since 1990: sound, lighting, video and streaming for conventions and shows, across four divisions.",
-        "did": "A custom back office that replaced their Bubble app: bilingual quote exports, 3,359 clients and 9,543 events migrated, and 2,486 inventory units tracked with QR codes."
+        "what": "Scuticchio is a Buenos Aires production company specializing in sound, lighting, video and streaming.",
+        "did": "We replaced its operations system and migrated the records for over 9,500 events. The team prepares bilingual quotes and scans QR codes to identify individual pieces of equipment."
+      },
+      "legalwise": {
+        "sector": "Legal education",
+        "what": "Legalwise Seminars provides continuing professional development for lawyers in Australia.",
+        "did": "We designed and built a portal for law firms. Learning managers can allocate training hours to lawyers, track their progress and collect certificates for firm-wide reporting."
+      },
+      "alveo": {
+        "sector": "Road infrastructure",
+        "what": "Alveo manufactures road signage and molded plastic products in Mexico City.",
+        "did": "We worked with the team to turn an AI application built for Alveo into products that other road infrastructure companies can use."
+      },
+      "seeds": {
+        "sector": "Talent",
+        "what": "Seeds connects companies with independent professionals across Latin America and the United States.",
+        "did": "We connected its CRM, an operations dashboard and an assistant that searches internal knowledge. The team can look up information and automate follow-up tasks using its own data."
+      },
+      "martis": {
+        "sector": "E-commerce",
+        "what": "Marti’s ships auto parts from Miami directly to customers in Argentina.",
+        "did": "We built a storefront that matches 2,958 parts against more than 21,000 vehicle compatibility records. Buyers find the right part and see the final price in pesos. Staff manage the catalog, pricing and orders in the same system."
+      },
+      "areafit": {
+        "sector": "Fitness",
+        "what": "AreaFit runs a network of gyms in Spain.",
+        "did": "We built the dashboard for Fiti, its WhatsApp and Instagram assistant. The team can read conversations by location, identify common questions and see how customers rate the support they receive."
+      },
+      "psima": {
+        "sector": "Mental health",
+        "what": "Psi Mammoliti provides online therapy to Spanish-speaking patients worldwide.",
+        "did": "We built and operate the system that connects patients, therapists, payments and reconciliation. It also brings together WhatsApp follow-ups and the metrics the team uses every day."
+      },
+      "elliecare": {
+        "sector": "Care technology",
+        "what": "Ellie Care develops technology for older adults and their families.",
+        "did": "We built a system that turns family photographs and a written memory into a narrated film. AI writes the story, generates the voiceover, animates the images and delivers the video."
       },
       "ulc": {
-        "sector": "Logistics · Trade",
-        "what": "Argentine logistics and foreign trade operator prospecting importers and exporters as clients.",
-        "did": "Their own prospecting CRM: it finds companies by tariff code in customs data, enriches the contacts and ranks leads against their ideal profile."
+        "sector": "Logistics",
+        "what": "ULC works with importers and exporters in Argentina.",
+        "did": "We built a CRM that finds companies by the goods they import or export. It uses customs records to identify prospects, adds contact details and ranks leads against the sales team’s target profile."
       },
       "muecas": {
-        "sector": "Food · Consumer",
-        "what": "Argentine real-snacks brand — bars, chocolates and alfajores — sold through distributors and its own channels.",
-        "did": "A full AI program: an internal assistant answering from the company's real documentation, custom automations and training so the team runs them itself."
+        "sector": "Food",
+        "what": "Muecas produces and distributes snack bars, chocolates and alfajores.",
+        "did": "We built an assistant that answers questions using the company’s own documents, automated internal tasks and trained the team to maintain those workflows."
       }
     }
   },
   "HowWeWork": {
-    "label": "From decision to operation",
-    "title": "One continuous line from business question to working system.",
-    "subtitle": "No strategy handoff. No technical build in isolation. The people framing the result stay accountable through production.",
+    "label": "Our FDE approach",
+    "title": "The engineers who listen",
+    "accent": "are the ones who build.",
+    "intro": "We call this forward deployed engineering. Our engineers work alongside the people who know the operation and stay involved once the system is in daily use.",
+    "photoAlt": "Pablo Loyúdice at the NoCoda studio.",
     "steps": [
       {
-        "number": "01",
-        "title": "Frame the move",
-        "description": "Name the decision, its owner, the economic value and the evidence that would make it better."
+        "title": "Follow a real case.",
+        "description": "We ask to see the last order, complaint or month-end close. The person who handled it walks us through each step, including the spreadsheet only their team knows about."
       },
       {
-        "number": "02",
-        "title": "Expose the operation",
-        "description": "Trace the real workflow, data, rules, exceptions and human judgment behind the current result."
+        "title": "Design with the people using it.",
+        "description": "We map how information travels, pinpoint the bottleneck and agree on what should change. The people who showed us the problem try the first version."
       },
       {
-        "number": "03",
-        "title": "Build the system",
-        "description": "Ship the smallest complete system that connects context to action with controls built in."
+        "title": "Build the infrastructure.",
+        "description": "We connect existing tools, organise the data and define access. Applications, AI models and integrations share a foundation the team can operate."
       },
       {
-        "number": "04",
-        "title": "Operate and learn",
-        "description": "Put it inside the team, measure the result and improve the decision loop from real use."
+        "title": "Stay involved in production.",
+        "description": "We work through the first weeks of use, monitor errors and adjust as new cases come in. The team learns to run the system and knows whom to call when things change."
       }
     ]
   },
@@ -292,16 +285,18 @@
     ]
   },
   "CTA": {
-    "title": "Bring us an operation that should work better.",
-    "subtitle": "In one conversation, we will map the decision, the friction and the most credible path to a measurable result.",
-    "button": "Map the operation",
-    "note": "30 MINUTES · ONE REAL PROBLEM · NO SALES THEATER"
+    "label": "Get in touch",
+    "title": "Where does your",
+    "accent": "work get stuck?",
+    "subtitle": "Bring a case to a 30-minute conversation. It could be the last invoice someone had to check or an order that changed hands five times. We’ll start there.",
+    "button": "Book a conversation"
   },
   "Footer": {
-    "description": "Strategy, data and AI systems that change how the business runs.",
-    "navigation": "Navigation",
+    "description": "Software, infrastructure and AI engineering alongside the people doing the work.",
+    "explore": "More from NoCoda",
+    "program": "Executive education",
+    "newsroom": "AI newsroom",
     "contact": "Contact",
-    "rights": "All rights reserved.",
-    "home": "Home"
+    "top": "Back to top"
   }
 }
