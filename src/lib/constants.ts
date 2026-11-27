@@ -11,7 +11,7 @@ export const SOCIAL_LINKS = {
 } as const;
 
 export const NAV_SECTIONS = [
-  { id: "como-trabajamos", labelKey: "howWeWork" },
   { id: "servicios", labelKey: "services" },
   { id: "clientes", labelKey: "clients" },
+  { id: "como-trabajamos", labelKey: "howWeWork" },
 ] as const;

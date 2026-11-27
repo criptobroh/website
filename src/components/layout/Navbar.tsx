@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/navigation";
 import Brand from "./Brand";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { CALENDLY_URL, NAV_SECTIONS } from "@/lib/constants";
+import { CALENDLY_URL, LEARN_URL, NAV_SECTIONS } from "@/lib/constants";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -49,6 +49,7 @@ export default function Navbar() {
             {NAV_SECTIONS.map(({ id, labelKey }) => (
               <a key={id} href={`${home}#${id}`} onClick={() => setOpen(false)}>{t(labelKey)}</a>
             ))}
+            <a href={LEARN_URL}>BEFORE AI <span aria-hidden="true">↗</span></a>
           </div>
           <LanguageSwitcher />
           <a className="studio-nav__talk" href={CALENDLY_URL}>{t("cta")} <span aria-hidden="true">↗</span></a>

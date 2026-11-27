@@ -8,7 +8,7 @@ export default async function Footer() {
     <footer className="studio-footer">
       <div className="studio-wrap">
         <div className="studio-footer__main">
-          <div><Brand /><p className="studio-footer__mission">{t("description")}</p></div>
+          <div><Brand onDark /><p className="studio-footer__mission">{t("description")}</p></div>
           <div className="studio-footer__group">
             <h2>{t("explore")}</h2>
             <a href={LEARN_URL}>BEFORE AI <span>{t("program")}</span><i aria-hidden="true">↗</i></a>

@@ -7,7 +7,7 @@ export default async function HowWeWork() {
 
   return (
     <section id="como-trabajamos" className="field-method" aria-labelledby="method-title">
-      <div id="por-que-nocoda" className="studio-wrap">
+      <div className="studio-wrap">
         <p className="studio-eyebrow"><span className="signal-line" aria-hidden="true" />{t("label")}</p>
         <div className="field-method__heading">
           <h2 id="method-title">{t("title")} <em>{t("accent")}</em></h2>
@@ -15,7 +15,7 @@ export default async function HowWeWork() {
         </div>
         <div className="field-method__body">
           <figure className="field-method__portrait">
-            <Image src="/images/pablo-estudio.webp" alt={t("photoAlt")} width={720} height={866}
+            <Image loading="eager" src="/images/pablo-estudio.webp" alt={t("photoAlt")} width={720} height={866}
               sizes="(max-width: 660px) 100vw, (max-width: 1400px) 38vw, 480px" />
             <figcaption><span>Pablo Loyúdice</span><span>NoCoda</span></figcaption>
           </figure>

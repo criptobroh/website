@@ -6,11 +6,3 @@ export const inter = localFont({
   variable: "--type-inter",
   display: "swap",
 });
-
-export const instrumentSerif = localFont({
-  src: "./fonts/instrument-serif-italic-latin.woff2",
-  weight: "400",
-  style: "italic",
-  variable: "--type-instrument",
-  display: "swap",
-});

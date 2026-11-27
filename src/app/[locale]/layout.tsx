@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
-import { inter, instrumentSerif } from "@/lib/fonts";
+import { inter } from "@/lib/fonts";
 import { SITE_URL, SITE_NAME, SOCIAL_LINKS } from "@/lib/constants";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -22,7 +22,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  const socialImage = { url: `/images/nocoda-${locale}.jpg`, width: 1200, height: 630, alt: t("title") };
+  const socialImage = { url: `/images/nocoda-${locale}.jpg?v=identity`, width: 1200, height: 630, alt: t("title") };
 
   return {
     title: t("title"),
@@ -53,8 +53,8 @@ export async function generateMetadata({
     },
     robots: { index: true, follow: true },
     icons: {
-      icon: "/favicon.png",
-      apple: "/favicon.png",
+      icon: "/favicon.png?v=original",
+      apple: "/favicon.png?v=original",
     },
   };
 }
@@ -91,7 +91,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${instrumentSerif.variable} antialiased`}
+      className={`${inter.variable} antialiased`}
     >
       <head>
         <script

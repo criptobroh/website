@@ -13,12 +13,12 @@
     "cta": "Hablemos"
   },
   "Hero": {
-    "badge": "Estudio de ingeniería aplicada",
-    "title": "Mostranos",
-    "titleAccent": "cómo trabajás.",
-    "subtitle": "Nos sentamos con tu equipo, seguimos un caso real y construimos el software, la infraestructura y la IA que hacen falta para resolverlo.",
+    "badge": "Forward Deployed Engineering",
+    "title": "Software e IA,",
+    "titleAccent": "desde adentro.",
+    "subtitle": "Trabajamos codo a codo con tu equipo. Seguimos el recorrido de un pedido, una consulta o un pago y construimos el software y la infraestructura que faltan.",
     "cta": "Agendar una charla",
-    "secondaryCta": "Explorá ejemplos",
+    "secondaryCta": "Ver proyectos",
     "clients": "Trabajamos con"
   },
   "Problem": {
@@ -129,11 +129,11 @@
   "Clients": {
     "label": "Clientes",
     "title": "Lo que construimos juntos.",
-    "subtitle": "Detrás de cada nombre hay un trabajo concreto. Explorá los proyectos por país y conocé qué hicimos con cada equipo.",
+    "subtitle": "Seguí los puntos del mapa y abrí las tarjetas para conocer el trabajo que hicimos con cada equipo.",
     "teams": "clientes",
     "countriesLabel": "países",
     "mapAlt": "Mapa de los países donde están nuestros clientes",
-    "mapHint": "Elegí un país para explorar sus proyectos.",
+    "mapHint": "Elegí un país para ver sus clientes.",
     "filterAria": "Filtrar clientes por país",
     "all": "Todos",
     "countries": {
@@ -151,65 +151,79 @@
       "sequra": {
         "sector": "Pagos",
         "what": "seQura financia compras en el momento del pago para comercios del sur de Europa.",
-        "did": "Construimos agentes de IA para acompañar el alta de comercios, desde la incorporación de un nuevo negocio hasta que puede ofrecer financiación en su tienda."
+        "did": "Construimos agentes de IA para acompañar el alta de comercios, desde la incorporación de un nuevo negocio hasta que puede ofrecer financiación en su tienda.",
+        "subject": "Alta de comercios"
       },
       "scuticchio": {
         "sector": "Producción de eventos",
         "what": "Productora de sonido, iluminación, video y streaming de Buenos Aires.",
-        "did": "Reemplazamos su sistema de gestión y migramos el historial de más de 9.500 eventos. El equipo prepara presupuestos bilingües y usa códigos QR para identificar cada pieza de su inventario."
+        "did": "Reemplazamos su sistema de gestión y migramos el historial de más de 9.500 eventos. El equipo prepara presupuestos bilingües y usa códigos QR para identificar cada pieza de su inventario.",
+        "subject": "Gestión de eventos"
       },
       "legalwise": {
         "sector": "Formación jurídica",
         "what": "Legalwise Seminars ofrece formación profesional continua para abogados en Australia.",
-        "did": "Diseñamos y construimos un portal para estudios jurídicos. Quienes coordinan la formación pueden distribuir horas entre abogados, consultar su avance y reunir certificados para los reportes del estudio."
+        "did": "Diseñamos y construimos un portal para estudios jurídicos. Quienes coordinan la formación pueden distribuir horas entre abogados, consultar su avance y reunir certificados para los reportes del estudio.",
+        "subject": "Portal de formación jurídica"
       },
       "alveo": {
         "sector": "Vialidad industrial",
         "what": "Alveo fabrica señalización vial y piezas plásticas en Ciudad de México.",
-        "did": "Trabajamos con su equipo para convertir una solución de IA propia en productos que otras empresas de vialidad industrial también pueden usar."
+        "did": "Trabajamos con su equipo para convertir una solución de IA propia en productos que otras empresas de vialidad industrial también pueden usar.",
+        "subject": "Productos para vialidad"
       },
       "seeds": {
         "sector": "Talento",
         "what": "Seeds conecta empresas con profesionales independientes en Latinoamérica y Estados Unidos.",
-        "did": "Conectamos el CRM, un panel de operaciones y un asistente que consulta el conocimiento interno. El equipo puede buscar información y automatizar tareas de seguimiento con datos de sus propios sistemas."
+        "did": "Conectamos el CRM, un panel de operaciones y un asistente que consulta el conocimiento interno. El equipo puede buscar información y automatizar tareas de seguimiento con datos de sus propios sistemas.",
+        "subject": "Operaciones de talento"
       },
       "martis": {
         "sector": "Comercio electrónico",
         "what": "Marti’s lleva autopartes desde Miami hasta la puerta del comprador en Argentina.",
-        "did": "Construimos una tienda que cruza 2.958 piezas con más de 21.000 compatibilidades. El comprador identifica la pieza correcta y ve el precio final en pesos. El equipo administra catálogo, precios y pedidos desde el mismo sistema."
+        "did": "Construimos una tienda que cruza 2.958 piezas con más de 21.000 compatibilidades. El comprador identifica la pieza correcta y ve el precio final en pesos. El equipo administra catálogo, precios y pedidos desde el mismo sistema.",
+        "subject": "Catálogo de autopartes"
       },
       "areafit": {
         "sector": "Gimnasios",
         "what": "AreaFit opera una red de gimnasios en España.",
-        "did": "Construimos el panel de Fiti, su asistente en WhatsApp e Instagram. El equipo de la cadena puede leer conversaciones de cada sede, ver los temas más frecuentes y revisar cómo valoran la atención sus clientes."
+        "did": "Construimos el panel de Fiti, su asistente en WhatsApp e Instagram. El equipo de la cadena puede leer conversaciones de cada sede, ver los temas más frecuentes y revisar cómo valoran la atención sus clientes.",
+        "subject": "Atención en gimnasios"
       },
       "psima": {
         "sector": "Salud mental",
         "what": "Psi Mammoliti atiende por videollamada a pacientes de la comunidad hispanohablante.",
-        "did": "Construimos y operamos el sistema que conecta pacientes, profesionales, pagos y conciliaciones. También reúne el seguimiento por WhatsApp y las métricas que usa el equipo en su trabajo diario."
+        "did": "Construimos y operamos el sistema que conecta pacientes, profesionales, pagos y conciliaciones. También reúne el seguimiento por WhatsApp y las métricas que usa el equipo en su trabajo diario.",
+        "subject": "Gestión de la clínica"
       },
       "elliecare": {
         "sector": "Tecnología para el cuidado",
         "what": "Ellie Care desarrolla tecnología para personas mayores y sus familias.",
-        "did": "Construimos un sistema que transforma fotos familiares y un recuerdo escrito en una película narrada. La IA arma la historia, genera la voz, anima las imágenes y entrega el video."
+        "did": "Construimos un sistema que transforma fotos familiares y un recuerdo escrito en una película narrada. La IA arma la historia, genera la voz, anima las imágenes y entrega el video.",
+        "subject": "Películas familiares"
       },
       "ulc": {
         "sector": "Logística",
         "what": "ULC trabaja con importadores y exportadores en Argentina.",
-        "did": "Creamos un CRM que encuentra empresas según los productos que importan o exportan. Cruza datos aduaneros, completa los contactos y ordena los prospectos según el perfil que busca el equipo comercial."
+        "did": "Creamos un CRM que encuentra empresas según los productos que importan o exportan. Cruza datos aduaneros, completa los contactos y ordena los prospectos según el perfil que busca el equipo comercial.",
+        "subject": "Prospección en comercio exterior"
       },
       "muecas": {
         "sector": "Alimentos",
         "what": "Muecas produce y distribuye barras, chocolates y alfajores.",
-        "did": "Construimos un asistente que responde preguntas a partir de la documentación de la empresa, automatizamos tareas internas y capacitamos al equipo para mantenerlas."
+        "did": "Construimos un asistente que responde preguntas a partir de la documentación de la empresa, automatizamos tareas internas y capacitamos al equipo para mantenerlas.",
+        "subject": "Asistente interno"
       }
-    }
+    },
+    "mapTitle": "Mapa de clientes",
+    "openCase": "Ver el proyecto de {name}",
+    "closeCase": "Cerrar proyecto"
   },
   "HowWeWork": {
     "label": "El método FDE",
-    "title": "El equipo que te escucha",
-    "accent": "es el que construye.",
-    "intro": "A eso le llamamos Forward Deployed Engineering. Nuestros ingenieros trabajan junto a las personas que conocen la operación y siguen involucrados cuando el sistema entra en uso.",
+    "title": "Quien escucha el problema",
+    "accent": "también lo resuelve.",
+    "intro": "Trabajamos dentro de la operación. El mismo equipo que acompaña a la gente en su trabajo diario diseña la primera versión, la pone en producción y vuelve a revisar cómo se usa.",
     "photoAlt": "Pablo Loyúdice en el estudio de NoCoda.",
     "steps": [
       {
@@ -261,28 +275,18 @@
     "trademark": "Snowflake® es una marca registrada de Snowflake Inc. Esta referencia describe capacidad técnica y no implica respaldo ni relación de partnership."
   },
   "WhyNoCoda": {
-    "label": "La diferencia NoCoda",
-    "title": "Criterio para decidir. Capacidad para construir.",
-    "subtitle": "De la mesa directiva a producción, responde el mismo equipo.",
-    "portalStatus": "EN VIVO / AUTÓNOMO",
-    "portalTitle": "Un newsroom autónomo, en vivo.",
-    "portalDescription": "NoCoda.TV es redactado, ilustrado y publicado las 24 horas por un sistema de IA construido por NoCoda.",
-    "portalCta": "Ver el sistema funcionando",
-    "portalAria": "NoCoda.TV — ver el sistema autónomo de noticias de IA funcionando en una pestaña nueva",
-    "points": [
-      {
-        "title": "Negocio antes que herramientas",
-        "description": "Elegimos tecnología después de aclarar la decisión, el flujo de trabajo y la medida de éxito, nunca antes."
-      },
-      {
-        "title": "Responsabilidad full-stack",
-        "description": "Estrategia, datos, software e IA quedan dentro de un solo equipo para que el resultado no se pierda entre proveedores."
-      },
-      {
-        "title": "La adopción es parte del sistema",
-        "description": "Un sistema no está terminado cuando se despliega. Está terminado cuando la gente lo usa y cambia el resultado operativo."
-      }
-    ]
+    "title": "Tres formas de empezar.",
+    "intro": "Podemos ayudarte a elegir dónde invertir, diseñar una operación con tu equipo o poner en marcha un sistema propio.",
+    "roadmap": "Plan de 90 días",
+    "programTitle": "Alinear a la dirección.",
+    "programBody": "En BEFORE AI, la dirección trabaja durante un día y medio con sus propios procesos. Sale con prioridades, responsables y un plan para los próximos 90 días.",
+    "programLink": "Explorá BEFORE AI",
+    "dataTitle": "Conectar los datos.",
+    "dataBody": "En dos a cuatro semanas trazamos el recorrido de un dato y diseñamos su integración. Cuando la operación lo requiere, trabajamos con Snowflake para reunir fuentes y definir quién puede usarlas.",
+    "dataLink": "Hablemos de tus datos",
+    "buildTitle": "Pasar de piloto a producción.",
+    "buildBody": "Construimos, probamos y operamos el sistema con tu equipo. Podés ver un ejemplo propio en NoCoda.TV, donde un flujo editorial convierte una noticia en una nota ilustrada.",
+    "buildLink": "Abrí una nota de NoCoda.TV"
   },
   "CTA": {
     "label": "Contacto",

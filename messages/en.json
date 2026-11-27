@@ -13,12 +13,12 @@
     "cta": "Let’s talk"
   },
   "Hero": {
-    "badge": "Applied engineering studio",
-    "title": "Show us",
-    "titleAccent": "how you work.",
-    "subtitle": "We sit down with your team, follow a real case from start to finish, and build the software, infrastructure and AI it takes to solve it.",
+    "badge": "Forward Deployed Engineering",
+    "title": "Software & AI,",
+    "titleAccent": "built with you.",
+    "subtitle": "Our engineers work alongside your team. We follow an order, a customer enquiry or a payment from start to finish and build the software and infrastructure it needs.",
     "cta": "Book a conversation",
-    "secondaryCta": "Explore examples",
+    "secondaryCta": "Explore our work",
     "clients": "Teams we work with"
   },
   "Problem": {
@@ -129,11 +129,11 @@
   "Clients": {
     "label": "Clients",
     "title": "What we built together.",
-    "subtitle": "Each name here has a different job to do. Explore the projects by country and see what we built with each team.",
+    "subtitle": "Follow the points on the map and open a card to see the work we did with each team.",
     "teams": "clients",
     "countriesLabel": "countries",
     "mapAlt": "Map of the countries where our clients are based",
-    "mapHint": "Choose a country to explore its projects.",
+    "mapHint": "Choose a country to see its clients.",
     "filterAria": "Filter clients by country",
     "all": "All",
     "countries": {
@@ -151,65 +151,79 @@
       "sequra": {
         "sector": "Payments",
         "what": "seQura provides checkout financing for merchants across southern Europe.",
-        "did": "We built AI agents to support merchant onboarding, from the moment a business joins seQura until it can offer financing at checkout."
+        "did": "We built AI agents to support merchant onboarding, from the moment a business joins seQura until it can offer financing at checkout.",
+        "subject": "Merchant onboarding"
       },
       "scuticchio": {
         "sector": "Event production",
         "what": "Scuticchio is a Buenos Aires production company specializing in sound, lighting, video and streaming.",
-        "did": "We replaced its operations system and migrated the records for over 9,500 events. The team prepares bilingual quotes and scans QR codes to identify individual pieces of equipment."
+        "did": "We replaced its operations system and migrated the records for over 9,500 events. The team prepares bilingual quotes and scans QR codes to identify individual pieces of equipment.",
+        "subject": "Event operations"
       },
       "legalwise": {
         "sector": "Legal education",
         "what": "Legalwise Seminars provides continuing professional development for lawyers in Australia.",
-        "did": "We designed and built a portal for law firms. Learning managers can allocate training hours to lawyers, track their progress and collect certificates for firm-wide reporting."
+        "did": "We designed and built a portal for law firms. Learning managers can allocate training hours to lawyers, track their progress and collect certificates for firm-wide reporting.",
+        "subject": "Legal education portal"
       },
       "alveo": {
         "sector": "Road infrastructure",
         "what": "Alveo manufactures road signage and molded plastic products in Mexico City.",
-        "did": "We worked with the team to turn an AI application built for Alveo into products that other road infrastructure companies can use."
+        "did": "We worked with the team to turn an AI application built for Alveo into products that other road infrastructure companies can use.",
+        "subject": "Road infrastructure products"
       },
       "seeds": {
         "sector": "Talent",
         "what": "Seeds connects companies with independent professionals across Latin America and the United States.",
-        "did": "We connected its CRM, an operations dashboard and an assistant that searches internal knowledge. The team can look up information and automate follow-up tasks using its own data."
+        "did": "We connected its CRM, an operations dashboard and an assistant that searches internal knowledge. The team can look up information and automate follow-up tasks using its own data.",
+        "subject": "Talent operations"
       },
       "martis": {
         "sector": "E-commerce",
         "what": "Marti’s ships auto parts from Miami directly to customers in Argentina.",
-        "did": "We built a storefront that matches 2,958 parts against more than 21,000 vehicle compatibility records. Buyers find the right part and see the final price in pesos. Staff manage the catalog, pricing and orders in the same system."
+        "did": "We built a storefront that matches 2,958 parts against more than 21,000 vehicle compatibility records. Buyers find the right part and see the final price in pesos. Staff manage the catalog, pricing and orders in the same system.",
+        "subject": "Auto parts catalog"
       },
       "areafit": {
         "sector": "Fitness",
         "what": "AreaFit runs a network of gyms in Spain.",
-        "did": "We built the dashboard for Fiti, its WhatsApp and Instagram assistant. The team can read conversations by location, identify common questions and see how customers rate the support they receive."
+        "did": "We built the dashboard for Fiti, its WhatsApp and Instagram assistant. The team can read conversations by location, identify common questions and see how customers rate the support they receive.",
+        "subject": "Gym customer support"
       },
       "psima": {
         "sector": "Mental health",
         "what": "Psi Mammoliti provides online therapy to Spanish-speaking patients worldwide.",
-        "did": "We built and operate the system that connects patients, therapists, payments and reconciliation. It also brings together WhatsApp follow-ups and the metrics the team uses every day."
+        "did": "We built and operate the system that connects patients, therapists, payments and reconciliation. It also brings together WhatsApp follow-ups and the metrics the team uses every day.",
+        "subject": "Clinic operations"
       },
       "elliecare": {
         "sector": "Care technology",
         "what": "Ellie Care develops technology for older adults and their families.",
-        "did": "We built a system that turns family photographs and a written memory into a narrated film. AI writes the story, generates the voiceover, animates the images and delivers the video."
+        "did": "We built a system that turns family photographs and a written memory into a narrated film. AI writes the story, generates the voiceover, animates the images and delivers the video.",
+        "subject": "Family films"
       },
       "ulc": {
         "sector": "Logistics",
         "what": "ULC works with importers and exporters in Argentina.",
-        "did": "We built a CRM that finds companies by the goods they import or export. It uses customs records to identify prospects, adds contact details and ranks leads against the sales team’s target profile."
+        "did": "We built a CRM that finds companies by the goods they import or export. It uses customs records to identify prospects, adds contact details and ranks leads against the sales team’s target profile.",
+        "subject": "Trade prospecting"
       },
       "muecas": {
         "sector": "Food",
         "what": "Muecas produces and distributes snack bars, chocolates and alfajores.",
-        "did": "We built an assistant that answers questions using the company’s own documents, automated internal tasks and trained the team to maintain those workflows."
+        "did": "We built an assistant that answers questions using the company’s own documents, automated internal tasks and trained the team to maintain those workflows.",
+        "subject": "Internal assistant"
       }
-    }
+    },
+    "mapTitle": "Client map",
+    "openCase": "View the project with {name}",
+    "closeCase": "Close project"
   },
   "HowWeWork": {
     "label": "Our FDE approach",
-    "title": "The engineers who listen",
+    "title": "The people who listen",
     "accent": "are the ones who build.",
-    "intro": "We call this forward deployed engineering. Our engineers work alongside the people who know the operation and stay involved once the system is in daily use.",
+    "intro": "We work inside the operation. The same engineers who spend time with your team design the first version, take it into production and come back to see how it holds up.",
     "photoAlt": "Pablo Loyúdice at the NoCoda studio.",
     "steps": [
       {
@@ -261,28 +275,18 @@
     "trademark": "Snowflake® is a registered trademark of Snowflake Inc. This reference describes technical capability and does not imply endorsement or partnership."
   },
   "WhyNoCoda": {
-    "label": "The NoCoda difference",
-    "title": "Judgment to decide. Capability to build.",
-    "subtitle": "From boardroom to production, one team stays accountable.",
-    "portalStatus": "LIVE / AUTONOMOUS",
-    "portalTitle": "An autonomous newsroom, live.",
-    "portalDescription": "NoCoda.TV is written, illustrated and published around the clock by an AI system built by NoCoda.",
-    "portalCta": "See the system running",
-    "portalAria": "NoCoda.TV — see the autonomous AI news system running in a new tab",
-    "points": [
-      {
-        "title": "Business before tooling",
-        "description": "We choose technology after the decision, workflow and success measure are clear—not before."
-      },
-      {
-        "title": "Full-stack accountability",
-        "description": "Strategy, data, software and AI stay inside one team, so the outcome does not disappear between vendors."
-      },
-      {
-        "title": "Adoption is part of the build",
-        "description": "A system is not finished when it deploys. It is finished when people use it and the operating result changes."
-      }
-    ]
+    "title": "Three ways to start.",
+    "intro": "We can help you choose where to invest, design a workflow with your team or put a custom system into production.",
+    "roadmap": "90-day roadmap",
+    "programTitle": "Align the leadership team.",
+    "programBody": "During BEFORE AI, leaders spend a day and a half working through their own operations. They leave with priorities, named owners and a plan for the next 90 days.",
+    "programLink": "Explore BEFORE AI in Spanish",
+    "dataTitle": "Connect the data.",
+    "dataBody": "In two to four weeks, we trace how data moves and design the integration. When the workflow calls for it, we use Snowflake to bring sources together and define who can access them.",
+    "dataLink": "Talk through your data",
+    "buildTitle": "Take a pilot into production.",
+    "buildBody": "We build, test and operate the system with your team. See one of our own at work in NoCoda.TV, where an editorial workflow turns a news item into an illustrated story.",
+    "buildLink": "Read a NoCoda.TV story in Spanish"
   },
   "CTA": {
     "label": "Get in touch",
