@@ -35,11 +35,11 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="studio-nav" ref={header} onBlur={(event) => {
+    <header className="studio-nav" data-studio-home={home === "" || undefined} ref={header} onBlur={(event) => {
       if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
     }}>
       <nav className="studio-wrap studio-nav__row" aria-label={t("navigation")}>
-        <Brand />
+        <Brand onDark={home === ""} />
         <button className="studio-menu-button" ref={trigger} aria-expanded={open}
           aria-controls="studio-nav-links" onClick={() => setOpen(!open)}>
           {open ? t("close") : t("menu")} <span aria-hidden="true">{open ? "×" : "☰"}</span>

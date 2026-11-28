@@ -13,18 +13,9 @@
     "cta": "Hablemos"
   },
   "Hero": {
-    "discipline": "Ingeniería de producto, datos e IA",
-    "title": "Construimos software",
-    "titleEnd": "con quienes lo usan.",
-    "subtitle": "Nos sentamos con tu equipo a entender el negocio y volvemos con una primera versión para probar juntos. Escribimos el software, conectamos tus sistemas y nos hacemos cargo de la infraestructura que lo sostiene.",
-    "cta": "Contanos tu idea",
-    "secondaryCta": "Qué construimos",
-    "projects": "Una selección de nuestro trabajo",
-    "examples": {
-      "events": "Software para producir eventos",
-      "commerce": "Autopartes por modelo de auto",
-      "newsroom": "Una redacción con agentes de IA"
-    }
+    "title": "Un equipo de ingeniería dentro de tu empresa.",
+    "subtitle": "Diseñamos software e IA con la gente que conoce tu negocio. Construimos la infraestructura y nos quedamos a operarla con tu equipo.",
+    "cta": "Hablemos de tu proyecto"
   },
   "Problem": {
     "label": "Dónde la IA gana su lugar",

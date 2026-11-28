@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --home-nav-height: 4.7125rem;
   --paper: #fff;
   --page: #fff;
   --ink: #111829;
@@ -93,6 +94,7 @@ button { cursor: pointer; }
 .studio-footer__base { padding-block: 1.25rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #37435a; color: #bdc7da; font-size: .73rem; }
 
 @media (max-width: 860px) {
+  :root { --home-nav-height: 4.1625rem; }
   .studio-nav__row { min-height: 4.1rem; justify-content: space-between; }
   .studio-menu-button { display: flex; align-items: center; gap: .55rem; background: none; border: 0; color: #152445; padding: .7rem 0 .7rem .8rem; font-size: .88rem; font-weight: 580; }
   .studio-menu-button span { color: var(--signal); font-size: 1.1rem; }
@@ -119,4 +121,22 @@ button { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
+
+
+.studio-nav[data-studio-home] {
+  background: rgb(10 16 15 / .9);
+  border-bottom-color: rgb(255 255 255 / .11);
+}
+.studio-nav[data-studio-home] .studio-nav__sections a,
+.studio-nav[data-studio-home] .studio-menu-button { color: #edf1ef; }
+.studio-nav[data-studio-home] .studio-languages a { color: #c6ceca; }
+.studio-nav[data-studio-home] .studio-languages a[aria-current] { color: #fff; }
+.studio-nav[data-studio-home] .studio-nav__sections a:hover,
+.studio-nav[data-studio-home] .studio-nav__sections a span,
+.studio-nav[data-studio-home] .studio-menu-button span { color: #a9caff; }
+.studio-nav[data-studio-home] :focus-visible { outline-color: #a9caff; }
+@media (max-width: 860px) {
+  .studio-nav[data-studio-home] .studio-nav__links { background: #121a19; border-color: #36403d; }
+  .studio-nav[data-studio-home] .studio-nav__sections a { border-color: #36403d; }
 }

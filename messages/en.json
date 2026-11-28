@@ -13,18 +13,9 @@
     "cta": "Let’s talk"
   },
   "Hero": {
-    "discipline": "Product engineering, data and AI",
-    "title": "We build software",
-    "titleEnd": "with the people who use it.",
-    "subtitle": "We sit down with your team to understand the business and bring back a first version to try together. We write the software, connect your systems and run the infrastructure it all depends on.",
-    "cta": "Tell us your idea",
-    "secondaryCta": "What we build",
-    "projects": "Selected work",
-    "examples": {
-      "events": "Software for live event production",
-      "commerce": "Finding parts that fit a vehicle",
-      "newsroom": "A newsroom run by AI agents"
-    }
+    "title": "An engineering team inside your business.",
+    "subtitle": "We design software and AI with the people who know your business. We build the infrastructure behind it and stay to run it with your team.",
+    "cta": "Talk to us about your project"
   },
   "Problem": {
     "label": "Where AI earns its place",

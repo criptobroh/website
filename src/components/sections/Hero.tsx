@@ -1,58 +1,35 @@
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import { getTranslations } from "next-intl/server";
-import { CALENDLY_URL, TV_URL } from "@/lib/constants";
+import StudioMotion from "@/components/visuals/StudioMotion";
+import StudioFilm from "@/components/visuals/StudioFilm";
+import { CALENDLY_URL } from "@/lib/constants";
 import ClientMarquee from "./ClientMarquee";
 import styles from "./Hero.module.css";
 
-const projects = [
-  { key: "events", name: "Scuticchio", image: "field-events", href: "#gestion-de-eventos" },
-  { key: "commerce", name: "Marti’s", image: "parts-catalog", href: "https://martis.lat/catalogo?make=Toyota&model=Camry" },
-  { key: "newsroom", name: "NoCoda.TV", image: "newsroom", href: `${TV_URL}/como-funciona` },
-] as const;
-
 export default async function Hero() {
   const t = await getTranslations("Hero");
+  const image = { alt: "", sizes: "100vw", loading: "eager", fetchPriority: "high" } as const;
+  const { props: portrait } = getImageProps({ ...image, src: "/images/studio-hero/portrait.webp", width: 850, height: 1050 });
+  const { props: landscape } = getImageProps({ ...image, src: "/images/studio-hero/landscape.webp", width: 1920, height: 1030 });
 
   return (
     <>
       <section className={styles.hero} aria-labelledby="field-title">
+        <div className={styles.scene}>
+          <picture>
+            <source media="(max-width: 660px) and (orientation: portrait), (max-width: 430px)" srcSet={portrait.srcSet} sizes={image.sizes} width={850} height={1050} />
+            <img {...landscape} alt="" />
+          </picture>
+          <StudioMotion />
+        </div>
         <div className={`studio-wrap ${styles.inner}`}>
-          <div className={styles.opening}>
-            <div>
-              <p className={styles.discipline}>{t("discipline")}</p>
-              <h1 id="field-title">{t("title")} <span>{t("titleEnd")}</span></h1>
-            </div>
-            <div className={styles.intro}>
-              <p>{t("subtitle")}</p>
-              <div className={styles.actions}>
-                <a href={CALENDLY_URL} className={styles.cta}>{t("cta")} <span aria-hidden="true">↗</span></a>
-                <a href="#servicios" className={styles.more}>{t("secondaryCta")} <span aria-hidden="true">↓</span></a>
-              </div>
-            </div>
+          <div className={styles.copy}>
+            <p className={styles.discipline}>Forward Deployed Engineering</p>
+            <h1 id="field-title">{t("title")}</h1>
+            <p className={styles.intro}>{t("subtitle")}</p>
+            <a className={styles.cta} href={CALENDLY_URL}>{t("cta")} <span aria-hidden="true">↗</span></a>
           </div>
-          <ul className={styles.projects} role="list" aria-label={t("projects")}>
-            {projects.map((project, index) => (
-              <li key={project.key}>
-                <a className={styles.project} href={project.href}>
-                  <div className={styles.frame}>
-                    <Image
-                      src={`/images/work/${project.image}.webp`}
-                      width={960}
-                      height={496}
-                      alt=""
-                      sizes="(max-width: 640px) 36vw, (max-width: 1550px) 31vw, 470px"
-                      loading="eager"
-                      fetchPriority={index === 0 ? "high" : "auto"}
-                    />
-                  </div>
-                  <div className={styles.caption}>
-                    <div><p>{project.name}</p><h2>{t(`examples.${project.key}`)}</h2></div>
-                    <span aria-hidden="true">{project.href.startsWith("#") ? "↓" : "↗"}</span>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className={styles.film}><StudioFilm /></div>
         </div>
       </section>
       <ClientMarquee />
