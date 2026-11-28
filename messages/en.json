@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "NoCoda | Software and AI engineering inside your operation",
-    "description": "We work alongside your team to understand the job and build the software, infrastructure and AI it takes to do it well."
+    "title": "NoCoda | Product engineering, data and AI",
+    "description": "We join your team to understand the business, build digital products, connect your systems and run the infrastructure they depend on."
   },
   "Navbar": {
     "services": "What we build",
@@ -13,13 +13,18 @@
     "cta": "Let’s talk"
   },
   "Hero": {
-    "badge": "Forward Deployed Engineering",
-    "title": "Software & AI,",
-    "titleAccent": "built with you.",
-    "subtitle": "Our engineers work alongside your team. We follow an order, a customer enquiry or a payment from start to finish and build the software and infrastructure it needs.",
-    "cta": "Book a conversation",
-    "secondaryCta": "Explore our work",
-    "clients": "Teams we work with"
+    "discipline": "Product engineering, data and AI",
+    "title": "We build software",
+    "titleEnd": "with the people who use it.",
+    "subtitle": "We sit down with your team to understand the business and bring back a first version to try together. We write the software, connect your systems and run the infrastructure it all depends on.",
+    "cta": "Tell us your idea",
+    "secondaryCta": "What we build",
+    "projects": "Selected work",
+    "examples": {
+      "events": "Software for live event production",
+      "commerce": "Finding parts that fit a vehicle",
+      "newsroom": "A newsroom run by AI agents"
+    }
   },
   "Problem": {
     "label": "Where AI earns its place",
@@ -61,50 +66,66 @@
     ]
   },
   "Services": {
-    "label": "Ways to work",
-    "title": "Three ways to start.",
-    "subtitle": "Align leadership, design the system or embed a forward-deployed team to build it. Every engagement ends in an owned next move.",
-    "items": [
-      {
-        "eyebrow": "1.5 DAYS · LEADERSHIP TEAM",
-        "title": "Executive AI alignment",
-        "description": "Leadership leaves with three priorities and its own 90-day roadmap.",
-        "features": [
-          "Decision and opportunity inventory",
-          "Data, process and governance readiness",
-          "Three company-owned priorities",
-          "Owners, evidence and first actions"
-        ],
-        "output": "OUTPUT / 90-DAY EXECUTIVE ROADMAP",
-        "link": "Explore BEFORE AI"
-      },
-      {
-        "eyebrow": "2–4 WEEKS · ONE OPERATION",
-        "title": "Strategy and system design",
-        "description": "We trace one operation and design the smallest system that can change it.",
-        "features": [
-          "Operating problem and value model",
-          "Process and decision architecture",
-          "Data and integration blueprint",
-          "Build plan with measurable outcomes"
-        ],
-        "output": "OUTPUT / EXECUTION BLUEPRINT",
-        "link": ""
-      },
-      {
-        "eyebrow": "PILOT → PRODUCTION · EMBEDDED",
-        "title": "Forward-deployed build",
-        "description": "A senior team builds and runs the solution inside the business.",
-        "features": [
-          "Custom software and AI agents",
-          "Data products and integrations",
-          "Human controls and traceability",
-          "Adoption, measurement and iteration"
-        ],
-        "output": "OUTPUT / A SYSTEM IN PRODUCTION",
-        "link": ""
-      }
-    ]
+    "title": "What we build",
+    "intro": "We build the software your team relies on, the products your customers use and the infrastructure that connects them.",
+    "clients": "Meet the teams",
+    "operations": {
+      "title": "Internal tools",
+      "description": "We build shared tools for work that crosses teams, so each person can see what they own and what happens next.",
+      "examples": [
+        {
+          "context": "Mental healthcare",
+          "work": "A clinic tracks patient referrals and reconciles payments for therapy sessions."
+        },
+        {
+          "anchor": "gestion-de-eventos",
+          "context": "Event production",
+          "work": "An event producer prepares quotes and its technicians identify equipment by scanning QR codes."
+        }
+      ]
+    },
+    "products": {
+      "title": "Digital products",
+      "description": "We design and build storefronts, portals and applications that customers can use on their own.",
+      "examples": [
+        {
+          "context": "Professional education",
+          "work": "Law firms allocate training hours to lawyers and collect their certificates in one portal."
+        },
+        {
+          "context": "E-commerce",
+          "work": "Shoppers can find a part that fits their car and see the final price in pesos."
+        }
+      ]
+    },
+    "ai": {
+      "title": "Applied AI",
+      "description": "We build assistants that search your documents and agents that carry out tasks. Your team decides which steps need human review.",
+      "examples": [
+        {
+          "context": "Payments",
+          "work": "Agents guide merchants through onboarding so they can offer financing at checkout."
+        },
+        {
+          "context": "Family stories",
+          "work": "A system turns family photos and a written memory into a narrated film."
+        }
+      ]
+    },
+    "infrastructure": {
+      "title": "Data infrastructure",
+      "description": "We connect systems through APIs and data connectors, set up access controls and monitor incoming data.",
+      "examples": [
+        {
+          "context": "Talent services",
+          "work": "We linked a talent consultancy’s CRM, operations platform and internal documentation."
+        },
+        {
+          "context": "International trade",
+          "work": "We matched customs records with business contacts so sales can find the importers of a given product."
+        }
+      ]
+    }
   },
   "DataCenters": {
     "eyebrow": "Critical infrastructure",
@@ -220,7 +241,7 @@
     "closeCase": "Close project"
   },
   "HowWeWork": {
-    "label": "Our FDE approach",
+    "label": "Forward Deployed Engineering (FDE)",
     "title": "The people who listen",
     "accent": "are the ones who build.",
     "intro": "We work inside the operation. The same engineers who spend time with your team design the first version, take it into production and come back to see how it holds up.",
@@ -292,7 +313,7 @@
     "label": "Get in touch",
     "title": "Where does your",
     "accent": "work get stuck?",
-    "subtitle": "Bring a case to a 30-minute conversation. It could be the last invoice someone had to check or an order that changed hands five times. We’ll start there.",
+    "subtitle": "Bring a product idea, a task that takes up too much of your team’s time, or systems you need to connect. We’ll spend half an hour working out where to start.",
     "button": "Book a conversation"
   },
   "Footer": {

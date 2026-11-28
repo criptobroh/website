@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "NoCoda | Ingeniería de software e IA dentro de tu operación",
-    "description": "Nos sentamos con tu equipo, entendemos cómo trabaja y construimos a medida el software, la infraestructura y la IA que necesita."
+    "title": "NoCoda | Ingeniería de producto, datos e IA",
+    "description": "Trabajamos con tu equipo para entender el negocio, desarrollar productos digitales, conectar tus sistemas y operar la infraestructura que los sostiene."
   },
   "Navbar": {
     "services": "Qué construimos",
@@ -13,13 +13,18 @@
     "cta": "Hablemos"
   },
   "Hero": {
-    "badge": "Forward Deployed Engineering",
-    "title": "Software e IA,",
-    "titleAccent": "desde adentro.",
-    "subtitle": "Trabajamos codo a codo con tu equipo. Seguimos el recorrido de un pedido, una consulta o un pago y construimos el software y la infraestructura que faltan.",
-    "cta": "Agendar una charla",
-    "secondaryCta": "Ver proyectos",
-    "clients": "Trabajamos con"
+    "discipline": "Ingeniería de producto, datos e IA",
+    "title": "Construimos software",
+    "titleEnd": "con quienes lo usan.",
+    "subtitle": "Nos sentamos con tu equipo a entender el negocio y volvemos con una primera versión para probar juntos. Escribimos el software, conectamos tus sistemas y nos hacemos cargo de la infraestructura que lo sostiene.",
+    "cta": "Contanos tu idea",
+    "secondaryCta": "Qué construimos",
+    "projects": "Una selección de nuestro trabajo",
+    "examples": {
+      "events": "Software para producir eventos",
+      "commerce": "Autopartes por modelo de auto",
+      "newsroom": "Una redacción con agentes de IA"
+    }
   },
   "Problem": {
     "label": "Dónde la IA gana su lugar",
@@ -61,50 +66,66 @@
     ]
   },
   "Services": {
-    "label": "Cómo empezar",
-    "title": "Tres formas de empezar.",
-    "subtitle": "Alinee a la dirección, diseñe el sistema o incorpore un equipo forward-deployed para construirlo. Cada intervención termina en un próximo movimiento con dueño.",
-    "items": [
-      {
-        "eyebrow": "1,5 DÍAS · EQUIPO DIRECTIVO",
-        "title": "Alineación ejecutiva de IA",
-        "description": "La dirección sale con tres prioridades y un roadmap propio de 90 días.",
-        "features": [
-          "Inventario de decisiones y oportunidades",
-          "Madurez de datos, procesos y gobierno",
-          "Tres prioridades propias de la empresa",
-          "Responsables, evidencia y primeras acciones"
-        ],
-        "output": "SALIDA / ROADMAP EJECUTIVO DE 90 DÍAS",
-        "link": "Explorar BEFORE AI"
-      },
-      {
-        "eyebrow": "2–4 SEMANAS · UNA OPERACIÓN",
-        "title": "Estrategia y diseño del sistema",
-        "description": "Trazamos una operación y diseñamos el sistema mínimo para cambiarla.",
-        "features": [
-          "Problema operativo y modelo de valor",
-          "Arquitectura de proceso y decisión",
-          "Blueprint de datos e integraciones",
-          "Plan de construcción con resultados medibles"
-        ],
-        "output": "SALIDA / BLUEPRINT DE EJECUCIÓN",
-        "link": ""
-      },
-      {
-        "eyebrow": "PILOTO → PRODUCCIÓN · INTEGRADO",
-        "title": "Construcción forward-deployed",
-        "description": "Un equipo senior construye y opera la solución dentro del negocio.",
-        "features": [
-          "Software y agentes de IA a medida",
-          "Productos de datos e integraciones",
-          "Controles humanos y trazabilidad",
-          "Adopción, medición e iteración"
-        ],
-        "output": "SALIDA / UN SISTEMA EN PRODUCCIÓN",
-        "link": ""
-      }
-    ]
+    "title": "Qué construimos",
+    "intro": "Hacemos el software que usa tu equipo, los productos que llegan a tus clientes y la infraestructura que los conecta.",
+    "clients": "Conocé a los equipos",
+    "operations": {
+      "title": "Software de gestión",
+      "description": "Reunimos el trabajo de distintas áreas en una herramienta donde cada persona ve qué tiene a cargo y qué sigue.",
+      "examples": [
+        {
+          "context": "Salud mental",
+          "work": "La clínica sigue las derivaciones de pacientes y concilia los cobros de las sesiones."
+        },
+        {
+          "anchor": "gestion-de-eventos",
+          "context": "Producción de eventos",
+          "work": "La productora arma presupuestos y sus técnicos identifican cada equipo por su QR."
+        }
+      ]
+    },
+    "products": {
+      "title": "Productos digitales",
+      "description": "Diseñamos y construimos tiendas, portales y aplicaciones que tus clientes usan por su cuenta.",
+      "examples": [
+        {
+          "context": "Formación profesional",
+          "work": "Un estudio jurídico asigna horas de formación a sus abogados y reúne sus certificados."
+        },
+        {
+          "context": "Comercio electrónico",
+          "work": "El comprador encuentra la autoparte compatible con su auto y ve el precio final en pesos."
+        }
+      ]
+    },
+    "ai": {
+      "title": "Herramientas de IA",
+      "description": "Creamos asistentes que consultan tus documentos y agentes que ejecutan tareas. Acordamos con tu equipo qué pasos necesitan revisión.",
+      "examples": [
+        {
+          "context": "Pagos",
+          "work": "Los agentes acompañan a los comercios en el alta para ofrecer financiación en su tienda."
+        },
+        {
+          "context": "Historias familiares",
+          "work": "Un sistema convierte fotos y un recuerdo escrito en una película narrada."
+        }
+      ]
+    },
+    "infrastructure": {
+      "title": "Infraestructura de datos",
+      "description": "Unimos sistemas mediante APIs y conectores, definimos permisos y monitoreamos las cargas de datos.",
+      "examples": [
+        {
+          "context": "Talento",
+          "work": "Conectamos el CRM, el panel de operaciones y la documentación de una consultora de talento."
+        },
+        {
+          "context": "Comercio exterior",
+          "work": "Cruzamos datos aduaneros y contactos para que ventas encuentre a los importadores de cada producto."
+        }
+      ]
+    }
   },
   "DataCenters": {
     "eyebrow": "Infraestructura crítica",
@@ -220,7 +241,7 @@
     "closeCase": "Cerrar proyecto"
   },
   "HowWeWork": {
-    "label": "El método FDE",
+    "label": "Forward Deployed Engineering (FDE)",
     "title": "Quien escucha el problema",
     "accent": "también lo resuelve.",
     "intro": "Trabajamos dentro de la operación. El mismo equipo que acompaña a la gente en su trabajo diario diseña la primera versión, la pone en producción y vuelve a revisar cómo se usa.",
@@ -292,7 +313,7 @@
     "label": "Contacto",
     "title": "¿Dónde se traba",
     "accent": "tu operación?",
-    "subtitle": "Traé un caso a una charla de 30 minutos. Puede ser la última factura que hubo que revisar o un pedido que pasó por cinco manos. Arrancamos por ahí.",
+    "subtitle": "Podés venir con una idea de producto, una tarea que le quita tiempo a tu equipo o varios sistemas que necesitás conectar. En media hora vemos por dónde empezar.",
     "button": "Agendar una charla"
   },
   "Footer": {

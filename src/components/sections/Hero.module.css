@@ -1,87 +1,96 @@
 .hero {
-  position: relative;
-  isolation: isolate;
-  overflow: clip;
-  background: #f0f3fd;
+  background: #111a29;
+  color: #fff;
 }
-.scene {
-  display: block;
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  pointer-events: none;
-}
-.scene img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 48%;
-}
-.inner {
-  position: relative;
-  min-height: clamp(32rem, 41.65vw, 49rem);
+.inner { padding-block: clamp(2.9rem, 4.8vw, 5.3rem) clamp(1.65rem, 2.5vw, 2.65rem); }
+.opening {
   display: grid;
-  grid-template-columns: minmax(0,1.05fr) minmax(0,1fr);
+  grid-template-columns: minmax(0, 1.42fr) minmax(0, .86fr);
+  gap: clamp(2.4rem, 6vw, 7rem);
+  align-items: end;
+}
+.discipline {
+  display: flex;
   align-items: center;
+  gap: .75rem;
+  color: #d4e3ff;
+  font: 600 .72rem/1.4 var(--font-mono);
+  letter-spacing: .09em;
+  text-transform: uppercase;
 }
-.copy { padding-block: clamp(3rem, 5.4vw, 6.5rem); }
-.copy h1 {
-  margin: clamp(1.3rem,2vw,2rem) 0 1.4rem;
-  color: #111827;
-  font-size: clamp(4.15rem,6.3vw,6.8rem);
-  font-weight: 640;
-  line-height: .96;
-  letter-spacing: -.072em;
+.discipline::before { content: ""; width: 1.8rem; height: .15rem; background: #548aff; }
+.opening h1 {
+  max-width: 16ch;
+  margin: 1.15rem 0 0;
+  color: #fff;
+  font-size: clamp(3.5rem, 5.35vw, 5.75rem);
+  font-weight: 590;
+  letter-spacing: -.069em;
+  line-height: 1.01;
 }
-.copy h1 span { display: block; color: #0a4ed1; }
-.intro {
-  max-width: 29.5rem;
-  color: #364762;
-  font-size: clamp(1.02rem,1.27vw,1.2rem);
-  line-height: 1.56;
-  letter-spacing: -.018em;
-  text-wrap: pretty;
+.opening h1 span { display: block; color: #a7c8ff; }
+.intro { max-width: 29.5rem; padding-bottom: .12rem; }
+.intro > p {
+  color: #e1e7f1;
+  font-size: clamp(1rem, 1.16vw, 1.17rem);
+  letter-spacing: -.015em;
+  line-height: 1.57;
 }
-.actions { display: flex; flex-wrap: wrap; gap: .65rem 1.6rem; align-items: center; margin-top: 1.85rem; }
-.launcher { align-self: end; justify-self: end; margin-block-end: 1.55rem; }
-@media (min-width: 1950px) {
-  .scene { width: 122rem; left: 50%; transform: translateX(-50%); mask-image: linear-gradient(90deg,transparent,#000 9% 91%,transparent); }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.45rem; margin-top: 1.35rem; }
+.actions a { display: inline-flex; align-items: center; gap: .65rem; min-height: 2.8rem; font-size: .89rem; font-weight: 620; }
+.cta { color: #14284c; background: #f8fbff; padding: .65rem 1.1rem; border-radius: 100px; }
+.cta:hover { background: #d2e3ff; }
+.more { color: #e4eeff; }
+.more:hover { text-decoration: underline; text-underline-offset: .25rem; }
+.hero a:focus-visible { outline: 3px solid #9cc6ff; outline-offset: 4px; }
+.projects {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.8rem, 1.55vw, 1.85rem);
+  margin: clamp(2.35rem, 3.6vw, 4.1rem) 0 0;
+  padding: 0;
 }
-@media (min-width: 741px) and (max-width: 1050px) {
-  .inner { min-height: clamp(28rem,48vw,33rem); }
-  .copy h1 { font-size: clamp(3rem,6.25vw,4.2rem); }
-  .intro { max-width: 24rem; }
-  .scene img { object-position: 43% 50%; }
-  .scene::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgb(243 245 255 / .66) 0%, rgb(240 243 255 / .58) 37%, transparent 56%);
-  }
+.project { display: block; }
+.frame { background: #25344c; overflow: hidden; aspect-ratio: 1.98; border-radius: .25rem; }
+.frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease-out; }
+.caption { display: flex; justify-content: space-between; align-items: end; gap: .55rem; padding-top: .75rem; }
+.caption p { color: #b7c3da; font-size: .77rem; font-weight: 500; }
+.caption h2 { margin-top: .18rem; color: white; font-size: clamp(1rem, 1.28vw, 1.35rem); font-weight: 555; letter-spacing: -.032em; line-height: 1.18; }
+.caption > span { color: #b6d2ff; line-height: 1; font-size: 1.2rem; }
+@media (hover: hover) {
+  .project:hover .frame img { transform: scale(1.035); }
+  .project:hover .caption h2 { text-decoration: underline; text-underline-offset: .25em; }
 }
-@media (max-width: 740px) {
-  .hero {
-    display: grid;
-    grid-template-columns: minmax(0,1fr);
-    background: linear-gradient(130deg,#fafbff 12%,#eef1ff 62%,#dae4fc);
-  }
-  .inner { display: contents; }
-  .copy { grid-area: 1/1; padding: clamp(1.9rem,7vw,3.25rem) var(--gutter) .65rem; }
-  .copy h1 { font-size: clamp(2.95rem,10.8vw,4.7rem); line-height: .98; margin: 1rem 0; }
-  .intro { max-width: 34rem; font-size: 1rem; }
-  .actions { gap: .32rem 1.1rem; margin-top: 1.25rem; }
-  .actions a:first-child { gap: .7rem; padding-inline: 1.12rem; }
-  .scene {
-    grid-area: 2/1;
-    position: relative;
-    inset: auto;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1.83;
-    mask-image: linear-gradient(to bottom,transparent,#000 14%);
-  }
-  .scene img { object-fit: contain; }
-  .launcher { grid-area: 2/1; justify-self: start; margin: 0 0 1rem var(--gutter); }
+@media (max-width: 980px) {
+  .opening { gap: 2rem; grid-template-columns: minmax(0, 1.1fr) minmax(0, .85fr); }
+  .opening h1 { font-size: clamp(2.7rem, 5.1vw, 3.3rem); }
+  .actions { gap: .3rem 1rem; }
+}
+@media (max-width: 720px) {
+  .inner { padding-block: 2.4rem 1.6rem; }
+  .opening { grid-template-columns: 1fr; gap: 1.3rem; }
+  .opening h1 { max-width: none; font-size: clamp(2.5rem, 7.8vw, 3.5rem); text-wrap: balance; }
+  .opening h1 span { text-wrap: balance; }
+  .intro { max-width: 38rem; }
+  .actions { gap: .15rem 1rem; margin-top: 1rem; }
+  .projects { margin-top: 1.9rem; gap: .75rem; }
+}
+@media (max-width: 640px) {
+  .projects { display: flex; flex-direction: column; gap: 0; }
+  .project { display: grid; grid-template-columns: clamp(7.3rem, 31vw, 12rem) 1fr; align-items: center; gap: 1rem; padding-block: .65rem; border-top: 1px solid #344154; }
+  .projects li:last-child .project { padding-bottom: 0; }
+  .frame { aspect-ratio: 2.1; }
+  .caption { padding: 0; align-items: center; }
+}
+@media (max-width: 370px) {
+  .inner { padding-top: 1.9rem; }
+  .discipline { font-size: .63rem; letter-spacing: .06em; }
+  .actions a { font-size: .84rem; }
+  .actions { column-gap: .75rem; }
+  .actions .cta { padding-inline: .9rem; }
+  .project { gap: .7rem; grid-template-columns: 6.6rem 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .frame img, .project:hover .frame img { transition: none; transform: none; }
 }
