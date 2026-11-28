@@ -22,7 +22,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  const socialImage = { url: `/images/nocoda-${locale}.jpg?v=identity`, width: 1200, height: 630, alt: t("title") };
+  const socialImage = { url: `/images/nocoda-${locale}.jpg?v=glass`, width: 1200, height: 630, alt: t("title") };
 
   return {
     title: t("title"),
